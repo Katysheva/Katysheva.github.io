@@ -18,14 +18,14 @@
 	<h2>Пример извлечения данных JSON в Angular.js</h2 >
 		<h1 id="title">Freelancers</h1>
 		<h2 id="description">List of freelansers</h2>
-		<div id="freelansersList" class="freelancer" ng-repeat="freelancer in freelancers">
+		<div id="freelansersList" class="freelancer" ng-repeat="freelancer in freelancers | orderBy: 'name' ">
 			<div class="freelancer__name">{{freelancer.name}}</div>
 			<div class="freelancer__function">{{freelancer.function}}</div>
 			<div class="freelancer__age">{{freelancer.age}}</div>
 			<div class="freelancer__status">{{freelancer.status}}</div>
 		</div>
 
-		<table class="table table-striped">
+<!-- 		<table class="table table-striped">
 			<tr>
 				<th>Код</th>
 				<th>Страна</th>
@@ -36,6 +36,6 @@
 				<td>{{freelancer.function}}</td>
 				<td>{{freelancer.age}}</td>
 			</tr>
-		</table>
+		</table> -->
 	</body>
 	</html>
