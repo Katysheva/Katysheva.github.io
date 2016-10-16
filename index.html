@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Polina Katysheva">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-	<title>JSON Parser</title>
+	<link rel="stylesheet" href="style.css">
+	<title>From JSON with AngularJS</title>
 	<script>
 		var jsonApp = angular.module('jsonApp', []);
 		jsonApp.controller('MainCtrl', function ($scope, $http){
@@ -15,27 +16,22 @@
 	</script>
 </head>
 <body ng-controller="MainCtrl">
-	<h2>Пример извлечения данных JSON в Angular.js</h2 >
+	<h2 class="page-title">From JSON with AngularJS</h2>
+	<section class="main-page">
 		<h1 id="title">Freelancers</h1>
 		<h2 id="description">List of freelansers</h2>
-		<div id="freelansersList" class="freelancer" ng-repeat="freelancer in freelancers | orderBy: 'name' ">
-			<div class="freelancer__name">{{freelancer.name}}</div>
-			<div class="freelancer__function">{{freelancer.function}}</div>
-			<div class="freelancer__age">{{freelancer.age}}</div>
-			<div class="freelancer__status">{{freelancer.status}}</div>
+		<div id="freelansersList" class="freelancer freelancer--title">
+			<div class="freelancer__column">Name</div>
+			<div class="freelancer__column">Function</div>
+			<div class="freelancer__column">Age</div>
+			<div class="freelancer__column">Status</div>
 		</div>
-
-<!-- 		<table class="table table-striped">
-			<tr>
-				<th>Код</th>
-				<th>Страна</th>
-				<th>Население</th>
-			</tr>
-			<tr ng-repeat="freelancer in freelancers | orderBy: 'name' ">
-				<td>{{freelancer.name}}</td>
-				<td>{{freelancer.function}}</td>
-				<td>{{freelancer.age}}</td>
-			</tr>
-		</table> -->
-	</body>
-	</html>
+		<div id="freelansersList" class="freelancer" ng-repeat="freelancer in freelancers | orderBy: 'name' ">
+			<div class="freelancer__column">{{freelancer.name}}</div>
+			<div class="freelancer__column">{{freelancer.function}}</div>
+			<div class="freelancer__column">{{freelancer.age}}</div>
+			<div class="freelancer__column">{{freelancer.status}}</div>
+		</div>
+	</section>
+</body>
+</html>

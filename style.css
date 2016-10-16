@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	align-items: center;
+}
+.main-page{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 800px;
+	background: #e4ffe1;
+	/*flex-basis: 500px;*/
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.page-title{
+	text-align: center;
+	margin-bottom: 40px;
+}
+#title{
+	padding: 10px;
+	font-size: 28px;
+}
+#description{
+	padding-left: 10px;
+	padding-bottom: 10px;
+	font-weight: normal;
+	font-size: 20px;
+}
+.freelancer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: space-between;
+
+	border-bottom: 1px solid #808080;
+}
+.freelancer__column{
+	padding: 10px;
+}
+.freelancer--title{
+	background: #f0f0f0;
+	font-weight: bold;
+}
