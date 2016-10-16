@@ -24,5 +24,18 @@
 			<div class="freelancer__age">{{freelancer.age}}</div>
 			<div class="freelancer__status">{{freelancer.status}}</div>
 		</div>
+
+		<table class="table table-striped">
+			<tr>
+				<th>Код</th>
+				<th>Страна</th>
+				<th>Население</th>
+			</tr>
+			<tr ng-repeat="freelancer in freelancers | orderBy: 'code' ">
+				<td>{{freelancer.name}}</td>
+				<td>{{freelancer.function}}</td>
+				<td>{{freelancer.age}}</td>
+			</tr>
+		</table>
 	</body>
 	</html>
