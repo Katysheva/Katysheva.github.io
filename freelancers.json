@@ -1,0 +1,22 @@
+{
+	"title": "Freelancers",
+	"description": "List of freelansers",
+	"freelansers": [{
+		"name": "Alex",
+		"function": "web-developer",
+		"age":"46",
+		"status": "free"
+	},
+	{
+		"name": "Lulu",
+		"function": "copywriter",
+		"age":"34",
+		"status": "busy"
+	},
+	{
+		"name": "Jack",
+		"function": "DB administrator",
+		"age":"34",
+		"status": "busy"
+	}]
+}
