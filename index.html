@@ -31,10 +31,10 @@
 				<th>Страна</th>
 				<th>Население</th>
 			</tr>
-			<tr ng-repeat="freelancer in freelancers | orderBy: 'name' ">
-				<td>{{freelancer.name}}</td>
-				<td>{{freelancer.function}}</td>
-				<td>{{freelancer.age}}</td>
+			<tr ng-repeat="country in countries | orderBy: 'code' ">
+				<td>{{country.code}}</td>
+				<td>{{country.name}}</td>
+				<td>{{country.population}}</td>
 			</tr>
 		</table>
 	</body>
