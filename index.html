@@ -9,7 +9,7 @@
 		var jsonApp = angular.module('jsonApp', []);
 		jsonApp.controller('MainCtrl', function ($scope, $http){
 			$http.get('countries.json').success(function(data) {
-				$scope.freelancers = data;
+				$scope.countries = data;
 			});
 		});
 	</script>
