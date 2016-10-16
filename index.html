@@ -8,24 +8,24 @@
 	<script>
 		var jsonApp = angular.module('jsonApp', []);
 		jsonApp.controller('MainCtrl', function ($scope, $http){
-			$http.get('countries.json').success(function(data) {
-				$scope.countries = data;
+			$http.get('freelancers.json').success(function(data) {
+				$scope.freelancers = data;
 			});
 		});
 	</script>
 </head>
 <body ng-controller="MainCtrl">
 	<h2>Пример извлечения данных JSON в Angular.js</h2 >
-		<h1 id="title">{{freelancers.title}}</h1>
-		<h2 id="description">{{freelancers.description}}</h2>
-<!-- 		<div id="freelansersList" class="freelancer" ng-repeat="freelancer in freelancers">
+		<h1 id="title">Freelancers</h1>
+		<h2 id="description">List of freelansers</h2>
+		<div id="freelansersList" class="freelancer" ng-repeat="freelancer in freelancers">
 			<div class="freelancer__name">{{freelancer.name}}</div>
 			<div class="freelancer__function">{{freelancer.function}}</div>
 			<div class="freelancer__age">{{freelancer.age}}</div>
 			<div class="freelancer__status">{{freelancer.status}}</div>
-		</div> -->
+		</div>
 
-		<table class="table table-striped">
+<!-- 		<table class="table table-striped">
 			<tr>
 				<th>Код</th>
 				<th>Страна</th>
@@ -36,6 +36,6 @@
 				<td>{{country.name}}</td>
 				<td>{{country.population}}</td>
 			</tr>
-		</table>
+		</table> -->
 	</body>
 	</html>
