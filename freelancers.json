@@ -1,7 +1,4 @@
-{
-	"title": "Freelancers",
-	"description": "List of freelansers",
-	"freelansers": [{
+ [{
 		"name": "Alex",
 		"function": "web-developer",
 		"age":"46",
@@ -18,5 +15,5 @@
 		"function": "DB administrator",
 		"age":"34",
 		"status": "busy"
-	}]
-}
+	}
+]
