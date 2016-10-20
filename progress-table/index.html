@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Таблица успеваемости</title>
+	<meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.12/fc-3.2.2/fh-3.1.2/sc-1.4.2/datatables.min.css"/>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.12/fc-3.2.2/fh-3.1.2/sc-1.4.2/datatables.min.js"></script>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<table id="table-of-progress" class="progress-table">
+
+<!-- 		<colgroup></colgroup>
+		<colgroup class="slim"></colgroup>
+		<colgroup class="slim"></colgroup>
+		<colgroup class="slim"></colgroup>
+		<colgroup class="slim"></colgroup> -->
+
+		<thead class="progress-table-header">
+			<tr>
+				<th class="progress-table-header__item">Имя</th>
+				<th class="progress-table-header__item">Команда</th>
+				<th class="progress-table-header__item">Средний балл</th>
+				<th class="progress-table-header__item">Сумма баллов</th>
+				<th class="progress-table-header__item">% <br> (от макс.)</th>
+				<th class="progress-table-header__item text--left text--top">
+					<div class="questioner-header">
+						<div class="questioner">
+							<div class="questioner__type">Квестинар</div>
+							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+						</div>
+						<div class="questioner-details">
+							<div class="questioner-details__step">Шаг 1</div>
+							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+						</div>
+						<a href="#" class="questioner__show">Развернуть квестинар
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
+							</svg>
+						</a>
+						<a href="#" class="questioner__hide">Свернуть квестинар 
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
+							</svg>
+						</a>
+					</div>
+				</th>
+				<th class="progress-table-header__item text--left opened-questioner">
+					<div class="questioner-header">
+						<div class="questioner">
+							<div class="questioner__type">Квестинар</div>
+							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+						</div>
+						<div class="questioner-details">
+							<div class="questioner-details__step">Шаг 1</div>
+							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+						</div>
+						<a href="#" class="questioner__show">Развернуть квестинар
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
+							</svg>
+						</a>
+						<a href="#" class="questioner__hide">Свернуть квестинар 
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
+							</svg>
+						</a>
+					</div>
+				</th>
+				<th class="progress-table-header__item text--left opened-questioner">
+					<div class="questioner-header">
+						<div class="questioner">
+							<div class="questioner__type">Квестинар</div>
+							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+						</div>
+						<div class="questioner-details">
+							<div class="questioner-details__step">Шаг 1</div>
+							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+						</div>
+						<a href="#" class="questioner__show">Развернуть квестинар
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
+							</svg>
+						</a>
+						<a href="#" class="questioner__hide">Свернуть квестинар 
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
+							</svg>
+						</a>
+					</div>
+				</th>
+				<th class="progress-table-header__item text--left opened-questioner">
+					<div class="questioner-header">
+						<div class="questioner">
+							<div class="questioner__type">Квестинар</div>
+							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+						</div>
+						<div class="questioner-details">
+							<div class="questioner-details__step">Шаг 1</div>
+							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+						</div>
+						<a href="#" class="questioner__show">Развернуть квестинар
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
+							</svg>
+						</a>
+						<a href="#" class="questioner__hide">Свернуть квестинар 
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
+							</svg>
+						</a>
+					</div>
+				</th>
+				<th class="progress-table-header__item text--left opened-questioner">
+					<div class="questioner-header">
+						<div class="questioner">
+							<div class="questioner__type">Квестинар</div>
+							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+						</div>
+						<div class="questioner-details">
+							<div class="questioner-details__step">Шаг 1</div>
+							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+						</div>
+						<a href="#" class="questioner__show">Развернуть квестинар
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
+							</svg>
+						</a>
+						<a href="#" class="questioner__hide">Свернуть квестинар 
+							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
+							</svg>
+						</a>
+					</div>
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>
+					<div class="student-name">Григорий Рего</div>
+					<a href="#" class="show-hide-command">Команда</a>
+				</td>
+				<td>Quest-team</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td><div class="result-item">Нет результата</div></td>
+				<td class="need-examination">
+					<div class="result-item">Выполнено полностью
+						<div class="result-item__note">(требуется экспертиза)</div>
+					</div>
+				</td>
+				<td class="checked">
+					<div class="result-item"><a href="#modal1" class="open_modal result-item__rating">Modal here</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+				<td class="not-done">
+					<div class="result-item">Ничего не выполнено</div>
+				</td>
+				<td class="checked">
+					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="light-blue">
+					<div class="student-name">Анастасия Борисюк</div>
+					<a href="#" class="show-hide-command">Свернуть</a>
+				</td>
+				<td>TimeCatch</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class="without-examination">
+					<div class="result-item">Без экспертизы
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+				<td class="with-result">
+					<div class="result-item">Есть результаты</div>
+				</td>
+				<td class="checked">
+					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+				<td class="not-done">
+					<div class="result-item">Ничего не выполнено</div>
+				</td>
+				<td class="checked">
+					<div class="result-item"><a href="#" class="result-item__rating">Есть ответ</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="darken-then-light-blue">
+					<div class="student-name">Анастасия Васильева</div>
+				</td>
+				<td>TimeCatch</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class="checked">
+					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+				<td class="not-done">
+					<div class="result-item">Ничего не выполнено</div>
+				</td>
+				<td class="checked">
+					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+				<td class="not-done">
+					<div class="result-item">Ничего не выполнено</div>
+				</td>
+				<td class="checked">
+					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="student-name">Анастасия Васильева</div>
+					<a href="#" class="show-hide-command">Свернуть</a>
+				</td>
+				<td>TimeCatch</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td class="checked">
+					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+				<td class="not-done">
+					<div class="result-item">Ничего не выполнено</div>
+				</td>
+				<td class="checked">
+					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+				<td class="not-done">
+					<div class="result-item">Ничего не выполнено</div>
+				</td>
+				<td class="checked">
+					<div class="result-item">
+						<a href="#" class="result-item__rating">Оценка 4</a>
+						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div id="modal1" class="modal_div">
+		<div class="results-window">
+			<div class="results-window__user"><img src="img/user-avatar.png" alt=""></div>
+			<div class="results-window__details">
+				<div class="details__name text--bold">Валера Пузанков</div>
+				<div class="details__date">Дата первого выполнения: 14.03.2016 22:04:13</div>
+
+				<div class="details__about-quest">Всего попыток: 1</div>
+				<div class="details__about-quest">Все результаты пользователя: <a href="#">Открыть</a></div>
+				<div class="details__about-quest">Квестинар: <span class="text--bold">№1. О курсе</span></div>
+				<div class="details__about-quest">Шаг: <span class="text--bold">Подведение итогов и экспертиза квестинара</span></div>
+				<div class="details__text">
+					<span class="text--bold">Результат</span>
+					Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Которой, речью, однажды. Которое, парадигматическая несколько злых залетают грамматики, раз точках продолжил наш встретил журчит мир. Живет гор, продолжил вопрос?
+				</div>
+				<span class="text--bold">Вложения:</span>
+				<a href="#" class="details__include">
+					<svg style="width:16px;height:16px" viewBox="0 0 24 24">
+						<path fill="#c8c8c8" transform="rotate(30 12.5,12) " d="M16.5,6V17.5A4,4 0 0,1 12.5,21.5A4,4 0 0,1 8.5,17.5V5A2.5,2.5 0 0,1 11,2.5A2.5,2.5 0 0,1 13.5,5V15.5A1,1 0 0,1 12.5,16.5A1,1 0 0,1 11.5,15.5V6H10V15.5A2.5,2.5 0 0,0 12.5,18A2.5,2.5 0 0,0 15,15.5V5A4,4 0 0,0 11,1A4,4 0 0,0 7,5V17.5A5.5,5.5 0 0,0 12.5,23A5.5,5.5 0 0,0 18,17.5V6H16.5Z" />
+					</svg>
+					Документ1.doc
+				</a>
+				<div class="details__text">
+					<span class="text--bold">Ответ</span>
+					<div>Сбить запятой но, там ты ведущими собрал буквенных если коварный наш всемогущая города, толку семантика выйти великий не коварных сих журчит пунктуация деревни лучше вскоре повстречался, раз ipsum живет! Парадигматическая!</div>
+				</div>
+				<div class="details__buttons">
+					<button class="details__save-btn">
+						<svg x="0px" y="0px" viewBox="0 0 486 486" style="width:16px;height:16px">
+							<g>
+								<g>
+									<path d="M473.7,485.75c6.8,0,12.3-5.5,12.3-12.3v-359.8c0-3.6-1.6-7-4.3-9.3L363,2.85c-0.2-0.2-0.4-0.3-0.6-0.4    c-0.3-0.2-0.5-0.4-0.8-0.6c-0.4-0.2-0.7-0.4-1.1-0.6c-0.3-0.1-0.6-0.3-0.9-0.4c-0.4-0.2-0.9-0.3-1.3-0.4c-0.3-0.1-0.6-0.2-0.9-0.2    c-0.8-0.1-1.5-0.2-2.3-0.2H12.3C5.5,0.05,0,5.55,0,12.35v461.3c0,6.8,5.5,12.3,12.3,12.3h461.4V485.75z M384.5,461.25h-283v-184.1    c0-3.7,3-6.6,6.6-6.6h269.8c3.7,0,6.6,3,6.6,6.6V461.25z M161.8,24.45h180.9v127.8c0,0.8-0.6,1.4-1.4,1.4h-178    c-0.8,0-1.4-0.7-1.4-1.4V24.45H161.8z M24.6,24.45h112.8v127.8c0,14.3,11.6,25.9,25.9,25.9h178c14.3,0,25.9-11.6,25.9-25.9V38.75    l94.2,80.6v341.9H409v-184.1c0-17.2-14-31.1-31.1-31.1H108.1c-17.2,0-31.1,14-31.1,31.1v184.2H24.6V24.45z" fill="#efefef"/>
+									<path d="M227.4,77.65h53.8v32.6c0,6.8,5.5,12.3,12.3,12.3s12.3-5.5,12.3-12.3v-44.8c0-6.8-5.5-12.3-12.3-12.3h-66.1    c-6.8,0-12.3,5.5-12.3,12.3S220.7,77.65,227.4,77.65z" fill="#efefef"/>
+									<path d="M304.5,322.85h-123c-6.8,0-12.3,5.5-12.3,12.3s5.5,12.3,12.3,12.3h123c6.8,0,12.3-5.5,12.3-12.3    S311.3,322.85,304.5,322.85z" fill="#efefef"/>
+									<path d="M304.5,387.75h-123c-6.8,0-12.3,5.5-12.3,12.3s5.5,12.3,12.3,12.3h123c6.8,0,12.3-5.5,12.3-12.3    S311.3,387.75,304.5,387.75z" fill="#efefef"/>
+								</g>
+							</g>
+						</svg>
+						Сохранить
+					</button>
+					<button class="details__close-btn modal_close">
+						<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+							<path fill="#ffb4b4" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+						</svg>
+						Закрыть
+					</button>
+				</div>
+			</div>
+			<div class="results-window__rating">
+				Оценка
+				<div id="numericcontrol">
+					<input type="text" class="rating__number" />
+					<a class="rating__plus" href="#">
+						<svg viewBox="0 0 49 20">
+							<polygon transform="rotate(180 13.718504905700684,7.552337169647217) " points="26.010803926646986,0 13.718472495941114,12.252267993977739 1.426204513029461,0 0,1.4308505017943673 13.718472495941114,15.104674136046015 27.437010362336878,1.4308505017943673"/>
+						</svg>
+					</a>
+					<a class="rating__minus" href="#">
+						<svg viewBox="0 0 49 20">
+							<polygon points="26.010803926646986,0 13.718472495941114,12.252267993977739 1.426204513029461,0 0,1.4308505017943673 13.718472495941114,15.104674136046015 27.437010362336878,1.4308505017943673"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="overlay"></div>
+
+	<script>
+		$('#table-of-progress').DataTable( {
+			fixedHeader: true,
+			paging: false,
+			ordering: false,
+			searching: false,
+			info: false,
+			autoWidth: false,
+			// scrollX: true,
+			// scrollCollapse: true,
+			"columnDefs": [
+			{ "width": "90px", "targets": 0 },
+			{ "width": "110px", "targets": 1 },
+			{ "width": "62px", "targets": 2 },
+			{ "width": "62px", "targets": 3 },
+			{ "width": "62px", "targets": 4 },
+			{ "width": "200px", "targets": '_all' }
+			]
+		});
+	</script>
+
+	<script>
+		$(document).ready(function() { 
+			
+			var overlay = $('#overlay'); 
+			var open_modal = $('.open_modal'); 
+			var close = $('.modal_close, #overlay'); 
+			var modal = $('.modal_div');
+
+			open_modal.click( function(event){
+				event.preventDefault(); 
+				var div = $(this).attr('href');
+				overlay.fadeIn(400,
+					function(){
+						$(div)
+						.css('display', 'block') 
+						.animate({opacity: 1, top: '10%'}, 200);
+					});
+			});
+			close.click( function(){ 
+				modal 
+				.animate({opacity: 0, top: '45%'}, 200, 
+					function(){ 
+						$(this).css('display', 'none');
+						overlay.fadeOut(400);
+					});
+			});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function(e) {
+			$('#numericcontrol input[type="text"]').val("0");
+			$val=$('#numericcontrol input[type="text"]').val();
+			$('#numericcontrol a.rating__plus').click(function(){
+				$val++;
+				$(this).parent('div#numericcontrol').find('input[type="text"]').val($val);
+			});
+			$('#numericcontrol a.rating__minus').click(function(){
+				if($val>0)
+				{
+					$val--;	
+					$(this).parent('div#numericcontrol').find('input[type="text"]').val($val);
+				}
+				else
+				{
+					alert("Value can't be less then 0");
+				}
+				// if($val<10)
+				// {
+				// 	$val++;	
+				// 	$(this).parent('div#numericcontrol').find('input[type="text"]').val($val);
+				// }
+				// else
+				// {
+				// 	alert("Value can't be less then 0");
+				// }
+
+			});
+		});
+	</script>
+</body>
+</html>
