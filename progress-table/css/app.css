@@ -21,17 +21,11 @@
 @font-face {
   font-family: HelveticaNeueCyr;
   /* Имя шрифта */
-  src: url(../fonts/HelveticaNeueCyr-Thin.otf);
-  /* Путь к файлу со шрифтом */ }
-
-@font-face {
-  font-family: HelveticaNeueCyrBold;
-  /* Имя шрифта */
   src: url(../fonts/HelveticaNeueCyr-Medium.otf);
   /* Путь к файлу со шрифтом */ }
 
 @font-face {
-  font-family: HelveticaNeueCyrBlack;
+  font-family: HelveticaNeueCyrBold;
   /* Имя шрифта */
   src: url(../fonts/HelveticaNeueCyr-Bold.otf);
   /* Путь к файлу со шрифтом */ }
@@ -128,11 +122,17 @@ html, body {
 button:focus {
   outline: none; }
 
+.hidcont, .collapsed {
+  display: none; }
+
+.dn {
+  display: none; }
+
 .text--left {
   text-align: left; }
 
 .text--bold {
-  font-family: 'HelveticaNeueCyrBlack'; }
+  font-family: 'HelveticaNeueCyrBold'; }
 
 .text--top {
   vertical-align: top; }
@@ -168,18 +168,14 @@ table.dataTable.no-footer {
     font-family: 'HelveticaNeueCyrBold'; }
   .questioner__title {
     color: #363636; }
-  .questioner__hide {
-    color: #787a7a;
-    text-decoration: underline;
-    display: none; }
-    .questioner__hide > svg {
-      margin-bottom: -5px; }
   .questioner__show {
     color: #787a7a;
     text-decoration: underline;
     padding-top: 10px; }
     .questioner__show > svg {
       margin-bottom: -5px; }
+    .questioner__show:focus {
+      outline: none; }
 
 .questioner-details__step {
   color: #949494;
@@ -195,19 +191,40 @@ table.dataTable.no-footer {
   border-left: 1px solid #cecece;
   border-bottom: 1px solid #cecece; }
   .progress-table-header__item:nth-child(1) {
-    max-width: 91px; }
+    min-width: 95px; }
+  .progress-table-header__item:nth-child(2) {
+    width: 110px; }
+  .progress-table-header__item:nth-child(3) {
+    min-width: 62px; }
+  .progress-table-header__item:nth-child(4) {
+    min-width: 62px; }
+  .progress-table-header__item:nth-child(5) {
+    min-width: 62px; }
+  .progress-table-header__item:nth-child(n+6) {
+    min-width: 200px;
+    vertical-align: top; }
   .progress-table-header__item:last-child {
     border-right: 1px solid #cecece; }
+
+.hide-arrow, .questioner__hide {
+  display: none; }
+
+.show--default {
+  display: inline; }
 
 .opened-questioner {
   background: #bbbbbb; }
   .opened-questioner .questioner__title {
     color: #fff; }
-  .opened-questioner .questioner__show {
+  .opened-questioner .show-arrow, .opened-questioner .show--default {
     display: none; }
   .opened-questioner .questioner-details__step,
-  .opened-questioner .questioner-details__description, .opened-questioner .questioner__hide {
+  .opened-questioner .questioner-details__description {
     display: block; }
+  .opened-questioner .hide-arrow {
+    display: inline; }
+  .opened-questioner .questioner__hide {
+    display: inline; }
 
 .show-hide-command {
   color: #4780b0;

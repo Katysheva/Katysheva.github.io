@@ -10,260 +10,438 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-	<table id="table-of-progress" class="progress-table">
+	<div class="progress-table-container">
+		<table id="table-of-progress" class="progress-table">
+			<thead class="progress-table-header">
+				<tr>
+					<th class="progress-table-header__item">Имя</th>
+					<th class="progress-table-header__item">Команда</th>
+					<th class="progress-table-header__item">Средний балл</th>
+					<th class="progress-table-header__item">Сумма баллов</th>
+					<th class="progress-table-header__item">% <br> (от макс.)</th>
+					<th data-questioner="1" class="progress-table-header__item text--left not-collapsed">
+						<div class="questioner-header">
+							<div class="questioner">
+								<div class="questioner__type">Квестинар</div>
+								<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+							</div>
+							<div class="questioner-details">
+								<div class="questioner-details__step">Шаг 1</div>
+								<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+							</div>
+							<a href="#" class="questioner__show">
+								<span class="questioner__hide">Свернуть</span><span class="show--default">Развернуть</span> квестинар
+								<svg class="show-arrow" style="width:20px;height:20px" viewBox="0 0 24 24">
+									<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
+								</svg>
+								<svg class="hide-arrow" style="width:20px;height:20px" viewBox="0 0 24 24">
+									<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
+								</svg>
+							</a>
+						</div>
+					</th>
+					<th data-questioner="1" class="progress-table-header__item text--left opened-questioner collapsed">
+						<div class="questioner-header">
+							<div class="questioner">
+								<div class="questioner__type">Квестинар</div>
+								<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+							</div>
+							<div class="questioner-details">
+								<div class="questioner-details__step">Шаг 1</div>
+								<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+							</div>
+						</div>
+					</th>
+					<th data-questioner="1" class="progress-table-header__item text--left opened-questioner collapsed">
+						<div class="questioner-header">
+							<div class="questioner">
+								<div class="questioner__type">Квестинар</div>
+								<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+							</div>
+							<div class="questioner-details">
+								<div class="questioner-details__step">Шаг 1</div>
+								<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+							</div>
+						</div>
+					</th>
+					<th data-questioner="2" class="progress-table-header__item text--left opened-questioner collapsed">
+						<div class="questioner-header">
+							<div class="questioner">
+								<div class="questioner__type">Квестинар</div>
+								<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+							</div>
+							<div class="questioner-details">
+								<div class="questioner-details__step">Шаг 1</div>
+								<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+							</div>
+						</div>
+					</th>
+					<th class="progress-table-header__item text--left">
+						<div class="questioner-header">
+							<div class="questioner">
+								<div class="questioner__type">Квестинар</div>
+								<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+							</div>
+							<div class="questioner-details">
+								<div class="questioner-details__step">Шаг 1</div>
+								<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+							</div>
+							<a href="#" class="questioner__show">
+								<span class="questioner__hide">Свернуть</span><span class="show--default">Развернуть</span> квестинар
+								<svg class="show-arrow" style="width:20px;height:20px" viewBox="0 0 24 24">
+									<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
+								</svg>
+								<svg class="hide-arrow" style="width:20px;height:20px" viewBox="0 0 24 24">
+									<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
+								</svg>
+							</a>
+						</div>
+					</th>
+					<th class="progress-table-header__item text--left">
+						<div class="questioner-header">
+							<div class="questioner">
+								<div class="questioner__type">Квестинар</div>
+								<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+							</div>
+							<div class="questioner-details">
+								<div class="questioner-details__step">Шаг 1</div>
+								<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+							</div>
+							<a href="#" class="questioner__show">
+								<span class="questioner__hide">Свернуть</span><span class="show--default">Развернуть</span> квестинар
+								<svg class="show-arrow" style="width:20px;height:20px" viewBox="0 0 24 24">
+									<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
+								</svg>
+								<svg class="hide-arrow" style="width:20px;height:20px" viewBox="0 0 24 24">
+									<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
+								</svg>
+							</a>
+						</div>
+					</th>
+					<th class="progress-table-header__item text--left">
+						<div class="questioner-header">
+							<div class="questioner">
+								<div class="questioner__type">Квестинар</div>
+								<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+							</div>
+							<div class="questioner-details">
+								<div class="questioner-details__step">Шаг 1</div>
+								<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+							</div>
+							<a href="#" class="questioner__show">
+								<span class="questioner__hide">Свернуть</span><span class="show--default">Развернуть</span> квестинар
+								<svg class="show-arrow" style="width:20px;height:20px" viewBox="0 0 24 24">
+									<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
+								</svg>
+								<svg class="hide-arrow" style="width:20px;height:20px" viewBox="0 0 24 24">
+									<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
+								</svg>
+							</a>
+						</div>
+					</th>
+				</tr>
+			</thead>
 
-<!-- 		<colgroup></colgroup>
-		<colgroup class="slim"></colgroup>
-		<colgroup class="slim"></colgroup>
-		<colgroup class="slim"></colgroup>
-		<colgroup class="slim"></colgroup> -->
+			<tbody>
+				<tr data-team-id="3" class="not_hidcont">
+					<td>
+						<div class="student-name">Григорий Рего</div>
+					</td>
+					<td>Quest-team</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td class="need-examination">
+						<div class="result-item">Выполнено полностью
+							<div class="result-item__note">(требуется экспертиза)</div>
+						</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#modal1" class="open_modal result-item__rating">Modal here</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+				</tr>
+				<tr data-team-id="1" class="not_hidcont">
+					<td>
+						<div class="student-name">Григорий Рего</div>
+						<a href="#" class="show-hide-command show-hide-command">Команда</a>
+					</td>
+					<td>Quest-team</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td class="need-examination">
+						<div class="result-item">Выполнено полностью
+							<div class="result-item__note">(требуется экспертиза)</div>
+						</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#modal1" class="open_modal result-item__rating">Modal here</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+				</tr>
 
-		<thead class="progress-table-header">
-			<tr>
-				<th class="progress-table-header__item">Имя</th>
-				<th class="progress-table-header__item">Команда</th>
-				<th class="progress-table-header__item">Средний балл</th>
-				<th class="progress-table-header__item">Сумма баллов</th>
-				<th class="progress-table-header__item">% <br> (от макс.)</th>
-				<th class="progress-table-header__item text--left text--top">
-					<div class="questioner-header">
-						<div class="questioner">
-							<div class="questioner__type">Квестинар</div>
-							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+				<tr data-team-id="1" class="hidcont">
+					<td class="darken-then-light-blue">
+						<div class="student-name">Анастасия Васильева</div>
+					</td>
+					<td>TimeCatch</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
 						</div>
-						<div class="questioner-details">
-							<div class="questioner-details__step">Шаг 1</div>
-							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
+					</td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
 						</div>
-						<a href="#" class="questioner__show">Развернуть квестинар
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
-							</svg>
-						</a>
-						<a href="#" class="questioner__hide">Свернуть квестинар 
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
-							</svg>
-						</a>
-					</div>
-				</th>
-				<th class="progress-table-header__item text--left opened-questioner">
-					<div class="questioner-header">
-						<div class="questioner">
-							<div class="questioner__type">Квестинар</div>
-							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item">
+							<a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
 						</div>
-						<div class="questioner-details">
-							<div class="questioner-details__step">Шаг 1</div>
-							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
-						</div>
-						<a href="#" class="questioner__show">Развернуть квестинар
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
-							</svg>
-						</a>
-						<a href="#" class="questioner__hide">Свернуть квестинар 
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
-							</svg>
-						</a>
-					</div>
-				</th>
-				<th class="progress-table-header__item text--left opened-questioner">
-					<div class="questioner-header">
-						<div class="questioner">
-							<div class="questioner__type">Квестинар</div>
-							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
-						</div>
-						<div class="questioner-details">
-							<div class="questioner-details__step">Шаг 1</div>
-							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
-						</div>
-						<a href="#" class="questioner__show">Развернуть квестинар
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
-							</svg>
-						</a>
-						<a href="#" class="questioner__hide">Свернуть квестинар 
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
-							</svg>
-						</a>
-					</div>
-				</th>
-				<th class="progress-table-header__item text--left opened-questioner">
-					<div class="questioner-header">
-						<div class="questioner">
-							<div class="questioner__type">Квестинар</div>
-							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
-						</div>
-						<div class="questioner-details">
-							<div class="questioner-details__step">Шаг 1</div>
-							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
-						</div>
-						<a href="#" class="questioner__show">Развернуть квестинар
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
-							</svg>
-						</a>
-						<a href="#" class="questioner__hide">Свернуть квестинар 
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
-							</svg>
-						</a>
-					</div>
-				</th>
-				<th class="progress-table-header__item text--left opened-questioner">
-					<div class="questioner-header">
-						<div class="questioner">
-							<div class="questioner__type">Квестинар</div>
-							<div class="questioner__title">№1. О курсе «Интернет-предпринимательство» и работа с системой </div>
-						</div>
-						<div class="questioner-details">
-							<div class="questioner-details__step">Шаг 1</div>
-							<div class="questioner-details__description">Изучение теории по работе в системе Квестинаров (x1)</div>
-						</div>
-						<a href="#" class="questioner__show">Развернуть квестинар
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#6d7375" d="M5,6.41L6.41,5L17,15.59V9H19V19H9V17H15.59L5,6.41Z" />
-							</svg>
-						</a>
-						<a href="#" class="questioner__hide">Свернуть квестинар 
-							<svg style="width:20px;height:20px" viewBox="0 0 24 24">
-								<path fill="#8a8a8a" d="M19,17.59L17.59,19L7,8.41V15H5V5H15V7H8.41L19,17.59Z" />
-							</svg>
-						</a>
-					</div>
-				</th>
-			</tr>
-		</thead>
+					</td>
+				</tr>
 
-		<tbody>
-			<tr>
-				<td>
-					<div class="student-name">Григорий Рего</div>
-					<a href="#" class="show-hide-command">Команда</a>
-				</td>
-				<td>Quest-team</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td><div class="result-item">Нет результата</div></td>
-				<td class="need-examination">
-					<div class="result-item">Выполнено полностью
-						<div class="result-item__note">(требуется экспертиза)</div>
-					</div>
-				</td>
-				<td class="checked">
-					<div class="result-item"><a href="#modal1" class="open_modal result-item__rating">Modal here</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-				<td class="not-done">
-					<div class="result-item">Ничего не выполнено</div>
-				</td>
-				<td class="checked">
-					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td class="light-blue">
-					<div class="student-name">Анастасия Борисюк</div>
-					<a href="#" class="show-hide-command">Свернуть</a>
-				</td>
-				<td>TimeCatch</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td class="without-examination">
-					<div class="result-item">Без экспертизы
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-				<td class="with-result">
-					<div class="result-item">Есть результаты</div>
-				</td>
-				<td class="checked">
-					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-				<td class="not-done">
-					<div class="result-item">Ничего не выполнено</div>
-				</td>
-				<td class="checked">
-					<div class="result-item"><a href="#" class="result-item__rating">Есть ответ</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td class="darken-then-light-blue">
-					<div class="student-name">Анастасия Васильева</div>
-				</td>
-				<td>TimeCatch</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td class="checked">
-					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-				<td class="not-done">
-					<div class="result-item">Ничего не выполнено</div>
-				</td>
-				<td class="checked">
-					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-				<td class="not-done">
-					<div class="result-item">Ничего не выполнено</div>
-				</td>
-				<td class="checked">
-					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<div class="student-name">Анастасия Васильева</div>
-					<a href="#" class="show-hide-command">Свернуть</a>
-				</td>
-				<td>TimeCatch</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td class="checked">
-					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-				<td class="not-done">
-					<div class="result-item">Ничего не выполнено</div>
-				</td>
-				<td class="checked">
-					<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-				<td class="not-done">
-					<div class="result-item">Ничего не выполнено</div>
-				</td>
-				<td class="checked">
-					<div class="result-item">
-						<a href="#" class="result-item__rating">Оценка 4</a>
-						<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
-					</div>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+				<tr data-team-id="1" class="hidcont">
+					<td class="darken-then-light-blue">
+						<div class="student-name">Анастасия Васильева</div>
+					</td>
+					<td>TimeCatch</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item">
+							<a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+				</tr>
 
+				<tr data-team-id="1" class="hidcont">
+					<td class="darken-then-light-blue">
+						<div class="student-name">Анастасия Васильева</div>
+					</td>
+					<td>TimeCatch</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item">
+							<a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+				</tr>
+
+				<tr data-team-id="1" class="hidcont">
+					<td class="darken-then-light-blue">
+						<div class="student-name">Анастасия Васильева</div>
+					</td>
+					<td>TimeCatch</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item">
+							<a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+				</tr>
+
+				<tr data-team-id="1" class="hidcont">
+					<td class="darken-then-light-blue">
+						<div class="student-name">Анастасия Васильева</div>
+					</td>
+					<td>TimeCatch</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item">
+							<a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+				</tr>
+				<tr data-team-id="2" class="not_hidcont">
+					<td>
+						<div class="student-name">Анастасия Борисюк</div>
+						<a href="#" class="show-hide-command show-hide-command">Команда</a>
+					</td>
+					<td>TimeCatch</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td class="without-examination">
+						<div class="result-item">Без экспертизы
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="with-result">
+						<div class="result-item">Есть результаты</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Есть ответ</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+				</tr>
+				<tr data-team-id="2" class="hidcont">
+					<td class="darken-then-light-blue">
+						<div class="student-name">Анастасия Васильева</div>
+					</td>
+					<td>TimeCatch</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td><div class="result-item">Нет результата</div></td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+					<td class="not-done">
+						<div class="result-item">Ничего не выполнено</div>
+					</td>
+					<td class="checked">
+						<div class="result-item"><a href="#" class="result-item__rating">Оценка 4</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 	<div id="modal1" class="modal_div">
 		<div class="results-window">
 			<div class="results-window__user"><img src="img/user-avatar.png" alt=""></div>
@@ -331,87 +509,77 @@
 		</div>
 	</div>
 	<div id="overlay"></div>
-
-	<script>
-		$('#table-of-progress').DataTable( {
-			fixedHeader: true,
-			paging: false,
-			ordering: false,
-			searching: false,
-			info: false,
-			autoWidth: false,
-			// scrollX: true,
-			// scrollCollapse: true,
-			"columnDefs": [
-			{ "width": "90px", "targets": 0 },
-			{ "width": "110px", "targets": 1 },
-			{ "width": "62px", "targets": 2 },
-			{ "width": "62px", "targets": 3 },
-			{ "width": "62px", "targets": 4 },
-			{ "width": "200px", "targets": '_all' }
-			]
-		});
-	</script>
-
-	<script>
-		$(document).ready(function() { 
-			
-			var overlay = $('#overlay'); 
-			var open_modal = $('.open_modal'); 
-			var close = $('.modal_close, #overlay'); 
-			var modal = $('.modal_div');
-
-			open_modal.click( function(event){
-				event.preventDefault(); 
-				var div = $(this).attr('href');
-				overlay.fadeIn(400,
-					function(){
-						$(div)
-						.css('display', 'block') 
-						.animate({opacity: 1, top: '10%'}, 200);
-					});
-			});
-			close.click( function(){ 
-				modal 
-				.animate({opacity: 0, top: '45%'}, 200, 
-					function(){ 
-						$(this).css('display', 'none');
-						overlay.fadeOut(400);
-					});
-			});
-		});
-	</script>
-
 	<script>
 		$(document).ready(function(e) {
-			$('#numericcontrol input[type="text"]').val("0");
-			$val=$('#numericcontrol input[type="text"]').val();
-			$('#numericcontrol a.rating__plus').click(function(){
-				$val++;
-				$(this).parent('div#numericcontrol').find('input[type="text"]').val($val);
-			});
-			$('#numericcontrol a.rating__minus').click(function(){
-				if($val>0)
-				{
-					$val--;	
-					$(this).parent('div#numericcontrol').find('input[type="text"]').val($val);
-				}
-				else
-				{
-					alert("Value can't be less then 0");
-				}
-				// if($val<10)
-				// {
-				// 	$val++;	
-				// 	$(this).parent('div#numericcontrol').find('input[type="text"]').val($val);
-				// }
-				// else
-				// {
-				// 	alert("Value can't be less then 0");
-				// }
+			$('#table-of-progress tbody td:nth-child(6)').hide();
+			$('#table-of-progress tbody td:nth-child(7)').hide();
+			$('#table-of-progress tbody td:nth-child(8)').hide();
+
+
+			// var cur_th_row = $('#table-of-progress thead').children().children();
+			// var hidden_cols = [];
+			// var quest_ids = [];
+			// var ths_numbers = [];
+
+
+			// $(cur_th_row).each(function(i,elem){
+			// 	var data = $(elem).data("questioner")
+			// 	if($(data) === undefined){i++;}
+			// 	else if ($.inArray($(elem).data("questioner"), quest_ids) === -1)
+			// 		$(quest_ids).push(323);
+			// });
+			// $(cur_th_row).each(function(j,elem){
+			// 	var sd = $('[data-questioner="'+quest_ids[j]+'"]:not(.not-collapsed)');
+			// 		// $(ths_numbers).add();
+			// 	});
+
+			// // $(quest_ids).each(function(j,elem){
+			// // 	$(cur_th_row).each(function(l,elem){
+			// // 		ths_numbers[l] = $(quest_ids[j]).parent().children().index($(elem));
+			// // 	});
+			// // });
+			// console.log(quest_ids);
+			// 	// var ths = $('[data-questioner="'+questioner_id+'"]:not(.not-collapsed)');
+			// 	// var cols = [];
+
+			// 	// $(ths).each(function(i,elem){
+			// 	// 	cols[i] = $(elem).parent().children().index($(elem));
+			// 	// });
+
+			// 	// ths.hide();
+			// 	// $(current_th).removeClass('opened-questioner');
+			// 	// $(cols).each(function(i,col){
+			// 	// 	$('#table-of-progress tbody td:nth-child('+(col+1)+')').hide();
+			// 	// });
+
+
 
 			});
-		});
-	</script>
-</body>
-</html>
+		</script>
+
+
+
+
+
+
+
+		<script>
+			$('#table-of-progress').DataTable( {
+				fixedHeader: true,
+				paging: false,
+				ordering: false,
+				searching: false,
+				info: false,
+				autoWidth: false,
+				"columnDefs": [
+				{ "width": "90px", "targets": 0 },
+				{ "width": "110px", "targets": 1 },
+				{ "width": "62px", "targets": 2 },
+				{ "width": "62px", "targets": 3 },
+				{ "width": "62px", "targets": 4 },
+				{ "width": "200px", "targets": '_all' }
+				]
+			});
+		</script>
+	</body>
+	</html>
