@@ -125,6 +125,9 @@ button:focus {
 .hidcont, .collapsed {
   display: none; }
 
+#table-of-progress {
+  min-width: 100%; }
+
 .dn {
   display: none; }
 
@@ -287,9 +290,9 @@ table.dataTable {
   z-index: 3;
   position: fixed;
   background-color: #000;
-  opacity: 0.7;
-  -moz-opacity: 0.7;
-  filter: alpha(opacity=70);
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=50);
   width: 100%;
   height: 100%;
   top: 0;
@@ -321,10 +324,12 @@ table.dataTable {
     color: #000; }
 
 .details__text {
-  padding: 15px 0; }
+  padding: 15px 0;
+  color: #4d4d4d; }
   .details__text > span {
     display: block;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    color: #000; }
 
 .details__include {
   color: #678dd3;
