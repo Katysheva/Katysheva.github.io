@@ -152,6 +152,9 @@ button:focus {
 .text--top {
   vertical-align: top; }
 
+.text--19 {
+  font-size: 19px; }
+
 table.dataTable thead th {
   padding: 5px;
   border-bottom: 1px solid #cecece; }
