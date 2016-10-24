@@ -137,9 +137,6 @@ button:focus {
 .hidcont, .collapsed {
   display: none; }
 
-#table-of-progress {
-  min-width: 100%; }
-
 .dn {
   display: none; }
 

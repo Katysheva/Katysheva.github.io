@@ -5,13 +5,13 @@
 	<meta charset="utf-8">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.12/fc-3.2.2/fh-3.1.2/sc-1.4.2/datatables.min.css"/>
-	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.12/fc-3.2.2/fh-3.1.2/sc-1.4.2/datatables.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/datatables.css"/>
+	<script type="text/javascript" src="js/datatables.js"></script>
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 	<div class="progress-table-container">
-		<table id="table-of-progress" class="progress-table">
+		<table id="table-of-progress" class="progress-table" style="width: 1000px;">
 			<thead class="progress-table-header">
 				<tr>
 					<th class="progress-table-header__item">Имя</th>
@@ -485,7 +485,7 @@
 			{ "width": "62px", "targets": 2 },
 			{ "width": "62px", "targets": 3 },
 			{ "width": "62px", "targets": 4 },
-			{ "width": "200px", "targets": '_all' }
+			// { "width": "200px", "targets": '_all' }
 			]
 		});
 	</script>
