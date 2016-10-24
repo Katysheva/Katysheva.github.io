@@ -251,6 +251,9 @@ table.dataTable.no-footer {
   .opened-questioner .questioner__show {
     color: #787a7a; }
 
+.collapsed {
+  background: #c8c8c8; }
+
 .show-hide-command {
   color: #4780b0;
   font-size: 12px;
