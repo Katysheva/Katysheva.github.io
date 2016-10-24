@@ -19,6 +19,12 @@
   display: none !important; }
 
 @font-face {
+  font-family: HelveticaNeue;
+  /* Имя шрифта */
+  src: url(../fonts/HelveticaNeueCyr-Light.otf);
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
   font-family: HelveticaNeueCyr;
   /* Имя шрифта */
   src: url(../fonts/HelveticaNeueCyr-Medium.otf);
@@ -64,9 +70,9 @@ body {
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
-  color: #000;
-  font-family: "HelveticaNeueCyr";
-  font-size: 14px;
+  color: #654242;
+  font-family: "HelveticaNeue";
+  font-size: 12px;
   line-height: 1.5; }
 
 h1,
@@ -107,12 +113,18 @@ a {
     text-decoration: none; }
 
 b, strong {
-  font-family: gothamProBold; }
+  font-weight: bold; }
 
 img,
 picture {
   margin: 0;
   max-width: 100%; }
+
+table tr th {
+  color: #565656; }
+
+table tr td {
+  font-size: 14px; }
 
 html, body {
   background: #fff;
@@ -161,27 +173,30 @@ table.dataTable.no-footer {
 
 .questioner-header {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  font-size: 15px;
+  padding: 20px 15px; }
 
 .questioner {
   align-items: flex-start; }
   .questioner__type {
-    color: #949494;
+    color: #b8b7b7;
     padding-bottom: 10px;
     font-family: 'HelveticaNeueCyrBold'; }
   .questioner__title {
     color: #363636; }
   .questioner__show {
-    color: #787a7a;
+    color: #808384;
     text-decoration: underline;
-    padding-top: 10px; }
+    padding-top: 10px;
+    font-size: 12px; }
     .questioner__show > svg {
       margin-bottom: -5px; }
     .questioner__show:focus {
       outline: none; }
 
 .questioner-details__step {
-  color: #949494;
+  color: #a4a4a4;
   font-family: 'HelveticaNeueCyrBold';
   display: none; }
 
@@ -219,6 +234,8 @@ table.dataTable.no-footer {
   background: #bbbbbb; }
   .opened-questioner .questioner__title {
     color: #fff; }
+  .opened-questioner .questioner__type {
+    color: #a4a4a4; }
   .opened-questioner .show-arrow, .opened-questioner .show--default {
     display: none; }
   .opened-questioner .questioner-details__step,
@@ -228,10 +245,12 @@ table.dataTable.no-footer {
     display: inline; }
   .opened-questioner .questioner__hide {
     display: inline; }
+  .opened-questioner .questioner__show {
+    color: #787a7a; }
 
 .show-hide-command {
   color: #4780b0;
-  font-size: 0.8em;
+  font-size: 12px;
   text-decoration: underline; }
 
 .result-item {
@@ -284,7 +303,7 @@ table.dataTable {
   display: none;
   opacity: 0;
   z-index: 5;
-  padding: 20px; }
+  padding: 50px; }
 
 #overlay {
   z-index: 3;
@@ -303,16 +322,17 @@ table.dataTable {
 .results-window {
   display: flex; }
   .results-window__user {
-    flex-basis: 45%;
-    padding-top: 20px; }
+    flex-basis: 45%; }
   .results-window__details {
     padding: 20px; }
   .results-window__rating {
     flex-basis: 45%;
+    color: #a9a9a9;
     position: relative; }
 
 .details__name {
-  font-weight: bold; }
+  font-weight: bold;
+  color: #000; }
 
 .details__date {
   color: #a9a9a9;
@@ -325,7 +345,7 @@ table.dataTable {
 
 .details__text {
   padding: 15px 0;
-  color: #4d4d4d; }
+  color: #2a2a2a; }
   .details__text > span {
     display: block;
     padding-bottom: 5px;
