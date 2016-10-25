@@ -57,7 +57,7 @@
 					function(){
 						$(div)
 						.css('display', 'block') 
-						.animate({opacity: 1, top: '10%'}, 200);
+						.animate({opacity: 1, top: '5%'}, 200);
 					});
 			});
 			close.click( function(){ 

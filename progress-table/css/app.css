@@ -251,6 +251,9 @@ table.dataTable.no-footer {
 .collapsed {
   background: #c8c8c8; }
 
+.not-collapsed {
+  background: #dadada; }
+
 .show-hide-command {
   color: #4780b0;
   font-size: 12px;
@@ -323,11 +326,12 @@ table.dataTable {
   display: none; }
 
 .results-window {
-  display: flex; }
+  display: flex;
+  font-size: 15px; }
   .results-window__user {
-    flex-basis: 45%; }
+    flex-basis: 50%; }
   .results-window__details {
-    padding: 20px; }
+    padding-left: 10px; }
   .results-window__rating {
     flex-basis: 45%;
     color: #a9a9a9;
