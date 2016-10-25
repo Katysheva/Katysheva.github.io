@@ -247,6 +247,8 @@ table.dataTable.no-footer {
     display: inline; }
   .opened-questioner .questioner__show {
     color: #787a7a; }
+  .opened-questioner.not-collapsed {
+    background: #bbb; }
 
 .collapsed {
   background: #c8c8c8; }
@@ -367,14 +369,19 @@ table.dataTable {
     margin-bottom: -3px; }
 
 .details__buttons {
-  display: flex; }
+  display: flex;
+  font-size: 15px; }
 
 .details__save-btn {
   display: flex;
   background: #7dc987;
   color: #fff;
   padding: 10px 30px;
-  border-radius: 20px; }
+  border-radius: 30px;
+  font-size: 15px;
+  height: 45px;
+  width: 190px;
+  justify-content: center; }
   .details__save-btn svg {
     margin-right: 10px;
     margin-bottom: -3px; }
@@ -382,7 +389,8 @@ table.dataTable {
 .details__close-btn {
   color: #e25c62;
   background: #fff;
-  padding-left: 20px; }
+  padding-left: 20px;
+  font-size: 15px; }
   .details__close-btn > svg {
     margin-bottom: -5px; }
 
