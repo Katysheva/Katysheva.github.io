@@ -1,4 +1,7 @@
 		$(document).ready(function(e) {
+			client_w=document.body.clientWidth;
+			client_h=document.body.clientHeight;
+			defaultTeamName();
 			$('#numericcontrol input[type="text"]').val("0");
 			$val=$('#numericcontrol input[type="text"]').val();
 			$('#numericcontrol a.rating__plus').click(function(){
@@ -21,7 +24,20 @@
 				}
 			});
 
-			var current_text = "";
+
+			function defaultTeamName () {
+				var cur_text = "Команда";
+				var first_tds = $('#table-of-progress tbody td:nth-child(1) .show-hide-command');
+				$(first_tds).each(function(i,elem){
+					if(client_w<800){
+						cur_tr = $(elem).parent().parent().parent();
+						cur_text = $($(cur_tr).children()[1]).text();
+					}
+					$(elem).text(cur_text);
+				});
+			}
+			
+
 
 			$('.not_hidcont>td>.student-info>.show-hide-command').click(function(){  
 
@@ -32,12 +48,16 @@
 
 				var trs = $('[data-team-id="'+team_id+'"]:not(.not_hidcont)');
 				var hidcont = trs;
-				var s = $(this).text();
-				var d = s!="Свернуть";
+				var current_text = "";
+
 				if($(this).text()!="Свернуть")
 					current_text = $(this).text();
 
-				console.log(first_td);
+				if(client_w<800){
+					current_text = $($(current_tr).children()[1]).text();
+				}else{
+					current_text = 'Команда';
+				}
 				if (hidcont.is(':hidden')){
 					hidcont.show();
 					$(first_td).addClass('light-blue');
@@ -54,6 +74,7 @@
 			var open_modal = $('.open_modal'); 
 			var close = $('.modal_close, #overlay'); 
 			var modal = $('.modal_div');
+			var body = $('body');
 
 			open_modal.click( function(event){
 				event.preventDefault(); 
@@ -64,6 +85,8 @@
 						.css('display', 'block') 
 						.animate({opacity: 1, top: '5%'}, 200);
 					});
+				$(body).css('overflow', 'hidden');
+				$(modal).css('overflow', 'auto');
 			});
 			close.click( function(){ 
 				modal 
@@ -72,6 +95,7 @@
 						$(this).css('display', 'none');
 						overlay.fadeOut(400);
 					});
+				$(body).css('overflow', 'auto');
 			});
 
 
@@ -103,9 +127,7 @@
 					});
 				}
 			}); 
-			client_w=document.body.clientWidth;
-			client_h=document.body.clientHeight;
-			if(client_w<1000){
+			if(client_w<800){
 				var step_txt = $('.questioner-details__step');
 				$(step_txt).each(function(i,elem){
 					$(step_txt).text($(elem).text().slice(0,1)+$(elem).text().slice(-1));
@@ -117,7 +139,6 @@
 			});
 			}
 		});
-
 
 		function cropTxt(str){
 			if (str.length > 30) str = str.slice(0, 10) + ' ... ' + str.slice(-5);

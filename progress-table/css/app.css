@@ -132,11 +132,11 @@ html, body {
   min-height: 100%; }
 
 .icon {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   display: block;
   background: url("../img/icons-info-sprite.png") no-repeat;
-  background-position-x: 0;
+  background-position-x: -1px;
   background-position-y: 0; }
 
 button:focus {
@@ -190,6 +190,13 @@ table.dataTable.no-footer {
     #table-of-progress thead tr th:nth-child(n+2):nth-child(-n+5), #table-of-progress thead tr td:nth-child(n+2):nth-child(-n+5), #table-of-progress tbody tr th:nth-child(n+2):nth-child(-n+5), #table-of-progress tbody tr td:nth-child(n+2):nth-child(-n+5) {
       display: table-cell; } }
 
+.fixedHeader-floating thead tr th:nth-child(n+2):nth-child(-n+5), .fixedHeader-floating thead tr td:nth-child(n+2):nth-child(-n+5), .fixedHeader-floating tbody tr th:nth-child(n+2):nth-child(-n+5), .fixedHeader-floating tbody tr td:nth-child(n+2):nth-child(-n+5), .fixedHeader-locked thead tr th:nth-child(n+2):nth-child(-n+5), .fixedHeader-locked thead tr td:nth-child(n+2):nth-child(-n+5), .fixedHeader-locked tbody tr th:nth-child(n+2):nth-child(-n+5), .fixedHeader-locked tbody tr td:nth-child(n+2):nth-child(-n+5) {
+  display: none; }
+
+@media (min-width: 920px) {
+  .fixedHeader-floating thead tr th:nth-child(n+2):nth-child(-n+5), .fixedHeader-floating thead tr td:nth-child(n+2):nth-child(-n+5), .fixedHeader-floating tbody tr th:nth-child(n+2):nth-child(-n+5), .fixedHeader-floating tbody tr td:nth-child(n+2):nth-child(-n+5), .fixedHeader-locked thead tr th:nth-child(n+2):nth-child(-n+5), .fixedHeader-locked thead tr td:nth-child(n+2):nth-child(-n+5), .fixedHeader-locked tbody tr th:nth-child(n+2):nth-child(-n+5), .fixedHeader-locked tbody tr td:nth-child(n+2):nth-child(-n+5) {
+    display: table-cell; } }
+
 .progress-table-container {
   width: 100%;
   overflow: scroll; }
@@ -197,6 +204,9 @@ table.dataTable.no-footer {
     .progress-table-container {
       width: auto;
       overflow: inherit; } }
+
+.hide {
+  display: none; }
 
 .questioner-header {
   display: flex;
@@ -361,17 +371,21 @@ table.dataTable {
   display: none;
   opacity: 0;
   z-index: 5;
-  padding: 50px; }
+  padding: 20px;
+  overflow: auto;
+  height: 90%; }
   @media (min-width: 920px) {
     .modal_div {
       width: 700px;
       left: 50%;
-      margin-left: -350px; } }
+      margin-left: -350px;
+      height: auto;
+      padding: 50px; } }
   .modal_div--info {
     margin: 10px;
-    width: auto;
     left: 0;
     padding: 40px 25px;
+    height: auto;
     width: 90%; }
     @media (min-width: 480px) {
       .modal_div--info {
@@ -418,15 +432,28 @@ table.dataTable {
 
 .results-window {
   display: flex;
-  font-size: 15px; }
+  font-size: 15px;
+  flex-wrap: wrap; }
   .results-window__user {
-    flex-basis: 50%; }
+    flex-basis: 50%;
+    order: 1; }
   .results-window__details {
-    padding-left: 10px; }
+    padding-left: 0;
+    order: 3; }
+    @media (min-width: 920px) {
+      .results-window__details {
+        padding-left: 10px; } }
   .results-window__rating {
     flex-basis: 45%;
     color: #a9a9a9;
-    position: relative; }
+    position: relative;
+    order: 2; }
+    @media (min-width: 920px) {
+      .results-window__rating {
+        order: 4; } }
+  @media (min-width: 920px) {
+    .results-window {
+      flex-wrap: nowrap; } }
 
 .details__name {
   font-weight: bold;
@@ -508,13 +535,19 @@ table.dataTable {
     flex-basis: 80%; }
   .student-name__info {
     display: inherit;
-    width: 15px;
-    height: 15px; }
+    width: 16px;
+    height: 16px; }
     .student-name__info:hover .icon--info {
-      background-position-x: -17px; }
+      background-position-x: -18px; }
     @media (min-width: 920px) {
       .student-name__info {
         display: none; } }
+
+.darken-then-light-blue .student-name__info .icon--info, .light-blue .student-name__info .icon--info {
+  background-position-x: -18px; }
+
+.darken-then-light-blue .student-name__info:hover .icon--info, .light-blue .student-name__info:hover .icon--info {
+  background-position-x: -35px; }
 
 .student-info {
   display: flex;
