@@ -384,7 +384,8 @@ table.dataTable {
     margin: 10px;
     left: 0;
     padding: 40px 25px;
-    height: auto; }
+    height: auto;
+    width: 200px; }
     @media (min-width: 480px) {
       .modal_div--info {
         width: 250px;
