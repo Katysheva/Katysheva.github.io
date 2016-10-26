@@ -21,16 +21,21 @@
 				}
 			});
 
+			var current_text = "";
 
-			$('.not_hidcont>td>.show-hide-command').click(function(){  
+			$('.not_hidcont>td>.student-info>.show-hide-command').click(function(){  
 
-				var current_tr = $(this).parent().parent();
+				var current_tr = $(this).parent().parent().parent();
 				var first_td = current_tr[0].firstElementChild;
 
 				var team_id = $(current_tr).data("teamId");
 
 				var trs = $('[data-team-id="'+team_id+'"]:not(.not_hidcont)');
 				var hidcont = trs;
+				var s = $(this).text();
+				var d = s!="Свернуть";
+				if($(this).text()!="Свернуть")
+					current_text = $(this).text();
 
 				console.log(first_td);
 				if (hidcont.is(':hidden')){
@@ -41,7 +46,7 @@
 				else{        
 					hidcont.hide();
 					$(first_td).removeClass('light-blue');
-					$(this).text("Команда");
+					$(this).text(current_text);
 				}
 			}); 
 
@@ -98,4 +103,23 @@
 					});
 				}
 			}); 
+			client_w=document.body.clientWidth;
+			client_h=document.body.clientHeight;
+			if(client_w<1000){
+				var step_txt = $('.questioner-details__step');
+				$(step_txt).each(function(i,elem){
+					$(step_txt).text($(elem).text().slice(0,1)+$(elem).text().slice(-1));
+				});
+				var ths_text = $('#table-of-progress .questioner__title, #table-of-progress .questioner-details__description');
+				$(ths_text).each(function(i,elem){
+				var df = cropTxt($(elem).text());// ;
+				$(elem).text(df);
+			});
+			}
 		});
+
+
+		function cropTxt(str){
+			if (str.length > 30) str = str.slice(0, 10) + ' ... ' + str.slice(-5);
+			return str;
+		}

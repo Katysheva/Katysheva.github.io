@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div class="progress-table-container">
-		<table id="table-of-progress" class="progress-table" style="width: 1000px;">
+		<table id="table-of-progress" class="progress-table" style="">
 			<thead class="progress-table-header">
 				<tr>
 					<th class="progress-table-header__item">Имя</th>
@@ -136,9 +136,14 @@
 			</thead>
 
 			<tbody>
-				<tr data-team-id="3" class="not_hidcont">
+				<!-- <tr data-team-id="3" class="not_hidcont">
 					<td>
 						<div class="student-name">Григорий Рего</div>
+
+						<div class="student-name__for-mobile">
+							<div class="student-name__team">Quest-team</div>
+							<a href="#" class="student-name__info"><i class="icon icon--info"></i></a>
+						</div>
 					</td>
 					<td>Quest-team</td>
 					<td>0</td>
@@ -169,17 +174,25 @@
 							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
 						</div>
 					</td>
-				</tr>
+				</tr> -->
 				<tr data-team-id="1" class="not_hidcont">
 					<td>
-						<div class="student-name">Григорий Рего</div>
-						<a href="#" class="show-hide-command show-hide-command">Команда</a>
+						<div class="student-info">
+							<div class="student-name">Григорий Рего</div>
+							<a href="#" class="show-hide-command student-name__command">Quest-team</a>
+							<a href="#modal-user-info" class="open_modal student-name__info"><i class="icon icon--info"></i></a>
+							<!-- <a href="#modal1" class="open_modal result-item__rating">Modal here</a> -->
+						</div>
 					</td>
 					<td>Quest-team</td>
 					<td>0</td>
 					<td>0</td>
 					<td>0</td>
-					<td><div class="result-item">Нет результата</div></td>
+					<td class="checked">
+						<div class="result-item"><a href="#modal1" class="open_modal result-item__rating">Modal here</a>
+							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
+						</div>
+					</td>
 					<td><div class="result-item">Нет результата</div></td>
 					<td><div class="result-item">Нет результата</div></td>
 					<td class="need-examination">
@@ -303,7 +316,7 @@
 						</div>
 					</td>
 				</tr>
-				<tr data-team-id="2" class="not_hidcont">
+<!-- 				<tr data-team-id="2" class="not_hidcont">
 					<td>
 						<div class="student-name">Анастасия Борисюк</div>
 						<a href="#" class="show-hide-command show-hide-command">Команда</a>
@@ -367,7 +380,7 @@
 							<div class="result-item__date">06.10.2016<span class="result-item__time">01:17:24</span></div>
 						</div>
 					</td>
-				</tr>
+				</tr> -->
 			</tbody>
 		</table>
 	</div>
@@ -435,6 +448,35 @@
 					</a>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div id="modal-user-info" class="modal_div modal_div--info">
+		<div class="modal-user">
+			<dl class="modal-user__data">
+				<div class="modal-user__row">
+					<dt class="modal-user__left">Команда</dt>
+					<dd class="modal-user__right">TimeQuest</dd>
+				</div>
+				<div class="modal-user__row">
+					<dt class="modal-user__left">Средний балл</dt>
+					<dd class="modal-user__right">21</dd>
+				</div>
+				<div class="modal-user__row">
+					<dt class="modal-user__left">Сумма баллов</dt>
+					<dd class="modal-user__right">0</dd>
+				</div>
+				<div class="modal-user__row">
+					<dt class="modal-user__left">% (от макс.)</dt>
+					<dd class="modal-user__right">0</dd>
+				</div>
+			</dl>
+			<button class="modal-user__close-btn modal_close">
+				<svg style="width:20px;height:20px" viewBox="0 0 24 24">
+					<path fill="#ffb4b4" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+				</svg>
+				Закрыть
+			</button>
 		</div>
 	</div>
 	<div id="overlay"></div>
