@@ -363,6 +363,7 @@ table.dataTable {
   color: #fff; }
 
 .modal_div {
+  width: 300px;
   background: #fff;
   position: fixed;
   top: 0;
@@ -373,6 +374,13 @@ table.dataTable {
   padding: 20px;
   overflow: auto;
   height: 90%; }
+  @media (min-width: 480px) {
+    .modal_div {
+      width: 500px;
+      left: 50%;
+      margin-left: -250px;
+      height: auto;
+      padding: 50px; } }
   @media (min-width: 920px) {
     .modal_div {
       width: 700px;
@@ -382,13 +390,12 @@ table.dataTable {
       padding: 50px; } }
   .modal_div--info {
     margin: 10px;
-    left: 0;
+    left: 5%;
     padding: 40px 25px;
     height: auto;
-    width: 200px; }
+    width: 250px; }
     @media (min-width: 480px) {
       .modal_div--info {
-        width: 250px;
         left: 50%;
         margin-left: -125px; } }
 
