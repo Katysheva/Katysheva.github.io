@@ -2417,13 +2417,16 @@ body.is-loading #header:after {
 
 .benefits {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  color: #f8f8f8; }
 
 .benefits-item {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   padding: 10px; }
+  .benefits-item__title {
+    color: #f8f8f8; }
   @media (min-width: 480px) {
     .benefits-item {
       flex-basis: 50%; } }
@@ -2432,13 +2435,19 @@ body.is-loading #header:after {
       flex-basis: 25%; } }
 
 .trainer {
-  text-align: left; }
+  text-align: center; }
   .trainer h3 {
     padding: 10px;
     background: #a2ca28;
     margin-bottom: 0; }
   .trainer p {
     padding: 10px; }
+  .trainer img {
+    display: block;
+    margin: 0 auto; }
+  @media (min-width: 920px) {
+    .trainer {
+      text-align: left; } }
 
 .list-mark {
   margin-right: 5px;
@@ -2455,3 +2464,14 @@ header p {
 
 header.major.special-line:after {
   background: #fd634e; }
+
+main {
+  background: url(../images/fixed-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#four {
+  color: #f8f8f8; }
+  #four h2 {
+    color: #f8f8f8; }
