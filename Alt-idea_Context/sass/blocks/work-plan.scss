@@ -1,0 +1,85 @@
+.work-plan {
+	background-color: #252525;
+	color: #fff;
+	padding: 60px 0;
+	h2 {
+		margin: 30px 0;
+		text-transform: none;
+	}
+}
+
+.work-plan__wrapper {
+	@include container-fluid();
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	background-position: 0 0;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.work-plan__text {
+	flex-basis: 100%;
+	.block-title {
+		margin-top: 0;
+	}
+}
+
+.work-plan__list {
+	list-style-type: none;
+	counter-reset: num;
+}
+.work-plan__item {
+	display: flex;
+	align-items: center;
+	font-size: 21px;
+	span {
+		flex-basis: 100%;
+	}
+	&:before {
+		display: inline-block;
+		content: counter(num) '. ';
+		counter-increment: num;
+		color: #fff;
+		width: 35px;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		padding: 9px 0;
+		text-align: center;
+		line-height: 16px;
+		font-style: italic;
+		margin: 5px;
+		flex-basis: 45px;
+	}
+}
+@media ($tablet-widths) {
+	.work-plan__item {
+		span {
+			flex-basis: 500px;
+		}
+		&:before {
+			flex-basis: 35px;
+		}
+	}
+}
+@media ($desktop-widths) {
+	// .work-plan__img {
+	// 	flex-basis: 50%;
+	// }
+	.work-plan__wrapper {
+		background-image: url('../../img/pic_tablet-skew.png');
+		background-position: 0 50px;
+	}
+	.work-plan__text {
+		flex-basis: 50%;
+	}
+	.work-plan__item {
+		span {
+			flex-basis: 500px;
+		}
+		&:before {
+			flex-basis: 35px;
+		}
+	}
+}

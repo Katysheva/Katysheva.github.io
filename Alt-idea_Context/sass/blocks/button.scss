@@ -1,0 +1,34 @@
+button {
+	&:focus {
+		outline: none;
+	}
+}
+
+.button {
+	@include block-padding(15px, 10px);
+	background-color: $dark-orange;
+	border-radius: 3px;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 2px solid $dark-orange;
+	// font-size: 16px;
+	&:hover, &:focus {
+		// background-color: mix(white, $dark-orange, 20%);
+		background-color: $orange;
+		color: #fff;
+	}
+
+	&--trans {
+		background-color: transparent;
+		border-color: #fff;
+
+		&:hover, &:focus {
+			border-color: $dark-orange;
+			color: $dark-orange;
+		}
+	}
+}
+a.button {
+	display: block;
+}

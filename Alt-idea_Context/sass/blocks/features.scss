@@ -1,0 +1,21 @@
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.features__item {
+	flex-basis: 100%;
+	padding: 10px 0;
+}
+@media ($tablet-widths) {
+	.features__item {
+		// flex-basis: 100%;
+	}
+}
+@media ($desktop-widths) {
+	.features__item {
+		flex-basis: 32%;
+		padding: 0 15px 0 0;
+	}
+}

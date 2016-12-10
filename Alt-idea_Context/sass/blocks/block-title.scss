@@ -1,0 +1,54 @@
+.block-title {
+	margin-bottom: 15px;
+	text-align: center;
+	margin: 90px auto;
+	text-transform: uppercase;
+	&:after {
+		content: "";
+		display: block;
+		height: 3px;
+		width: 220px;
+		background-color: $orange;
+		margin-top: 10px;
+		margin: 10px auto;
+	}
+	&--middle {
+		text-transform: none;
+		margin: 0 0 20px;
+		
+	}
+	&--small {
+		text-transform: none;
+		text-align: left;
+		margin: 20px 0;
+		&:before {
+			content: "";
+			display: inline-block;
+			height: 50px;
+			width: 3px;
+			background-color: $orange;
+			margin: 0 5px -25px -10px;
+		}
+		&:after {
+			display: none;
+		}
+
+	}
+}
+.block-title__desc {
+	text-align: center;
+	&--white {
+		color: #fff;
+	}
+}
+
+@media ($desktop-widths) {
+	.block-title {
+		&--left {
+			text-align: left;
+			&:after {
+				margin: 10px 0;
+			}
+		}
+	}
+}

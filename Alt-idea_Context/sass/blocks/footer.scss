@@ -1,0 +1,38 @@
+.footer {
+	background-color: #26333f;
+	color: #fff;
+	padding: 60px;
+	text-align: center;
+}
+
+.footer__content {
+	@include container-fluid();
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.socials__list {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__address {
+	flex-basis: 100%;
+	padding-bottom: 20px;
+}
+.footer__social {
+	flex-basis: 100%;
+	padding-bottom: 20px;
+}
+.footer__contacts {
+	flex-basis: 100%;
+	padding-bottom: 20px;
+}
+
+
+@media ($desktop-widths) {
+	.footer__content {
+		flex-wrap: nowrap;
+	}
+}

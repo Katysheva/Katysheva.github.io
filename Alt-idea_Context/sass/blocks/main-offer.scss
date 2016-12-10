@@ -1,0 +1,14 @@
+.main-offer {
+	background-color: white;
+	@include block-padding(20px, 20px);
+	flex-basis: 100%;
+	text-align: center;
+
+}
+
+@media screen and (min-width: $tablet-width) {
+	.main-offer {
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+	}
+}

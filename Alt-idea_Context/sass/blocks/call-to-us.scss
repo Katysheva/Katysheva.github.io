@@ -1,0 +1,20 @@
+.call-to-us {
+	background-color: #111c25;
+	background-image: url('../img/bg_pattern.png');
+	color: #fff;
+	text-align: center;
+	padding: 70px;
+	h2 {
+		margin: 0;
+	}
+}
+.call-to-us__wrapper {
+	@include container-fluid();
+}
+@media ($tablet-widths) {
+	.call-to-us__btn {
+		max-width: 200px;
+		margin: 0 auto;
+	}
+}
+@media ($desktop-widths) {}

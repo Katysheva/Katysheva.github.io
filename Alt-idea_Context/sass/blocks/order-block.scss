@@ -1,0 +1,62 @@
+.order-block {
+	background: url('../img/pic_man.png'), url('../img/bg_actions.png');
+	background-size: 50%, cover;
+	background-repeat: no-repeat;
+	background-position: 100% 100%, 0 0;
+	padding: 150px 0;
+	text-align: center;
+}
+
+.order-block__wrapper {
+	@include container-fluid();
+
+}
+.order-block__text {
+	.block-title {
+		margin: 0;
+	}
+}
+
+.order-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.order-form__field {
+	flex-basis: 30%;
+	padding-right: 20px;
+	label {
+		display: block;
+	}
+	input {
+		display: block;
+		width: 265px;
+		padding: 10px;
+		background-color: #ebebeb;
+		border: 0;
+		&:focus {
+			outline: none;
+			background-color: mix(white, #ebebeb, 60%);
+		}
+	}
+}
+
+.order-block__btn{
+	margin-top: 30px;
+}
+
+@media ($tablet-widths) {
+	.order-block {
+		background-size: 50%, cover;
+	}
+}
+@media ($desktop-widths) {
+	.order-block {
+		text-align: left;
+		background-size: contain, cover;
+	}
+	
+	.order-form {
+		justify-content: flex-start;
+	}
+}

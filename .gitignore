@@ -1,1 +1,11 @@
 *.zip
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+sass/*.scss
+node_modules/
+Thumbs.db

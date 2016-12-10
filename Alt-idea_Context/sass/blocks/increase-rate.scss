@@ -1,0 +1,32 @@
+.increase-rate {
+	background-color: $main-bg-color;
+	padding: 70px 0;
+}
+.increase-rate__wrapper {
+	@include container-fluid();
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.increase-rate__award {
+	flex-basis: 30%;
+}
+.increase-rate__text {
+	padding: 0 10px;
+	flex-basis: 100%;
+}
+
+
+
+@media ($tablet-widths) {
+
+}
+@media ($desktop-widths) {
+	.increase-rate__wrapper {
+	}
+	.increase-rate__text {
+		padding: 0;
+		flex-basis: 70%;
+
+	}
+}
