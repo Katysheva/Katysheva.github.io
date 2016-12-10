@@ -6,6 +6,6 @@
 *.pdf
 *.psd
 *.sublime*
-sass/*.scss
+sass/**/*.scss
 node_modules/
 Thumbs.db
