@@ -354,7 +354,7 @@ a.button {
 
 @media (min-width: 1100px) {
   .work-plan__wrapper {
-    background-image: url("../../img/pic_tablet-skew.png");
+    background-image: url("../img/pic_tablet-skew.png");
     background-position: 0 50px; }
   .work-plan__text {
     -ms-flex-preferred-size: 50%;
