@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Clio Light";
-  src: local("Clio Light"), url("../../fonts/LeType - ClioLight-Light.WOFF") format("woff"); }
+  src: local("Clio Light"), url("../fonts/LeType - ClioLight-Light.WOFF") format("woff"); }
 
 @font-face {
   font-family: "Clio Medium";
-  src: local("Clio Medium"), url("../../fonts/LeType - ClioMedium-Medium.WOFF") format("woff"); }
+  src: local("Clio Medium"), url("../fonts/LeType - ClioMedium-Medium.WOFF") format("woff"); }
 
 @font-face {
   font-family: "Clio SebiBold";
-  src: local("Clio SebiBold"), url("../../fonts/LeType - ClioSemiBold-SemiBold.WOFF") format("woff"); }
+  src: local("Clio SebiBold"), url("../fonts/LeType - ClioSemiBold-SemiBold.WOFF") format("woff"); }
 
 * {
   box-sizing: border-box; }
