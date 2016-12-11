@@ -21,6 +21,7 @@
 	h5 {
 		margin-bottom: 0;
 		margin-top: 15px;
+		font-family: $clio-medium;
 	}
 }
 .cards__img {
@@ -36,11 +37,15 @@
 	}
 	.cards__item{
 		flex-basis: 50%;
+
 	}
 }
 @media ($desktop-widths) {
 	.cards__item{
 		flex-basis: 25%;
 		padding-bottom: 0;
+		&:nth-child(n+5) {
+			padding-top: 40px;
+		}
 	}
 }

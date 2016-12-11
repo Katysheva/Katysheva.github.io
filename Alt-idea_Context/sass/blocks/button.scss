@@ -12,9 +12,8 @@ button {
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 2px solid $dark-orange;
-	// font-size: 16px;
+	font-family: $clio-medium;
 	&:hover, &:focus {
-		// background-color: mix(white, $dark-orange, 20%);
 		background-color: $orange;
 		color: #fff;
 	}

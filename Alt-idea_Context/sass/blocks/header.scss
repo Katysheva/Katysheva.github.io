@@ -23,6 +23,7 @@
 .header__phone {
   font-size: 32px;
   padding: 20px 0;
+  font-family: "Arial Narrow", "Arial", sans-serif;
 } 
 .header__offer {
   text-align: center;
@@ -33,6 +34,7 @@
   h1 {
     font-size: 45px;
     text-transform: uppercase;
+    font-family: $clio-sebiBold;
   }
   h3 {
     font-size: 22px;

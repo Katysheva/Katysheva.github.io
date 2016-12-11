@@ -1,10 +1,22 @@
+@font-face {
+  font-family: "Clio Light";
+  src: local("Clio Light"), url("../../fonts/LeType - ClioLight-Light.WOFF") format("woff"); }
+
+@font-face {
+  font-family: "Clio Medium";
+  src: local("Clio Medium"), url("../../fonts/LeType - ClioMedium-Medium.WOFF") format("woff"); }
+
+@font-face {
+  font-family: "Clio SebiBold";
+  src: local("Clio SebiBold"), url("../../fonts/LeType - ClioSemiBold-SemiBold.WOFF") format("woff"); }
+
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Calibri", sans-serif;
+  font-family: "Clio Light", "Arial", sans-serif;
   color: #0a0a0a;
   background-color: #fff; }
 
@@ -64,7 +76,8 @@ button:focus {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  border: 2px solid #f7883d; }
+  border: 2px solid #f7883d;
+  font-family: "Clio Medium", "Arial", sans-serif; }
   .button:hover, .button:focus {
     background-color: #ffbb35;
     color: #fff; }
@@ -99,12 +112,21 @@ a.button {
       width: 90%;
       max-width: 1100px;
       margin: 0 auto; } }
+  .footer__content h3 {
+    font-family: "Clio Medium", "Arial", sans-serif; }
 
 .socials__list {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none; }
+
+.socials__item:hover a svg, .socials__item:focus a svg {
+  fill: #ffbb35; }
+
+.socials__item:active a svg {
+  fill: #f8f8f8; }
 
 .footer__address {
   -ms-flex-preferred-size: 100%;
@@ -124,7 +146,13 @@ a.button {
 @media (min-width: 1100px) {
   .footer__content {
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap; } }
+        flex-wrap: nowrap; }
+  .footer__social {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px; }
+  .socials__list {
+    max-width: 250px;
+    min-width: 200px; } }
 
 .header {
   background-color: #ffbb35;
@@ -158,7 +186,8 @@ a.button {
 
 .header__phone {
   font-size: 32px;
-  padding: 20px 0; }
+  padding: 20px 0;
+  font-family: "Arial Narrow", "Arial", sans-serif; }
 
 .header__offer {
   text-align: center;
@@ -168,7 +197,8 @@ a.button {
   margin-bottom: 20px; }
   .header__offer-text h1 {
     font-size: 45px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Clio SebiBold", "Arial", sans-serif; }
   .header__offer-text h3 {
     font-size: 22px; }
 
@@ -324,7 +354,7 @@ a.button {
 
 @media (min-width: 1100px) {
   .work-plan__wrapper {
-    background-image: url("../img/pic_tablet-skew.png");
+    background-image: url("../../img/pic_tablet-skew.png");
     background-position: 0 50px; }
   .work-plan__text {
     -ms-flex-preferred-size: 50%;
@@ -382,7 +412,8 @@ a.button {
   padding-bottom: 20px; }
   .cards__item h5 {
     margin-bottom: 0;
-    margin-top: 15px; }
+    margin-top: 15px;
+    font-family: "Clio Medium", "Arial", sans-serif; }
 
 .cards__img {
   max-height: 93px; }
@@ -405,7 +436,9 @@ a.button {
   .cards__item {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+    .cards__item:nth-child(n+5) {
+      padding-top: 40px; } }
 
 .about-coeffs {
   background-color: #636363;
@@ -678,7 +711,8 @@ a.button {
       margin: 0 auto; } }
 
 .order-block__text .block-title {
-  margin: 0; }
+  margin: 0;
+  font-family: "Clio Medium", "Arial", sans-serif; }
 
 .order-form {
   display: -ms-flexbox;
@@ -727,6 +761,9 @@ a.button {
   padding: 70px; }
   .call-to-us h2 {
     margin: 0; }
+  .call-to-us p {
+    font-family: "Arial Narrow", Helvetica, sans-serif;
+    font-size: 24px; }
 
 .call-to-us__wrapper {
   max-width: 320px;

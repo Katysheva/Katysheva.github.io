@@ -7,6 +7,10 @@
 	h2 {
 		margin: 0;
 	}
+	p {
+		font-family: "Arial Narrow", Helvetica, sans-serif;
+		font-size: 24px;
+	}
 }
 .call-to-us__wrapper {
 	@include container-fluid();
