@@ -1,0 +1,26 @@
+.characteristic-list {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.characteristic-list__row {
+  display: table-row;
+}
+
+.characteristic-list__prop,
+.characteristic-list__value {
+  display: table-cell;
+  padding: 3px 0;
+}
+
+.characteristic-list__prop {
+  word-break: break-word;
+  width: 35%;
+  color: rgba($base-font-color, 0.6);
+}
+
+.characteristic-list__value {
+}

@@ -1,0 +1,31 @@
+.custom-radio {
+
+}
+
+input[type="radio"]{
+  display: none;
+  &:not(checked) {
+    opacity: 0;
+  }
+  &:not(checked) + label {
+    position: relative;
+    padding: 5px;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  &:not(checked) + .custom-radio:before {
+    content: '';
+    display: none;
+  }
+  &:checked + label {
+    background-color: $second-accent-color;
+    text-decoration: none;
+  }
+}
+
+.custom-radio {
+  margin-top: 20px;
+}

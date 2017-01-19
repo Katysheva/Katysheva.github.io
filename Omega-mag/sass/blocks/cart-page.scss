@@ -1,0 +1,13 @@
+.cart-page {
+  padding-top: 30px;
+}
+
+.cart-page__content {
+  @include container-fluid();
+}
+
+.cart-page__items {
+  display: table;
+  width: 100%;
+}
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Интернет-магазин Omega</title>
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/updown.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo"><h1><a href="index.html"><img src="img/logo.png" alt="Omega-mag logo"></a></h1></div>
+      <div class="search-panel">
+        <label for="search" class="search-panel__label"></label>
+        <div class="search-panel__field">
+          <input type="search" id="search" class="search-panel__input" placeholder="Поиск по каталогу">
+          <button class="search-panel__btn">
+            <svg viewBox="0 0 20.294 18.849" width="25.294px" height="23.849px">
+              <use xlink:href="#icon-search" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header__cart">
+        <div class="header__cart-info">
+          <svg viewBox="0 0 20.294 18.849" width="40" height="40">
+            <use xlink:href="#icon-cart" />
+          </svg>
+          <div class="header__cart-item">
+            <div class="header__item-count"><span>0</span> товаров</div>
+            <div class="header__item-count"><span>0</span> рублей</div>
+          </div>
+        </div>
+        <a href="cart.html" class="button bttn-unite">Оформить заказ</a>
+      </div>
+    </div>
+
+    <div class="header__tools">
+      <div class="header__tools-content">
+        <nav class="catalog-nav">
+          <a href="#" id="catalogNav" class="catalog-nav__title " onclick="showCatalog()">
+            Каталог товаров
+          </a>
+          <ul id="catalogNavTopLevel" class="catalog-nav__list catalog-nav__list--hidden"> <!--  -->
+            <li class="catalog-nav__item catalog-nav__item--selected">
+              <a href="#">Item1</a>
+
+              <div class="catalog-nav__submenu">
+                <div class="catalog-nav__submenu-col">
+                  <ul class="catalog-nav__sub-list">
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+                  </ul>
+                </div>
+                <div class="catalog-nav__submenu-col">
+                  <ul class="catalog-nav__sub-list">
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+                  </ul>
+                </div>
+                <div class="catalog-nav__submenu-col">
+                  <ul class="catalog-nav__sub-list">
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-nav__item"><a href="#">Item2</a></li>
+            <li class="catalog-nav__item"><a href="#">Item3</a></li>
+            <li class="catalog-nav__item"><a href="#">Item4</a></li>
+          </ul>
+        </nav>
+        <div class="header__profile-info">
+          <a href="#" class="header__login">Вход</a><a href="#" class="header__signup">Регистрация</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="cart-page">
+    <div class="cart-page__content">
+      <h2 class="section-title">Корзина</h2>
+      <div class="cart-page__products">
+        <div class="cart">
+          <div class="cart-table">
+            <div class="cart-table__head-row">
+              <div class="cart-table__head">Товар</div>
+              <div class="cart-table__head"></div>
+              <div class="cart-table__head">Количество</div>
+              <div class="cart-table__head">Стоимость</div>
+              <div class="cart-table__head">Скидка</div>
+              <div class="cart-table__head">Итого</div>
+              <div class="cart-table__head"></div>
+            </div>
+            <div class="cart-table__row">
+              <div class="cart-table__item"><img src="img/mock.png" alt=""></div>
+              <div class="cart-table__item">
+                <div class="cart-table__item--title"><i>3387 Куртка детская</i></div>
+                <div>Цвет:</div>
+                <section class="choosing-item">
+                  <div class="choosing-item__item active" data-color="yellow" style="background: #fff402;"></div>
+                  <div class="choosing-item__item" data-color="blue" style="background: #3b83bd;"></div>
+                </section>
+                <div>Размер:</div>
+                <section class="choosing-item">
+                  <div class="choosing-item__item active" data-size="38">38</div>
+                  <div class="choosing-item__item" data-size="40">40</div>
+                </section>
+                <div>Рост:</div>
+                <section class="choosing-item">
+                  <div class="choosing-item__item inactive" data-length="98">98</div>
+                  <div class="choosing-item__item" data-length="104">104</div>
+                  <div class="choosing-item__item active" data-length="114">114</div>
+                </section>
+              </div>
+              <div class="cart-table__item">
+                <div class="cart-table-counter" style="">
+                  <button class="btn btn--minus btn--updown" id="btnDecrease">-</button>
+                  <div>
+                    <input type="text" class="cart-table-counter__updown" id="controlledByButtons" value="0" />
+                  </div>
+                  <button class="btn btn--plus btn--updown" id="btnIncrease">+</button>
+                </div>
+              </div>
+              <div class="cart-table__item">1 297.00 руб <br> <strike>4 099 руб</strike></div>
+              <div class="cart-table__item">70 %</div>
+              <div class="cart-table__item cart-table__item--total">1 297.00 руб</div>
+              <div class="cart-table__item"><a href="#" class="cart-table__item--link">Удалить</a><br><a href="#" class="cart-table__item--link">Отложить</a></div>
+            </div>
+          </div>
+
+          <div class="cart-footer">
+            <div class="cart-footer__content">
+              <div class="cart-footer__column">
+                <a href="#" class="cart-footer__link">Вернуться в каталог</a>
+              </div>
+              <div class="cart-footer__column">
+                Введите промо-код
+                <input type="text" class="input-promo" />
+                <button class="btn btn--apply">Применить</button>
+              </div>
+              <div class="cart-footer__column cart-footer__total">
+                Итого: <span class="cart-footer__total--price">5 799 руб</span>
+              </div>
+              <div class="cart-footer__column">
+              <a href="#" class="btn cart__apply-btn bttn-unite">Перейти к оформлению</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+
+</footer>
+
+<div class="svg-sprite">
+  <svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-cart" viewBox="264.205 370.961 20.294 18.849"><path d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/></symbol><symbol id="icon-search" viewBox="0 0 485.213 485.213"><g><path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324    c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z"/><path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951    C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46    c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465    C318.424,257.208,257.206,318.416,181.956,318.416z" /><path d="M75.817,181.955h30.322c0-41.803,34.014-75.814,75.816-75.814V75.816C123.438,75.816,75.817,123.437,75.817,181.955z" /></g></symbol></svg>
+</div>
+
+
+<script>
+  function showCatalog() {
+    var catalogNavTopLevel = document.getElementById('catalogNavTopLevel');
+    var catalogNav = document.getElementById('catalogNav');
+
+    if(catalogNavTopLevel.className === 'catalog-nav__list catalog-nav__list--hidden') {
+      catalogNavTopLevel.className = 'catalog-nav__list';
+      catalogNav.className += ' catalog-nav__title--active';
+
+    } else {
+      catalogNavTopLevel.className += ' catalog-nav__list--hidden';
+      catalogNav.className = 'catalog-nav__title';
+    }
+  }
+</script>
+<script>
+  var $controlledByButtons = $('#controlledByButtons');
+  $controlledByButtons.updown({
+    step: 1,
+    shiftStep: 100
+  });
+  var $updown = $controlledByButtons.data('updown');
+  $('#btnIncrease').click(function(event){
+    $updown.increase(event);
+    $updown.triggerEvents();
+  });
+  $('#btnDecrease').click(function(event){
+    if($updown.value < 0)
+      {$updown.value = 0}
+    else{
+      $updown.decrease(event);
+      $updown.triggerEvents();
+    }
+  });
+</script>
+
+</body>
+</html>

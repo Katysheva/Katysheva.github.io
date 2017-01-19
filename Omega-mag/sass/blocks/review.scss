@@ -1,0 +1,38 @@
+.review {
+  padding: 20px;
+  font-size: 14px;
+}
+
+.review__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  position: relative;
+  margin-bottom: 15px;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    min-width: 100px;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, $accent-color 40%, $second-accent-color 40%);
+  }
+}
+
+.review__username {
+  margin-bottom: 0;
+}
+
+.review__rating {
+
+}
+
+.review__text {
+
+}

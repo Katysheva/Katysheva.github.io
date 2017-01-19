@@ -1,0 +1,118 @@
+.button {
+  text-align: center;
+  color: white;// $accent-color;;
+  background-color: $second-accent-color;
+  display: block;
+  border: 0;
+  padding: 7px 20px;
+  font-size: 16px;
+  font-family: $opensans-semi;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover, &:focus {
+    background-color: mix(black, $second-accent-color, 20%);
+    color: $white;
+  }
+}
+
+.btn {
+  text-align: center;
+  background-color: $second-accent-color;
+  padding: 5px;
+  border: none;
+  &:hover{
+    background-color: mix(black, $second-accent-color, 20%);
+  }
+  &--updown {
+    width: 30px;
+    height: 30px;
+    &:focus{
+      outline: none;
+    }
+  }
+  &--apply {
+    background: #ececed;
+    border: 1px solid #a0a0a0;
+    margin-bottom: 1px;
+    &:hover{
+      background: #cbcbcc;
+    }
+  }
+}
+.bttn-unite {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+  z-index: 0;
+  overflow: hidden;
+  -webkit-transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.bttn-unite:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: mix(white, $second-accent-color, 20%);
+  content: '';
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: translate3d(-110%, -10%, 0) skewX(-20deg);
+  transform: translate3d(-110%, -10%, 0) skewX(-20deg);
+}
+.bttn-unite:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: mix(white, $accent-color, 30%);
+  content: '';
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: translate3d(110%, -10%, 0) skewX(-20deg);
+  transform: translate3d(110%, -10%, 0) skewX(-20deg);
+}
+.bttn-unite:hover,
+.bttn-unite:focus {
+  box-shadow: 0 1px 8px rgba(58,51,53,0.3);
+  color: #fff;
+  -webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.bttn-unite:hover:before,
+.bttn-unite:focus:before {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: translate3d(-50%, -10%, 0) skewX(-20deg);
+  transform: translate3d(-50%, -10%, 0) skewX(-20deg);
+}
+.bttn-unite:hover:after,
+.bttn-unite:focus:after {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: translate3d(50%, -10%, 0) skewX(-20deg);
+  transform: translate3d(50%, -10%, 0) skewX(-20deg);
+}

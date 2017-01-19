@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Интернет-магазин Omega</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo"><h1><a href="index.html"><img src="img/logo.png" alt="Omega-mag logo"></a></h1></div>
+      <div class="search-panel">
+        <label for="search" class="search-panel__label"></label>
+        <div class="search-panel__field">
+          <input type="search" id="search" class="search-panel__input" placeholder="Поиск по каталогу">
+          <button class="search-panel__btn">
+            <svg viewBox="0 0 20.294 18.849" width="25.294px" height="23.849px">
+              <use xlink:href="#icon-search" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header__cart">
+        <div class="header__cart-info">
+          <svg viewBox="0 0 20.294 18.849" width="40" height="40">
+            <use xlink:href="#icon-cart" />
+          </svg>
+          <div class="header__cart-item">
+            <div class="header__item-count"><span>0</span> товаров</div>
+            <div class="header__item-count"><span>0</span> рублей</div>
+          </div>
+        </div>
+        <button class="button bttn-unite" type="button">Оформить заказ</button>
+      </div>
+    </div>
+
+    <div class="header__tools">
+      <div class="header__tools-content">
+        <nav class="catalog-nav">
+          <a href="#" id="catalogNav" class="catalog-nav__title " onclick="showCatalog()">
+            Каталог товаров
+          </a>
+          <ul id="catalogNavTopLevel" class="catalog-nav__list catalog-nav__list--hidden"> <!--  -->
+            <li class="catalog-nav__item catalog-nav__item--selected">
+              <a href="#">Item1</a>
+
+              <div class="catalog-nav__submenu">
+                <div class="catalog-nav__submenu-col">
+                  <ul class="catalog-nav__sub-list">
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+                  </ul>
+                </div>
+                <div class="catalog-nav__submenu-col">
+                  <ul class="catalog-nav__sub-list">
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+                  </ul>
+                </div>
+                <div class="catalog-nav__submenu-col">
+                  <ul class="catalog-nav__sub-list">
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+
+                    <li class="catalog-nav__sub-item catalog-nav__sub-item--item-title"><a href="#">Sub-item1</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item2</a></li>
+                    <li class="catalog-nav__sub-item"><a href="#">Sub-item3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-nav__item"><a href="#">Item2</a></li>
+            <li class="catalog-nav__item"><a href="#">Item3</a></li>
+            <li class="catalog-nav__item"><a href="#">Item4</a></li>
+          </ul>
+        </nav>
+        <div class="header__profile-info">
+          <a href="#" class="header__login">Вход</a><a href="#" class="header__signup">Регистрация</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-details">
+      <div class="product-details__photo">
+        <img src="img/mock.png" alt="">
+      </div>
+      <div class="product-details__main-info">
+        <h1 class="product-details__title">Lorem ipsum dolor sit amet.</h1>
+
+        <div class="product-details__charachteristics">
+          <div class="product-details__block-title">Характеристики</div>
+
+
+          <div class="characteristic-list">
+            <div class="characteristic-list__row">
+              <div class="characteristic-list__prop">property1</div>
+              <div class="characteristic-list__value">value1</div>
+            </div>
+            <div class="characteristic-list__row">
+              <div class="characteristic-list__prop">property2</div>
+              <div class="characteristic-list__value">value2</div>
+            </div>
+            <div class="characteristic-list__row">
+              <div class="characteristic-list__prop">property3</div>
+              <div class="characteristic-list__value">value3</div>
+            </div>
+            <div class="characteristic-list__row">
+              <div class="characteristic-list__prop">property4</div>
+              <div class="characteristic-list__value">value4</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-details__description">
+          <div class="product-details__block-title">Описание</div>
+          <p class="product-details__description-text">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolorum iusto facilis exercitationem. Dicta consequuntur maxime hic, iure veritatis laudantium ullam, animi voluptatem doloribus totam quisquam amet nemo ea. Fugiat.</span><span>Corrupti at earum, sequi dolore aliquam harum reprehenderit sapiente, omnis, praesentium ut dolor. Labore similique magni magnam a officia laudantium, aliquam corporis. Non et, quos ad culpa sit, iste delectus.</span>
+          </p>
+        </div>
+      </div>
+      <div class="product-details__right-side">
+        <div class="product-details__to-cart">
+          <div class="to-cart-block to-cart-block--no-item">
+            <p class="to-cart-block__no-item-text">Товар закончился</p>
+            <div class="to-cart-block__price">3 124 руб.</div>
+            <div class="to-cart-block__existance">В наличии</div>
+            <a href="#" class="to-cart-block__btn bttn-unite">
+              <span class="to-cart-block__btn--no-item">Узнать о поступлении</span>
+              <span class="to-cart-block__btn--exist-item">В корзину</span>
+            </a>
+          </div>
+        </div>
+        <div class="product-details__random-review">
+          <a href="#reviews-block" class="product-details__all-reviews-btn">Все отзывы</a>
+          <section class="review">
+            <header class="review__header">
+              <h4 class="review__username">Joe</h4> <!-- <div class="review__rating">4.9</div> -->
+            </header>
+            <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ab numquam earum fugit laudantium. Unde, odio. Esse nisi, dolore quibusdam, illum natus architecto culpa est, tempore similique adipisci iusto distinctio.</div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommended-products">
+      <h3 class="section-title">Рекомендуем</h3>
+
+      <ul class="recommended-products__list">
+        <li class="recommended-products__item">
+          <div class="product-card">
+            <div class="product-card__img">
+              <a href="product-details.html">
+                <img src="img/products/item1.jpg" alt="">
+              </a>
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__description">
+                <a href="product-details.html" class="product-card__title">Mommy Love Мягкая Игрушка-подвеска Жираф Дуду</a>
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price">690 руб.</div>
+                <div class="product-card__cart">
+                  <a href="#" title="Add to cart">
+                    <svg viewBox="0 0 20.294 18.849" width="25.294px" height="23.849px">
+                      <use xlink:href="#icon-cart" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="reviews-section" id="reviews-block">
+
+    <div class="reviews-section__content">
+      <h3 class="section-title">Отзывы</h3>
+      <div class="add-review-block">
+        <textarea name="review-text" id=""  rows="2" class="add-review-block__text-field"></textarea>
+        <a href="#" class="button bttn-unite add-review-block__btn">Добавить отзыв</a>
+      </div>
+
+      <div class="reviews-section__review-items">
+        <section class="review">
+          <header class="review__header">
+            <h4 class="review__username">Joe</h4> <!-- <div class="review__rating">4.9</div> -->
+          </header>
+          <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ab numquam earum fugit laudantium. Unde, odio. Esse nisi, dolore quibusdam, illum natus architecto culpa est, tempore similique adipisci iusto distinctio.</div>
+        </section>
+        <section class="review">
+          <header class="review__header">
+            <h4 class="review__username">Joe</h4> <!-- <div class="review__rating">4.9</div> -->
+          </header>
+          <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ab numquam earum fugit laudantium. Unde, odio. Esse nisi, dolore quibusdam, illum natus architecto culpa est, tempore similique adipisci iusto distinctio.</div>
+        </section>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <footer class="footer">
+
+  </footer>
+
+  <div class="svg-sprite">
+    <svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-cart" viewBox="264.205 370.961 20.294 18.849"><path d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/></symbol><symbol id="icon-search" viewBox="0 0 485.213 485.213"><g><path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324    c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z"/><path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951    C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46    c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465    C318.424,257.208,257.206,318.416,181.956,318.416z" /><path d="M75.817,181.955h30.322c0-41.803,34.014-75.814,75.816-75.814V75.816C123.438,75.816,75.817,123.437,75.817,181.955z" /></g></symbol></svg>
+  </div>
+
+
+  <script>
+    function showCatalog() {
+      var catalogNavTopLevel = document.getElementById('catalogNavTopLevel');
+      var catalogNav = document.getElementById('catalogNav');
+
+      if(catalogNavTopLevel.className === 'catalog-nav__list catalog-nav__list--hidden') {
+        catalogNavTopLevel.className = 'catalog-nav__list';
+        catalogNav.className += ' catalog-nav__title--active';
+
+      } else {
+        catalogNavTopLevel.className += ' catalog-nav__list--hidden';
+        catalogNav.className = 'catalog-nav__title';
+      }
+    }
+  </script>
+
+
+</body>
+</html>

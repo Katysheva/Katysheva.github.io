@@ -1,0 +1,44 @@
+@mixin block-padding($top-bottom: 35px, $left-right: 20px) {
+	padding: $top-bottom $left-right;
+}
+
+@mixin container() {
+	max-width: 100%;
+	// @media screen and (min-width: $phone-width) {
+	// }
+
+	@media screen and (min-width: $tablet-width) {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+}
+
+@mixin container-fluid() {
+  width: auto;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    max-width: 900px;
+    padding: 0 30px;
+  }
+  @media ($desktop-widths) {
+    max-width: 1349px;
+  }
+}
+
+
+.main-container {
+  width: auto;
+  margin: 0 auto;
+  @media screen and (min-width: $tablet-width) {
+    max-width: 800px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
+}
+
+
+.svg-placeholder {
+  padding: 0 10px;
+}

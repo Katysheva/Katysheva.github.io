@@ -1,0 +1,40 @@
+.custom-checkbox {
+  display: block;
+  margin-top: 22px;
+  &:before {
+    content: '';
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $second-accent-color;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  &:after{
+    content: '';
+    clear: both;
+  }
+  span {
+    display: block;
+    padding: 8px 0;
+  }
+}
+input[type="checkbox"]{
+  display: none;
+  &:checked + .custom-checkbox:before {
+    background-image: url('../img/icon_tick-black.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;
+  }
+  &:not(checked) + .custom-checkbox:hover:before,
+  &:not(checked) + .custom-checkbox:focus:before {
+    border-color: mix(white, $accent-color, 50%);
+
+  }
+  &:not(checked) + .custom-checkbox:active:before {
+    border-color: rgba($gray, 0.3);
+  }
+}
