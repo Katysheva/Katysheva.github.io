@@ -9,7 +9,7 @@
 }
 
 .news__item {
-  flex-basis: 48%;
+  flex-basis: 100%;
   display: flex;
   justify-content: space-between;
 
@@ -22,8 +22,9 @@
   flex-basis: 30%;
 
   img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    max-height: 100%;
   }
 }
 
@@ -34,6 +35,7 @@
 .news__title {
   font-family: $opensans-semi;
   font-size: 20px;
+  margin: 0;
 }
 
 .news__text {
@@ -55,5 +57,16 @@
 @media ($tablet-widths) {
   .news {
     padding-top: 40px;
+  }
+  .news__item {
+    flex-basis: 48%;
+    flex-direction: column;
+  }
+}
+
+
+@media ($desktop-widths) {
+  .news__item {
+    flex-direction: row;
   }
 }

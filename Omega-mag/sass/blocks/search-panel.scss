@@ -1,5 +1,6 @@
 .search-panel {
-  width: 40%;
+  width: 80%;
+  padding-bottom: 20px;
 }
 
 .search-panel__field {
@@ -29,5 +30,19 @@
   &:active {
     cursor: pointer;
     opacity: 0.3;
+  }
+}
+
+@media ($tablet-widths) {
+  .search-panel {
+    order: 2;
+    flex-basis: 100%;
+  }
+}
+
+@media ($desktop-widths) {
+  .search-panel {
+    order: 0;
+    flex-basis: 40%;
   }
 }

@@ -1,0 +1,40 @@
+.bottom-nav {
+	padding-right: 20px;
+  flex-basis: 48%;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.bottom-nav__item {
+  &[title=bn-title] {
+    font-family: $opensans-semi;
+    padding-bottom: 5px;
+  }
+  &:nth-child(n+2):not(.bottom-nav__item--phone){
+    &:hover, &:focus {
+     cursor: pointer;
+     a {
+      color: lighten($accent-color, 10%);
+    }
+  }
+}
+&--phone {
+  border-bottom: 0;
+  @include block-padding(6px, 20px);
+}
+}
+.bottom-nav__link {
+  font-size: 13px;
+}
+
+
+@media ($tablet-widths) {
+  .bottom-nav {
+    flex-basis: 33%;
+  }
+}
+@media ($desktop-widths) {
+  .bottom-nav {
+    flex-basis: 25%;
+
+  }
+}
