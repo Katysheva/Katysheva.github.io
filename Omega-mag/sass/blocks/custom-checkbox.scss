@@ -1,13 +1,13 @@
 .custom-checkbox {
   display: block;
-  margin-top: 22px;
+  margin-top: 15px;
   &:before {
     content: '';
     float: left;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 2px;
-    width: 16px;
-    height: 16px;
+    width: 21px;
+    height: 21px;
     border: 1px solid $second-accent-color;
     border-radius: 3px;
     background-color: #fff;
@@ -16,9 +16,8 @@
     content: '';
     clear: both;
   }
-  span {
-    display: block;
-    padding: 8px 0;
+  &:first-of-type {
+    margin-top: 0;
   }
 }
 input[type="checkbox"]{

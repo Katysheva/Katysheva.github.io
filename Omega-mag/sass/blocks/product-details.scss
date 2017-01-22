@@ -15,6 +15,20 @@
   }
 }
 
+.product-details__title {
+  margin-bottom: 0;
+}
+
+.product-details__actions {
+  display: flex;
+  padding-bottom: 20px;
+}
+.product-details__like-btn {
+  svg {
+    fill: rgba(#EC0033, 0.5);
+  }
+}
+
 .product-details__block-title {
   font-family: $opensans-semi;
   position: relative;

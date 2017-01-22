@@ -1,5 +1,5 @@
 .footer {
-  padding: 50px 0;
+  padding: 50px 0 30px;
   margin-top: 50px;
   background: #e8e8e8;
   color: #444;
@@ -28,17 +28,13 @@
   flex-basis: 48%;
   padding: 0 20px;
   padding-top: 40px;
-  align-self: center;
-  p {
-    margin: 0;
-    padding-bottom: 10px;
-    font-family: $opensans-semi;
-  }
+  // align-self: center;
 }
 
 .socials__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 10px;
 }
 
 .socials__item {

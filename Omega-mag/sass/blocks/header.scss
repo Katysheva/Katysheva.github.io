@@ -2,10 +2,10 @@
   border-bottom: 1px solid  #d7d7d7;
   background-color: rgba(mix($second-accent-color, $accent-color, 15%), 0);
   background-image: linear-gradient(110deg, rgba($accent-color, 0.3) 5%, rgba($second-accent-color, 0.3) 5%,
-                                            rgba($second-accent-color, 0.3) 10%, rgba($accent-color, 0.3) 10%,
-                                            rgba($accent-color, 0.3) 15%, rgba($second-accent-color, 0.3) 15%,
-                                            rgba($second-accent-color, 0.3) 20%,
-                                            rgba(mix($second-accent-color, $accent-color, 20%), 0.1));
+    rgba($second-accent-color, 0.3) 10%, rgba($accent-color, 0.3) 10%,
+    rgba($accent-color, 0.3) 15%, rgba($second-accent-color, 0.3) 15%,
+    rgba($second-accent-color, 0.3) 20%,
+    rgba(mix($second-accent-color, $accent-color, 20%), 0.1));
 }
 
 .header__content {
@@ -14,12 +14,16 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px 30px;
+  padding: 10px 30px;
   text-align: center;
 }
 
 .header__cart {
 
+}
+
+.header__cart-icon {
+  display: flex;
 }
 
 .header__cart-info {
@@ -30,7 +34,7 @@
   justify-content: center;
 
   svg {
-    fill: mix(black, $second-accent-color, 50%);
+    fill: mix(black, $second-accent-color, 30%);
   }
 }
 
@@ -45,6 +49,15 @@
   }
 }
 
+.header__phone-number {
+  font-family: $opensans-semi;
+  text-align: center;
+  font-size: 24px;
+  color: mix(black, $accent-color, 50%);
+  display: block;
+  padding-bottom: 10px;
+}
+
 .header__logo {
   width: 100%;
   padding-bottom: 20px;
@@ -57,6 +70,11 @@
     width: 100%;
     height: auto;
     max-width: 300px;
+    margin: 0 auto;
+
+    @media ($tablet-widths) {
+      margin: auto;
+    }
   }
 }
 
@@ -91,11 +109,12 @@
   }
   .header__logo {
     width: auto;
+    padding-bottom: 0;
   }
 
   .header__content {
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 10px 30px;
     text-align: left;
   }
 

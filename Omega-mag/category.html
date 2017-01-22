@@ -125,130 +125,67 @@
       </div>
     </div>
   </header>
-  <main>
-    <section class="product-details">
-      <div class="product-details__photo">
-        <img src="img/mock.png" alt="">
-      </div>
-      <div class="product-details__main-info">
-        <h1 class="product-details__title">Lorem ipsum dolor sit amet.</h1>
-        <div class="product-details__actions">
-          <button type="button" class="button-icon product-details__like-btn" name="like-btn" title="В избранное">В избранное</button>
-          <button type="button" class="button-icon product-details__compare-btn" name="compare-btn" title="Сравнить">Сравнить</button>
-        </div>
 
-        <div class="product-details__charachteristics">
-          <div class="product-details__block-title">Характеристики</div>
-          <div class="characteristic-list">
-            <div class="characteristic-list__row">
-              <div class="characteristic-list__prop">property1</div>
-              <div class="characteristic-list__value">value1</div>
-            </div>
-            <div class="characteristic-list__row">
-              <div class="characteristic-list__prop">property2</div>
-              <div class="characteristic-list__value">value2</div>
-            </div>
-            <div class="characteristic-list__row">
-              <div class="characteristic-list__prop">property3</div>
-              <div class="characteristic-list__value">value3</div>
-            </div>
-            <div class="characteristic-list__row">
-              <div class="characteristic-list__prop">property4</div>
-              <div class="characteristic-list__value">value4</div>
-            </div>
-          </div>
-        </div>
-        <div class="product-details__description">
-          <div class="product-details__block-title">Описание</div>
-          <p class="product-details__description-text">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolorum iusto facilis exercitationem. Dicta consequuntur maxime hic, iure veritatis laudantium ullam, animi voluptatem doloribus totam quisquam amet nemo ea. Fugiat.</span><span>Corrupti at earum, sequi dolore aliquam harum reprehenderit sapiente, omnis, praesentium ut dolor. Labore similique magni magnam a officia laudantium, aliquam corporis. Non et, quos ad culpa sit, iste delectus.</span>
-          </p>
-        </div>
-      </div>
-      <div class="product-details__right-side">
-        <div class="product-details__to-cart">
-          <div class="to-cart-block to-cart-block--no-item">
-            <p class="to-cart-block__no-item-text">Товар закончился</p>
-            <div class="to-cart-block__price">3 124 руб.</div>
-            <div class="to-cart-block__existance">В наличии</div>
-            <a href="#" class="to-cart-block__btn bttn-unite">
-              <span class="to-cart-block__btn--no-item">Узнать о поступлении</span>
-              <span class="to-cart-block__btn--exist-item">В корзину</span>
-            </a>
-          </div>
-        </div>
-        <div class="product-details__random-review">
-          <a href="#reviews-block" class="product-details__all-reviews-btn">Все отзывы</a>
-          <section class="review">
-            <header class="review__header">
-              <h4 class="review__username">Joe</h4> <!-- <div class="review__rating">4.9</div> -->
-            </header>
-            <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ab numquam earum fugit laudantium. Unde, odio. Esse nisi, dolore quibusdam, illum natus architecto culpa est, tempore similique adipisci iusto distinctio.</div>
-          </section>
-        </div>
-      </div>
-    </section>
+  <main class="category-page">
+    <h2 class="section-title">Категория 1</h2>
+    <div class="two-column-block">
 
-    <section class="recommended-products">
-      <h3 class="section-title">Рекомендуем</h3>
-
-      <ul class="recommended-products__list">
-        <li class="recommended-products__item">
-          <div class="product-card">
-            <div class="product-card__img">
-              <a href="product-details.html">
-                <img src="img/products/item1.jpg" alt="">
-              </a>
+      <aside>
+        <form class="filters">
+          <fieldset class="filter-item">
+            <legend class="filter-item__title"><span>Filter 1</span></legend>
+            <div class="filter-item__values-list">
+              <input type="radio" id="filter1-item1" name="filter1">
+              <label for="filter1-item1" class="custom-radio">Filter value 1</label>
+              <input type="radio" id="filter1-item2" name="filter1">
+              <label for="filter1-item2" class="custom-radio">Filter value 2</label>
             </div>
-            <div class="product-card__info">
-              <div class="product-card__description">
-                <a href="product-details.html" class="product-card__title">Mommy Love Мягкая Игрушка-подвеска Жираф Дуду</a>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend class="filter-item__title"><span>Filter 2</span></legend>
+            <div class="filter-item__values-list">
+              <input type="checkbox" id="filter2-item1" name="filter2">
+              <label class="custom-checkbox" for="filter2-item1">filter value 1</label>
+              <input type="checkbox" id="filter2-item2" name="filter2">
+              <label class="custom-checkbox" for="filter2-item2">filter value 2</label>
+              <input type="checkbox" id="filter2-item3" name="filter2">
+              <label class="custom-checkbox" for="filter2-item3">filter value 3</label>
+            </div>
+          </fieldset>
+          <button class="button bttn-unite" title="Apply filters">Применить</button>
+        </form>
+      </aside>
+
+      <section class="cur-category">
+        <ul class="cur-category__list">
+          <li class="cur-category__item">
+            <div class="product-card">
+              <div class="product-card__img">
+                <a href="product-details.html">
+                  <img src="img/products/item1.jpg" alt="">
+                </a>
               </div>
-              <div class="product-card__footer">
-                <div class="product-card__price">690 руб.</div>
-                <div class="product-card__cart">
-                  <a href="#" title="Add to cart">
-                    <svg viewBox="0 0 20.294 18.849" width="25.294px" height="23.849px">
-                      <use xlink:href="#icon-cart" />
-                    </svg>
-                  </a>
+              <div class="product-card__info">
+                <div class="product-card__description">
+                  <a href="product-details.html" class="product-card__title">Mommy Love Мягкая Игрушка-подвеска Жираф Дуду</a>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" class="button-icon product-card__like-btn" name="like-btn" title="В избранное">В избранное</button>
+                  <button type="button" class="button-icon product-card__compare-btn" name="compare-btn" title="Сравнить">Сравнить</button>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__price">690 руб.</div>
+                  <div class="product-card__cart">
+                  <a href="#" title="Add to cart">В корзину</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <section class="reviews-section" id="reviews-block">
-
-    <div class="reviews-section__content">
-      <h3 class="section-title">Отзывы</h3>
-      <div class="add-review-block">
-        <textarea name="review-text" id=""  rows="2" class="add-review-block__text-field"></textarea>
-        <a href="#" class="button bttn-unite add-review-block__btn">Добавить отзыв</a>
-      </div>
-
-      <div class="reviews-section__review-items">
-        <section class="review">
-          <header class="review__header">
-            <h4 class="review__username">Joe</h4> <!-- <div class="review__rating">4.9</div> -->
-          </header>
-          <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ab numquam earum fugit laudantium. Unde, odio. Esse nisi, dolore quibusdam, illum natus architecto culpa est, tempore similique adipisci iusto distinctio.</div>
-        </section>
-        <section class="review">
-          <header class="review__header">
-            <h4 class="review__username">Joe</h4> <!-- <div class="review__rating">4.9</div> -->
-          </header>
-          <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ab numquam earum fugit laudantium. Unde, odio. Esse nisi, dolore quibusdam, illum natus architecto culpa est, tempore similique adipisci iusto distinctio.</div>
-        </section>
-      </div>
-
-
-
+          </li>
+        </ul>
+      </section>
     </div>
-  </section>
+  </main>
 
   <footer class="footer">
     <div class="footer__content">
@@ -321,8 +258,8 @@
     </div>
   </footer>
 
-
   <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+
   <script>
     function showCatalog() {
       var catalogNavTopLevel = document.getElementById('catalogNavTopLevel');
@@ -335,6 +272,17 @@
       } else {
         catalogNavTopLevel.className += ' catalog-nav__list--hidden';
         catalogNav.className = 'catalog-nav__title';
+      }
+    }
+
+    var catalogNavItem = document.querySelectorAll('.catalog-nav__item');
+
+    for (var i = 0; i <= catalogNavItem.length - 1; i++) {
+      var childrens = catalogNavItem[i].childNodes;
+      for (var j = 0; j <= childrens.length - 1; j++) {
+        if(childrens[j].className === 'catalog-nav__submenu') {
+          catalogNavItem[i].classList.add('catalog-nav__item--has-sub')
+        }
       }
     }
   </script>
