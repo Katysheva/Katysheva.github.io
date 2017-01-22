@@ -1,0 +1,29 @@
+.text-page {
+  padding-top: 30px;
+  font-size: 14px;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.text-page__subtitle {
+  font-family: $opensans-bold;
+  position: relative;
+  padding-bottom: 4px;
+  font-size: 18px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 3%;
+    min-width: 50px;
+    bottom: 0;
+    background: linear-gradient(to right, $accent-color 40%, $second-accent-color 40%);
+  }
+}

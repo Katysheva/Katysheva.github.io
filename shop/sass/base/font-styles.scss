@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'OpenSans-Light';
+  src:
+    local('OpenSans-Light'),
+    url('../fonts/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src:
+    local('OpenSans-Regular'),
+    url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src:
+    local('OpenSans-Semibold'),
+    url('../fonts/OpenSans-Semibold.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src:
+    local('OpenSans-Bold'),
+    url('../fonts/OpenSans-Bold.ttf');
+}
+
+$opensans-light: 'OpenSans-Light', 'Calibri', sans-serif;
+$opensans-regular: 'OpenSans-Regular', 'Calibri', sans-serif;
+$opensans-semi: 'OpenSans-Semibold', 'Calibri', sans-serif;
+$opensans-bold: 'OpenSans-Bold', 'Calibri', sans-serif;

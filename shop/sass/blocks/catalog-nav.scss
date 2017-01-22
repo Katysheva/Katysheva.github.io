@@ -1,0 +1,133 @@
+.catalog-nav {
+  position: relative;
+  font-size: 14px;
+}
+
+.catalog-nav__title {
+  background: $second-accent-color;
+  padding: 10px 30px 10px 10px;
+  display: flex;
+  align-items: center;
+  font-family: $opensans-semi;
+  font-size: 16px;
+  color: white;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/angle-arrow-down.svg') no-repeat 0 0;
+    background-size: 20px 20px;
+    margin-left: 20px;
+  }
+
+  &--active {
+    background: $white;
+    color: #000;
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.catalog-nav__list {
+  position: absolute;
+  background: $white;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0px 6px 10px rgba(#000, 0.1);
+
+  &--hidden {
+    display: none;
+  }
+}
+.catalog-nav__item {
+  a {
+    display: block;
+    padding: 5px 10px;
+    &:hover {
+      background-color: rgba($accent-color, 0.5);
+    }
+  }
+
+
+  &--has-sub {
+    &:hover {
+      & > .catalog-nav__submenu {
+        display: flex;
+      }
+      > a {
+        position: relative;
+        &:before {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          z-index: 710;
+          margin-top: -14.5px;
+          border-top: 14.5px solid transparent;
+          border-bottom: 14.5px solid transparent;
+          border-right: 14.5px solid #ccc;
+          content: '';
+        }
+
+        &:after {
+          position: absolute;
+          top: 50%;
+          right: -1px;
+          z-index: 710;
+          content: '';
+          border-top: 14px solid transparent;
+          border-bottom: 14px solid transparent;
+          border-right: 14px solid #fff;
+          margin-top: -14px
+        }
+      }
+    }
+  }
+}
+
+.catalog-nav__submenu {
+  background-color: $white;
+  position: absolute;
+  left: 215px;
+  top: 0;
+  min-width: 35vw;
+  max-width: 70vw;
+  box-shadow: 0 2px 10px rgba(#000, 0.2);
+
+  display: none;
+  justify-content: space-between;
+}
+
+
+
+.catalog-nav__submenu-col {
+  width: 32%;
+}
+
+.catalog-nav__sub-list {
+  padding: 10px;
+}
+
+.catalog-nav__sub-item {
+  a {
+    display: block;
+    padding: 0;
+    &:hover {
+      color: mix(black, $second-accent-color, 20%);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+
+  &--item-title {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16px;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.section-title {
+  font-family: $opensans-bold;
+  position: relative;
+  padding-bottom: 7px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 10%;
+    min-width: 50px;
+    bottom: 0;
+    background: linear-gradient(to right, $accent-color 40%, $second-accent-color 40%);
+  }
+}

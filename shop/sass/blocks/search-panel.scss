@@ -1,0 +1,50 @@
+.search-panel {
+  width: 80%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.search-panel__field {
+  position: relative;
+}
+
+.search-panel__input {
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+}
+
+.search-panel__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 3px 20px 0;
+  border: 0;
+  background: transparent;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  &:active {
+    cursor: pointer;
+    opacity: 0.3;
+  }
+}
+
+@media ($tablet-widths) {
+  .search-panel {
+    order: 2;
+    flex-basis: 100%;
+    padding-bottom: 0;
+  }
+}
+
+@media ($desktop-widths) {
+  .search-panel {
+    order: 0;
+    flex-basis: 40%;
+  }
+}

@@ -1,0 +1,145 @@
+.header {
+  border-bottom: 1px solid  #d7d7d7;
+  background-color: rgba(mix($second-accent-color, $accent-color, 15%), 0);
+  background-image: linear-gradient(110deg, rgba($accent-color, 0.3) 5%, rgba($second-accent-color, 0.3) 5%,
+    rgba($second-accent-color, 0.3) 10%, rgba($accent-color, 0.3) 10%,
+    rgba($accent-color, 0.3) 15%, rgba($second-accent-color, 0.3) 15%,
+    rgba($second-accent-color, 0.3) 20%,
+    rgba(mix($second-accent-color, $accent-color, 20%), 0.1));
+}
+
+.header__content {
+  @include container-fluid();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.header__cart {
+
+}
+
+.header__cart-icon {
+  display: flex;
+}
+
+.header__cart-info {
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  justify-content: center;
+
+  svg {
+    fill: mix(black, $second-accent-color, 30%);
+  }
+}
+
+.header__cart-item {
+  padding-left: 20px;
+}
+
+.header__item-count {
+  font-family: $opensans-regular;
+  span {
+    font-family: $opensans-bold;
+  }
+}
+
+.header__phone-number {
+  font-family: $opensans-semi;
+  text-align: center;
+  font-size: 24px;
+  color: mix(black, $accent-color, 50%);
+  display: block;
+  padding-bottom: 10px;
+}
+
+.header__logo {
+  width: 100%;
+  padding-bottom: 20px;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
+
+    @media ($tablet-widths) {
+      margin: auto;
+    }
+  }
+}
+
+.header__tools {
+  background: $accent-color;
+}
+
+.header__tools-content {
+  @include container-fluid();
+  display: flex;
+  align-items: center;
+}
+
+.header__profile-info {
+  a {
+    color: $white;
+    padding: 10px 20px;
+
+    &:hover {
+      text-decoration: underline;
+      color: $second-accent-color;
+    }
+  }
+}
+
+
+
+
+
+@media ($tablet-widths) {
+  .header {
+  }
+  .header__logo {
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  .header__content {
+    justify-content: space-between;
+    padding: 10px 30px;
+    text-align: left;
+  }
+
+  .header__cart {
+    order: 1;
+  }
+
+  .header__tools {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .header__tools-content {
+    justify-content: space-between;
+  }
+}
+
+@media ($desktop-widths) {
+  .header {
+  }
+
+  .header__content {
+    flex-wrap: nowrap;
+  }
+  .header__cart {
+    order: 0;
+  }
+}

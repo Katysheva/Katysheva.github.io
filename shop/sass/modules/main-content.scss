@@ -1,0 +1,114 @@
+.main-content {
+
+}
+
+.main-content__section-title {
+  font-family: $opensans-light;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
+.main-content__block-title {
+  color: $accent-color;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.main-content__title-description {
+	color: $gray;
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.main-content__car-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main-content__driver-info {
+	padding-top: 80px;
+}
+
+
+.main-content__footer {
+	text-align: center;
+	padding: 40px 0 30px;
+}
+
+
+.main-content__option {
+  border-top: 1px solid $second-accent-color;
+  padding-top: 30px;
+
+  &:first-of-type {
+    border: 0;
+    padding-top: 0;
+  }
+}
+
+.main-content__offers {
+  font-size: 14px;
+  font-family: $opensans-regular;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0;
+
+  a {
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.main-content__user-info {
+  color: $accent-color;
+}
+
+.main-content__sbm-btn {
+  display: block;
+  margin: 40px 0 0 15px;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.main-content__options {
+  border-left: 1px solid #ccc;
+  padding-left: 30px;
+  position: relative;
+  margin-left: 15px;
+
+  &:before {
+    content: '2';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: $opensans-semi;
+    padding-top: 2px;
+    top: 0;
+    left: -15px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 80px;
+    background-color: #ccc;
+  }
+}

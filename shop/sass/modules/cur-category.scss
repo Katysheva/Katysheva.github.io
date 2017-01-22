@@ -1,0 +1,23 @@
+.cur-category {
+  width: 100%;
+}
+
+.cur-category__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cur-category__item {
+  // flex-basis: 24%;
+  padding-bottom: 20px;
+}
+
+@media ($desktop-widths) {
+  .cur-category__item {
+    flex-basis: 24%;
+  }
+  .cur-category__list {
+    justify-content: space-between;
+  }
+}
