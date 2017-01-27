@@ -1,0 +1,13 @@
+@mixin block-padding($top-bottom: 35px, $left-right: 20px) {
+	padding: $top-bottom $left-right;
+}
+
+
+@mixin container-fluid() {
+  width: auto;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    max-width: 542px;
+    padding: 15px 20px;
+  }
+}

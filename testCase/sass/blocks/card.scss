@@ -1,0 +1,59 @@
+.container {
+  @include container-fluid();
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid  $light-gray;
+  flex-basis: 48%;
+  max-width: 48%;
+  margin-bottom: 20px;
+}
+
+.card__author-info {
+  padding: 10px 20px;
+  display: flex;
+}
+
+.card__author-name {
+  padding-top: 6px;
+  padding-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'Verdana', 'Arial', sans-serif;
+}
+
+.card__author-ave {
+  margin-bottom: -25px;
+  position: relative;
+  z-index: 1;
+}
+
+.card__img {
+  position: relative;
+}
+
+.card__price {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  z-index: 1;
+
+  color: $white;
+  font-size: 50px;
+  line-height: 35px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px;
+}
