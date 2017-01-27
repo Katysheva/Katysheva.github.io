@@ -8,9 +8,14 @@
 
 .card {
   border: 1px solid  $light-gray;
-  flex-basis: 48%;
-  max-width: 48%;
   margin-bottom: 20px;
+  flex-basis: 100%;
+
+  @media ($tablet-widths) {
+    flex-basis: 48%;
+    max-width: 48%;
+  }
+
 }
 
 .card__author-info {
@@ -35,6 +40,11 @@
 
 .card__img {
   position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .card__price {

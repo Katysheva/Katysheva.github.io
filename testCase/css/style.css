@@ -41,6 +41,7 @@ img {
 .container {
   width: auto;
   margin: 0 auto;
+  padding: 15px 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
@@ -51,15 +52,18 @@ img {
       flex-wrap: wrap; }
   @media (min-width: 701px) {
     .container {
-      max-width: 542px;
-      padding: 15px 20px; } }
+      max-width: 542px; } }
 
 .card {
   border: 1px solid #d4d4d4;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  max-width: 48%;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+  @media (min-width: 701px) {
+    .card {
+      -ms-flex-preferred-size: 48%;
+          flex-basis: 48%;
+      max-width: 48%; } }
 
 .card__author-info {
   padding: 10px 20px;
@@ -81,6 +85,9 @@ img {
 
 .card__img {
   position: relative; }
+  .card__img img {
+    width: 100%;
+    height: auto; }
 
 .card__price {
   position: absolute;
