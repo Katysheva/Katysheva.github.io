@@ -139,7 +139,8 @@
 					<dt>Кроссовер, представительский класс, внедорожник:</dt>
 					<dd>12 000 р.</dd>
 				</dl>
-				<button class="button" type="button">Записаться</button>
+				
+				<a href="#modal-window" class="button open_modal">Записаться</a>
 			</div>
 			<div class="service-item__image"><img src="img/serv1.jpg" alt="Абразивная полировка кузова"></div>
 		</article>
@@ -155,7 +156,8 @@
 					<dt>Кроссовер, представительский класс, внедорожник:</dt>
 					<dd>9 000 р.</dd>
 				</dl>
-				<button class="button" type="button">Записаться</button>
+				
+				<a href="#modal-window" class="button open_modal">Записаться</a>
 			</div>
 		</article>
 		<article class="service-item">
@@ -169,7 +171,8 @@
 					<dt>Кроссовер, представительский класс, внедорожник:</dt>
 					<dd>14 000 р.</dd>
 				</dl>
-				<button class="button" type="button">Записаться</button>
+				
+				<a href="#modal-window" class="button open_modal">Записаться</a>
 			</div>
 			<div class="service-item__image"><img src="img/serv3.jpg" alt="Жидкое стекло C.QUARTZ UK"></div>
 		</article>
@@ -185,7 +188,8 @@
 					<dt>Кроссовер, представительский класс, внедорожник:</dt>
 					<dd>30 000 р.</dd>
 				</dl>
-				<button class="button" type="button">Записаться</button>
+				
+				<a href="#modal-window" class="button open_modal">Записаться</a>
 			</div>
 		</article>
 		<article class="service-item">
@@ -199,7 +203,8 @@
 					<dt>Кроссовер, представительский класс, внедорожник:</dt>
 					<dd>3 000 р.</dd>
 				</dl>
-				<button class="button" type="button">Записаться</button>
+				
+				<a href="#modal-window" class="button open_modal">Записаться</a>
 			</div>
 			<div class="service-item__image"><img src="img/serv5.jpg" alt="Антидождь Koch Chemie NanoGlasVersiegelung"></div>
 		</article>
@@ -215,7 +220,8 @@
 					<dt>Кроссовер, представительский класс, внедорожник:</dt>
 					<dd>2 500 р.</dd>
 				</dl>
-				<button class="button" type="button">Записаться</button>
+				
+				<a href="#modal-window" class="button open_modal">Записаться</a>
 			</div>
 		</article>
 		<article class="service-item">
@@ -229,7 +235,7 @@
 					<dt>Кроссовер, представительский класс, внедорожник:</dt>
 					<dd>7 000 р.</dd>
 				</dl>
-				<button class="button" type="button">Записаться</button>
+				<a href="#modal-window" class="button open_modal">Записаться</a>
 			</div>
 			<div class="service-item__image"><img src="img/serv7.jpg" alt="Покраска одной детали"></div>
 		</article>
@@ -286,6 +292,43 @@
 			</section>
 		</div>
 	</footer>
+
+	<div id="modal-window" class="dialog">
+		<div class="dialog__content">
+			<h2 class="section-title">Записаться</h2>
+			<form action="echo" class="order-form">
+				<div class="order-form__body">
+					<label class="w48">
+						Ваше ФИО
+						<input type="text" class="custom-input"/>
+					</label>
+					<label class="w48">
+						Ваш телефон
+						<input type="tel" class="custom-input"/>
+					</label>
+					<label class="w48">
+						Марка автомобиля
+						<input type="text" class="custom-input"/>
+					</label>
+					<label class="w100">
+						Комментарий к услуге
+						<textarea class="custom-input order-form__textarea"></textarea>
+					</label>
+				</div>
+				<div class="dialog__btn">
+					<button class="button">Записаться</button>
+				</div>
+			</form>
+
+			<div class="close-modal action" data-dialog-close="X">
+			</div>
+		</div>
+	</div>
+		<div id="overlay"></div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
 
 	<script>
 		var menu = document.querySelector('.top-nav__list');
