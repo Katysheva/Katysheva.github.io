@@ -473,7 +473,7 @@ input, select {
 @media (min-width: 1100px) {
   .advantages {
     background: #ebeae8 url("../img/bg_advantages.jpg") no-repeat 45% 100%;
-    background-size: contain; }
+    background-size: cover; }
   .advantages__list {
     -ms-flex-preferred-size: 570px;
         flex-basis: 570px;
@@ -604,6 +604,12 @@ h3.service-item__title {
   height: 100%;
   display: block; }
 
+.service-item__image--mobile {
+  display: block; }
+
+.service-item__image--desktop {
+  display: none; }
+
 .post-info {
   background: #f2f0f1; }
 
@@ -641,7 +647,11 @@ h3.service-item__title {
     font-size: 36px; }
   .service-item__image {
     -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; } }
+        flex-basis: 50%; }
+    .service-item__image--mobile {
+      display: none; }
+    .service-item__image--desktop {
+      display: block; } }
 
 .dialog {
   width: 100%;
