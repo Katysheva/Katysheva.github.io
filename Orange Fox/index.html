@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Orange Fox</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<header class="header">
+		<div class="header__wrapper">
+			<nav id="top-nav" class="top-nav top-nav--no-js">
+				<div class="top-nav__header">
+					<div class="header__logo">
+						<a href="index.html">
+							<picture>
+								<source media="(min-width: 1050px)" srcset="img/logo.png" />
+								<img src="img/logo-mobile.png" alt="logo">
+							</picture>
+						</a>
+					</div>
+					<button class="header__toggle-button" onclick="openMenu()" id="menu-toggle" type="button" title="Open menu"></button>
+				</div>
+				<div class="top-nav__list">
+					<ul class="top-nav__left top-nav__left--no-js">
+						<li class="top-nav__item">
+							<a href="#">О нас</a>
+						</li>
+						<li class="top-nav__item">
+							<a href="#">Меню</a>
+						</li>
+						<li class="top-nav__item">
+							<a href="#">Спецпредложения</a>
+						</li>
+					</ul>
+					<ul class="top-nav__right">
+						<li class="top-nav__item">
+							+7977-514-7777 <br>
+							+74957292809
+						</li>
+						<li class="top-nav__item">
+							г. Москва, <br>
+							Семеновский пер. дом 21
+						</li>
+						<li class="top-nav__item">
+							<a href="https://www.tripadvisor.ru/Restaurant_Review-g298484-d10104949-Reviews-Red_Fox-Moscow_Central_Russia.html"><img src="img/tripAdLogo.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header__content">
+				<div class="header__order-block">
+					<div class="order-block">
+						<form class="order-block__form">
+							<fieldset>
+								<legend><a href="#" class="order-block__title">Забронировать <span>столик</span></a></legend>
+								<div class="order-form">
+									<label for="order-date">
+										<input type="date" id="order-date">
+									</label>
+
+									<label for="select-time">
+										<select name="select-time" id="select-time">
+											<option value="20:00">20:00</option>
+											<option value="21:00">21:00</option>
+										</select>
+									</label>
+									<label for="select-something">
+										<select name="select-something" id="select-something">
+											<option>Option 1</option>
+											<option>Option 2</option>
+										</select>
+									</label>
+
+									<label for="user-name">
+										<input type="text" id="user-name" placeholder="Имя">
+									</label>
+
+									<label for="user-tel">
+										<input type="tel" id="user-tel" placeholder="+7 (   )">
+									</label>
+									<button class="button order-form__btn">Забронировать</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="header__text-about">
+					<h1 class="header__title">Рыжий лис</h1>
+					<p>
+						Своим названием паб «Рыжий лис» обязан месту расположения – Соколиная гора. История этих угодий уходит корнями в далекое прошлое. Здесь ловчих птиц обучали приемам охоты, любимому развлечению великих князей, а затем и царей. 
+					</p>
+					<p>
+						Это место примечательное и во всех отношениях приятное. Паб объединяет два формата – полноценную ресторанную кухню и широкий барный ассортимент традиционных напитков и коктейлей в духе Туманного Альбиона.
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="about-us">
+		<div class="about-us__we">
+			<h2 class="section-title">О нас</h2>
+			<p class="about-us__text">
+				Тепло и радушно в пабе «Рыжий лис» гостей встречают: приветливый персонал и стильные уютные залы заведения, интерьер которых выполнен на манер зарубежных пабов и пивных домов, отличающихся понятной каждому свойской простотой и демократичностью. Массивная меблировка из натурального дерева, мягкие диваны, обитые кожей, приглушенное освещение и большой бар с широкой добротной стойкой, окутывают посетителей своим гостеприимством.
+			</p>
+
+			<div class="about-us__mob-img">
+				<img src="img/img_about-mobile.jpg" alt="">
+			</div>
+
+			<h2 class="section-title">Как нас найти</h2>
+			<p class="about-us__text">
+				г. Москва, Семеновский пер. дом 21 <br>
+				Метро: Семеновская
+			</p>
+			<p class="about-us__text">
+				Посмотреть <a href="#">схему проезда</a>
+			</p>
+		</div>
+		<div class="about-us__right-img">
+			<img src="img/pic_photos.png" alt="">
+		</div>
+	</section>
+
+	<section class="discount-offer">
+		<h2 class="discount-offer__offer">Скидка<br> на меню <span>20%</span></h2>
+		<p class="discount-offer__description">
+			Распечатайте купон, отдайте его официанту до открытия счета и получите свою скидку.
+		</p>
+		<a href="#" class="discount-offer__download">Скачать купон</a>
+	</section>
+
+	<section class="kitchen-menu">
+		<h2 class="section-title">Меню кухни</h2>
+
+		<div class="categories-block">
+			<select name="kitchen-menu" id="" class="choosing-category">
+				<option value="paste">Паста</option>
+				<option value="vermouth">Вермут</option>
+				<option value="fish-dishes">Рыбные блюда</option>
+				<option value="absinthe">Абсент</option>
+				<option value="popular-snacks">Популярные закуски</option>
+				<option value="appetizers" selected>Холодные закуски</option>
+				<option value="salads">Салаты</option>
+				<option value="soups">Супы</option>
+				<option value="hot-dishes">Горячие блюда</option>
+				<option value="burgers">Бургеры и сэндвичи на углях</option>
+				<option value="grill">Grill</option>
+				<option value="garnishes">Гарниры</option>
+				<option value="dessert">Десерт</option>
+			</select>
+		</div>
+		<div class="choosing-category-desktop">
+			<div class="category-item">
+				<input type="radio" id="paste" name="kitchen">
+				<label class="custom-radio" for="paste">Паста</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="vermouth" name="kitchen">
+				<label class="custom-radio" for="vermouth">Вермут</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="fish-dishes" name="kitchen">
+				<label class="custom-radio" for="fish-dishes">Рыбные блюда</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="absinthe" name="kitchen">
+				<label class="custom-radio" for="absinthe">Абсент</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="popular-snacks" name="kitchen">
+				<label class="custom-radio" for="popular-snacks">Популярные закуски</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="appetizers" name="kitchen" checked>
+				<label class="custom-radio" for="appetizers">Холодные закуски</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="salads" name="kitchen">
+				<label class="custom-radio" for="salads">Салаты</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="soups" name="kitchen">
+				<label class="custom-radio" for="soups">Супы</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="hot-dishes" name="kitchen">
+				<label class="custom-radio" for="hot-dishes">Горячие блюда</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="burgers" name="kitchen">
+				<label class="custom-radio" for="burgers">Бургеры и сэндвичи на углях</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="grill" name="kitchen">
+				<label class="custom-radio" for="grill">Grill</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="garnishes" name="kitchen">
+				<label class="custom-radio" for="garnishes">Гарниры</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="dessert" name="kitchen">
+				<label class="custom-radio" for="dessert">Десерт</label>
+			</div>
+		</div>
+
+		<div id="appetizers" class="menu">
+			<div class="menu__item">
+				<div class="menu__item-header">
+					<div class="menu__item-title">Полметра водки</div>
+					<div class="menu__wrapper"></div>
+					<div class="menu__item-price">5900 руб.</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<div class="menu__item-header">
+					<div class="menu__item-title">Рыжий лис</div>
+					<div class="menu__wrapper"></div>
+					<div class="menu__item-price">990 руб.</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<div class="menu__item-header">
+					<div class="menu__item-title">Хачапури по-мегрельски или по-аджарски</div>
+					<div class="menu__wrapper"></div>
+					<div class="menu__item-price">80 руб.</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<div class="menu__item-header">
+					<div class="menu__item-title">Чесночные гренки с пармезаном и сырным соусом</div>
+					<div class="menu__wrapper"></div>
+					<div class="menu__item-price">390 руб.</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<div class="menu__item-header">
+					<div class="menu__item-title">Кольца кальмаров в кляре</div>
+					<div class="menu__wrapper"></div>
+					<div class="menu__item-price">480 руб.</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<div class="menu__item-header">
+					<div class="menu__item-title">Мидии запеченные под сыром и шпинатом</div>
+					<div class="menu__wrapper"></div>
+					<div class="menu__item-price">1200 руб.</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<div class="menu__item-header">
+					<div class="menu__item-title">Креветки , отварные в пряном пивном соусе</div>
+					<div class="menu__wrapper"></div>
+					<div class="menu__item-price">630 руб.</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<div class="menu__item-header">
+					<div class="menu__item-title">Креветки обжаренные насливочном масле спряными травами</div>
+					<div class="menu__wrapper"></div>
+					<div class="menu__item-price">880 руб.</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<div class="menu__item-header">
+					<div class="menu__item-title">Куриные крылышки BBQ</div>
+					<div class="menu__wrapper"></div>
+					<div class="menu__item-price">570 руб.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bar-menu">
+		<h2 class="section-title">Барное меню</h2>
+
+		<div class="categories-block">
+			<select name="bar-menu" id="" class="choosing-category">
+				<option value="untea">НЕ ЧАЙНЫЙ ЧАЙ</option>
+				<option value="">Безалкогольные коктейли и лимонады</option>
+				<option value="">КОКТЕЙЛИ</option>
+				<option value="">Абсент</option>
+				<option value="">Безалкогольные напитки</option>
+				<option value="">Битеры</option>
+				<option value="">Бурбон и Теннеси</option>
+				<option value="">Вина</option>
+				<option value="">Виски</option>
+				<option value="">Водка</option>
+				<option value="">Джин</option>
+				<option value="">Игристые вина</option>
+				<option value="">Коньяк и бренди</option>
+				<option value="">Ликеры</option>
+				<option value="" selected>Разливное пиво</option>
+				<option value="">Ром</option>
+				<option value="">Текила</option>
+				<option value="">Чай и кофе</option>
+			</select>
+		</div>
+		<div class="choosing-category-desktop">
+			<div class="category-item">
+				<input type="radio" id="untea" name="bar">
+				<label class="custom-radio" for="untea">НЕ ЧАЙНЫЙ ЧАЙ</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Безалкогольные коктейли и лимонады</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">КОКТЕЙЛИ</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Абсент</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Безалкогольные напитки</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar" checked>
+				<label class="custom-radio" for="">Битеры</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Бурбон и Теннеси</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Вина</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Виски</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Водка</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Джин</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Игристые вина</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Коньяк и бренди</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Ликеры</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar" checked>
+				<label class="custom-radio" for="">Разливное пиво</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Ром</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Текила</label>
+			</div>
+			<div class="category-item">
+				<input type="radio" id="" name="bar">
+				<label class="custom-radio" for="">Чай и кофе</label>
+			</div>
+		</div>
+		<div id="beer" class="menu menu-with-img">
+			<div class="menu__item menu__item--bombardier">
+				<div class="menu__item-wrapper">
+					<div class="menu__item-header">
+						<div class="menu__item-title menu__item-title--bold">Bombardier Previum Bitter</div>
+						<div class="menu__wrapper"></div>
+						<div class="menu__item-price">330 руб.</div>
+					</div>
+					<div class="menu__item-description">
+						5,2 alc. Плотность 13% Пиво медного цвета с насыщенным солодовым привкусом и богатым ароматом хмеля и изюма.
+					</div>
+				</div>
+			</div>
+			<div class="menu__item menu__item--erdinger">
+				<div class="menu__item-wrapper">
+					<div class="menu__item-header">
+						<div class="menu__item-title menu__item-title--bold">Erdinger</div>
+						<div class="menu__wrapper"></div>
+						<div class="menu__item-price">330 руб.</div>
+					</div>
+					<div class="menu__item-description">
+						5,3 alc. Плотность 12,6% Свежий, более легкий вкус, относительно других пшеничных сортов.Верхняя ферментация придает пиву свежий мягкий вкус и дает более высокое содержание углекислого газа, это естественное содержание,а не искусственное наполнение.
+					</div>
+				</div>
+			</div>
+			<div class="menu__item menu__item--harp">
+				<div class="menu__item-wrapper">
+					<div class="menu__item-header">
+						<div class="menu__item-title menu__item-title--bold">Harp Lager</div>
+						<div class="menu__wrapper"></div>
+						<div class="menu__item-price">370 руб.</div>
+					</div>
+					<div class="menu__item-description">
+						5% alc. Плотность 11,5% Обладает светло-золотистым цветом, мягким вкусом и солодовым ароматом.
+					</div>
+				</div>
+			</div>
+			<div class="menu__item menu__item--red-fox">
+				<div class="menu__item-wrapper">
+					<div class="menu__item-header">
+						<div class="menu__item-title menu__item-title--bold">Red Fox Lager</div>
+						<div class="menu__wrapper"></div>
+						<div class="menu__item-price">290 руб.</div>
+					</div>
+					<div class="menu__item-description">
+						5,9% alc. Плотность 14% Наше фирменное пиво
+					</div>
+				</div>
+			</div>
+
+			<div class="menu__item menu__item--limburgse">
+				<div class="menu__item-wrapper">
+					<div class="menu__item-header">
+						<div class="menu__item-title menu__item-title--bold">Limburgse Witte Rose</div>
+						<div class="menu__wrapper"></div>
+						<div class="menu__item-price">330 руб.</div>
+					</div>
+					<div class="menu__item-description">
+						3,5% alc. Имеет великолепный, освежающий, мягкий и фруктовый вкус, с заметным акцентом свежесобранной, спелой малины. Слегка сладковатый и при этом очень насыщенный
+					</div>
+				</div>
+			</div>
+			<div class="menu__item menu__item--india">
+				<div class="menu__item-wrapper">
+					<div class="menu__item-header">
+						<div class="menu__item-title menu__item-title--bold">India Pale Ale </div>
+						<div class="menu__wrapper"></div>
+						<div class="menu__item-price">550 руб.</div>
+					</div>
+					<div class="menu__item-description">
+						5,9% alc. Плотность 14% Хорошо охмеленный индийский светлый эль с ярким и насыщенным ароматом тропических фруктов. Мощный вкус , в котором хорошо выраженная хмелевая горечь раскрывается в широком диапазоне от тропических фруктов до луговых цветов. интенсивное и сухое хмелевое послевкусие
+					</div>
+				</div>
+			</div>
+			<div class="menu__item menu__item--caffrey">
+				<div class="menu__item-wrapper">
+					<div class="menu__item-header">
+						<div class="menu__item-title menu__item-title--bold">Caffrey`s</div>
+						<div class="menu__wrapper"></div>
+						<div class="menu__item-price">590 руб.</div>
+					</div>
+					<div class="menu__item-description">
+						4,2 alc. Плотность 27,1% Легкий сливочно-солодовый с фруктовыми и ореховыми нотками. Так же, различимы нотки жареной карамели и темного шоколада. В послевкусии хорошо чувствуется благородная хмелевая горчинка.
+					</div>
+				</div>
+			</div>
+			<div class="menu__item menu__item--young-london">
+				<div class="menu__item-wrapper">
+					<div class="menu__item-header">
+						<div class="menu__item-title menu__item-title--bold">Young`s London</div>
+						<div class="menu__wrapper"></div>
+						<div class="menu__item-price">330 руб.</div>
+					</div>
+					<div class="menu__item-description">
+						5,2 alc. Плотность 10% Янтарный эль с полнотой характера, отличительным острым ароматом хмеля, прекрасно сочетающий в себе карамельный солод с хрустящей корочкой, фруктовый, перцовый хмель, и обладающий длительным послевкусием. Вкусовая нота – богатый, фруктовый классический эль насыщенного каштанового цвета.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subscribe-offer">
+		<div class="subscribe-offer__wrapper">
+			<h2 class="subscribe-offer__offer">Подпишись на наши новости!</h2>
+			<p class="subscribe-offer__description">
+				Если Вы хотите быть в курсе наших новостей, заполните форму ниже! 
+			</p>
+			<form class="subscribe-offer__form">
+				<input type="text" placeholder="Ваш электронный адрес">
+				<button class="button">Подписаться</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="special-offer">
+		<h3 class="special-offer__offer">Спецпредложения</h3>
+		<div class="slider">
+			<div class="slider__item">
+				<div class="slider__text">
+					<h4>Музыкальные вечера в Рыжем Лисе</h4>
+					<p>Уважаемые гости, дорогие друзья!</p>
+					<p>
+						Каждый четверг в Рыжем Лисе будут проходить музыальные вечера! Для Вас будут играть лучшие музыканты Москвы! Приходите с семьей, с друзьями, с девушкой или просто в одиночестве, чтобы насладится теплой обстановкой и приятно провести время!:)
+					</p>
+					<p>
+						Ваш ждет море позитива, вкусной еды и скидок!
+					</p>
+				</div>
+				<div class="slider__img"><img src="img/pic_sacs.jpg" alt=""></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="more-discount-offer">
+		<h3 class="more-discount-offer__offer">Хотите дополнительную скидку!</h3>
+		<p class="more-discount-offer__description">
+			Оставьте своей номер телефона и Ваше имя, администратор свяжется с вами и предложит выгодное предложение.  
+		</p>
+		<form class="more-discount-offer__form">
+			<input type="text" placeholder="Ваше имя">
+			<input type="tel" placeholder="+7 (   )">
+			<button class="button">Получить скидку</button>
+		</form>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<section class="footer__column">
+				<h4>Как нас найти</h4>
+				<p>
+					г. Москва, Семеновский пер. дом 21 <br>
+					Метро: Семеновская
+				</p>
+				<p>
+					Посмотреть <a href="#">схему проезда</a>
+				</p>
+			</section>
+			<section class="footer__column">
+				<h4>Контакты</h4>
+				<p>
+					+7977-514-7777 <br>
+					+74957292809 
+				</p>
+			</section>
+			<section class="footer__column">
+				<h4>Мы в соцсетях</h4>
+				<div class="socials__list">
+					<a href="#" class="btn-social btn-social--vk"><span>Вконтакте</span></a>
+					<a href="#" class="btn-social btn-social--fb"><span>Фейсбук</span></a>
+					<a href="#" class="btn-social btn-social--inst"><span>Инстаграм</span></a>
+				</div>
+			</section>
+		</div>
+
+
+		<section class="tripad">
+			<a href="https://www.tripadvisor.ru/Restaurant_Review-g298484-d10104949-Reviews-Red_Fox-Moscow_Central_Russia.html"><img src="img/tripAdLogo.png" alt=""></a>
+		</section>
+	</footer>
+
+	<script>
+		var menu = document.querySelector('.top-nav__left');
+		var menu_toggle = document.getElementById('menu-toggle');
+
+		if (menu.classList.contains('top-nav__left--no-js')) {
+			menu.classList.remove('top-nav__left--no-js');
+		}
+
+		function openMenu() {
+
+			if (menu.className === "top-nav__left") {
+				menu.classList.add('top-nav__left--opened');
+				menu_toggle.classList.add('header__toggle-button--close');
+			} else {
+				menu.className = "top-nav__left";
+				menu_toggle.className = "header__toggle-button";
+			}
+		} 
+
+		var orderBlockTitleElement = document.querySelector('.order-block__title');
+		var orderFormElement = document.querySelector('.order-form');
+
+		orderBlockTitleElement.addEventListener('click', function () {
+			if (orderFormElement.className === "order-form") {
+				orderFormElement.classList.add('order-form--opened');
+			} else {
+				orderFormElement.className = "order-form";
+			}
+		});
+
+	</script>
+
+</body>
+</html>
