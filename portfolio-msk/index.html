@@ -102,19 +102,19 @@
 		<h2 class="section-title">Наши работы</h2>
 		<ul class="gallery our-works__items">
 
-		<li><a href="img/1.jpg" rel="prettyPhoto[gallery]"><img src="img/1.jpg" width="240" height="240" alt="1" /></a></li>
+			<li><a href="img/1.jpg" rel="prettyPhoto[gallery]"><img src="img/1.jpg" width="270" height="270" alt="1" /></a></li>
 
-		<li><a href="img/2.jpg" rel="prettyPhoto[gallery]"><img src="img/2.jpg" width="240" height="240" alt="2" /></a></li>
+			<li><a href="img/2.jpg" rel="prettyPhoto[gallery]"><img src="img/2.jpg" width="270" height="270" alt="2" /></a></li>
 
-		<li><a href="img/3.jpg" rel="prettyPhoto[gallery]"><img src="img/3.jpg" width="240" height="240" alt="3" /></a></li>
+			<li><a href="img/3.jpg" rel="prettyPhoto[gallery]"><img src="img/3.jpg" width="270" height="270" alt="3" /></a></li>
 
-			<li><a href="img/4.jpg" rel="prettyPhoto[gallery]"><img src="img/4.jpg" width="240" height="240" alt="4" /></a></li>
+			<li><a href="img/4.jpg" rel="prettyPhoto[gallery]"><img src="img/4.jpg" width="270" height="270" alt="4" /></a></li>
 
-			<li><a href="img/5.jpg" rel="prettyPhoto[gallery]"><img src="img/5.jpg" width="240" height="240" alt="5" /></a></li>
+			<li><a href="img/5.jpg" rel="prettyPhoto[gallery]"><img src="img/5.jpg" width="270" height="270" alt="5" /></a></li>
 
-			<li><a href="img/6.jpeg" rel="prettyPhoto[gallery]"><img src="img/6.jpeg" width="240" height="240" alt="6" /></a></li>
-			<li><a href="img/7.jpg" rel="prettyPhoto[gallery]"><img src="img/7.jpg" width="240" height="240" alt="7" /></a></li>
-			<li><a href="img/8.jpg" rel="prettyPhoto[gallery]"><img src="img/8.jpg" width="240" height="240" alt="8" /></a></li>
+			<li><a href="img/6.jpeg" rel="prettyPhoto[gallery]"><img src="img/6.jpeg" width="270" height="270" alt="6" /></a></li>
+			<li><a href="img/7.jpg" rel="prettyPhoto[gallery]"><img src="img/7.jpg" width="270" height="270" alt="7" /></a></li>
+			<li><a href="img/8.jpg" rel="prettyPhoto[gallery]"><img src="img/8.jpg" width="270" height="240" alt="8" /></a></li>
 
 		</ul>
 		
@@ -171,7 +171,7 @@
 			</div>
 			<div class="service-item__image"><img src="img/serv3.jpg" alt="Жидкое стекло C.QUARTZ UK"></div>
 		</article>
-		<article class="service-item" id="under-clean">
+		<article class="service-item" id="keramic">
 			<div class="service-item__info">
 				<h3 class="service-item__title">2-х слойное керамическое покрытие ULTRA TECHNOLOGIES</h3>
 				<p>Покрытие твёрдостью 9Н формирует надёжную защиту ЛКП и придаёт насыщенный "леденцовый блеск", работая до трёх лет.</p>
@@ -187,7 +187,7 @@
 			</div>
 			<div class="service-item__image"><img src="img/serv4.jpg" alt="2-х слойное керамическое покрытие ULTRA TECHNOLOGIES"></div>
 		</article>
-		<article class="service-item" id="keramic">
+		<article class="service-item" id="antirain">
 			<div class="service-item__info">
 				<h3 class="service-item__title">Антидождь Koch Chemie NanoGlasVersiegelung</h3>
 				<p>Гидрофобное покрытие для стёкол длительного действия, лёгкое очищение от льда, редкое использование дворников от 80 км/ч</p>
@@ -203,7 +203,7 @@
 			</div>
 			<div class="service-item__image"><img src="img/serv5.jpg" alt="Антидождь Koch Chemie NanoGlasVersiegelung"></div>
 		</article>
-		<article class="service-item" id="antirain">
+		<article class="service-item" id="under-clean">
 			<div class="service-item__info">
 				<h3 class="service-item__title">Чистка подкапотного пространства диэлектрическим гелем Koch Chemie Golden Star Motorreiniger</h3>
 				<p>Блокирует доступ к электрическим элементам, делая мойку двигателя безопасной</p>
@@ -320,6 +320,8 @@
 		</div>
 	</div>
 
+	<a href="#" class="to-top-link">Наверх</a>
+
 	<div id="call-order" class="dialog">
 		<div class="dialog__content">
 			<h2 class="section-title">Заказать звонок</h2>
@@ -369,6 +371,14 @@
 				menu_toggle.className = "header__toggle-button";
 			}
 		} 
+
+		jQuery(function(f){
+			var element = f('.to-top-link');
+			f(window).scroll(function(){
+				element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](500);          
+			});
+		});
+
 	</script>
 
 	<script type="text/javascript" charset="utf-8">

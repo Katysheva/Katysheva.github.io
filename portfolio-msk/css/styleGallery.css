@@ -1,31 +1,3 @@
-
-* { margin: 0; padding: 0; border: 0; } 
-
-h1, h2, h3, h4, h5, h6, p { margin: 0 0 10px 0; }
-
-h1 { margin: 0; font-size: 1.8em; }
-
-h2, h3 {
-	padding: 0 0 5px 0;
-	margin: 0 0 10px 0;
-}
-
-h3 { margin: 20px 0 10px 0; }
-
-
-pre { display: block; }
-
-code {
-	display: block;
-	font: 1.3em Verdana, Arial, Sans-Serif;
-	padding: 0 10px;
-	border-left: 4px #bfc6c7 solid;
-	background: #E7EFF0;
-	color: #000;
-}
-
-
-
 ul.noBull { list-style: none; margin-left: 0; }
 ul li { margin: 0 0 5px 0; }
 ul li.current {
@@ -48,19 +20,6 @@ ul.checkmark li {
 	padding: 1px 0 1px 20px;
 	background: url(checkmar.gif) center left no-repeat;
 }
-
-
-select { border: 1px #9db2b9 solid; }
-
-label {
-	display: block;
-	font-size: 1.2em;
-	margin: 20px 0 5px 0;
-}
-
-
-
-
 
 ul.gallery {
 	list-style: none;
