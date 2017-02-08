@@ -540,7 +540,8 @@ input[type="radio"] {
     display: none; }
   .subscribe-offer__wrapper {
     max-width: 1200px;
-    padding: 0 30px; }
+    padding: 0 30px;
+    margin: 0 auto; }
   .subscribe-offer__form {
     -ms-flex-direction: row;
         flex-direction: row;
