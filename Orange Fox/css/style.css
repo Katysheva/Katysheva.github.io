@@ -89,7 +89,8 @@ img {
     -ms-flex-pack: center;
         justify-content: center;
     max-width: 1200px;
-    padding: 0 30px; }
+    padding: 0 30px;
+    margin: 0 auto; }
   .category-item {
     padding: 10px; } }
 
