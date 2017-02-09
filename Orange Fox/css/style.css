@@ -506,7 +506,7 @@ ol#pagination li.current {
   background: #cc3a3c; }
 
 ol#pagination li.prev, ol#pagination li.next {
-  background: url("../../img/right-arrow.svg") no-repeat 0 0;
+  background: url("../img/right-arrow.svg") no-repeat 0 0;
   border: 0;
   border-radius: 0;
   width: 20px;
