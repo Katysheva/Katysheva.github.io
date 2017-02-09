@@ -3,7 +3,7 @@
 <head>
 	<title>Orange Fox</title>
 	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -55,7 +55,7 @@
 					<div class="order-block">
 						<form class="order-block__form">
 							<fieldset>
-								<legend><a href="#" class="order-block__title">Забронировать <span>столик</span></a></legend>
+								<legend><a href="#" class="order-block__title button">Забронировать <span>столик</span></a></legend>
 								<div class="order-form">
 									<label for="order-date">
 										<input type="date" id="order-date">
@@ -69,8 +69,8 @@
 									</label>
 									<label for="select-something">
 										<select name="select-something" id="select-something">
-											<option>Option 1</option>
-											<option>Option 2</option>
+											<option>Количество гостей</option>
+											<option>2</option>
 										</select>
 									</label>
 
@@ -117,7 +117,7 @@
 				Метро: Семеновская
 			</p>
 			<p class="about-us__text">
-				Посмотреть <a href="#">схему проезда</a>
+				Посмотреть <a href="https://yandex.ru/maps/213/moscow/?mode=search&text=%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B5%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80.%20%D0%B4%D0%BE%D0%BC%2021&sll=49.419207%2C53.508816&sspn=0.258522%2C0.087390&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.717%252C55.783%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%25A1%25D0%25B5%25D0%25BC%25D1%2591%25D0%25BD%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%25D0%25BF%25D0%25B5%25D1%2580%25D0%25B5%25D1%2583%25D0%25BB%25D0%25BE%25D0%25BA%252C%252021&ll=37.717029%2C55.782706&z=18">схему проезда</a>
 			</p>
 		</div>
 		<div class="about-us__right-img">
@@ -489,9 +489,9 @@
 	</section>
 
 	<section class="special-offer">
-		<h3 class="special-offer__offer">Спецпредложения</h3>
-		<div class="slider">
-			<div class="slider__item">
+		<h2 class="special-offer__offer">Спецпредложения</h2>
+		<ul id="items" class="slider">
+			<li class="slider__item">
 				<div class="slider__text">
 					<h4>Музыкальные вечера в Рыжем Лисе</h4>
 					<p>Уважаемые гости, дорогие друзья!</p>
@@ -499,13 +499,60 @@
 						Каждый четверг в Рыжем Лисе будут проходить музыальные вечера! Для Вас будут играть лучшие музыканты Москвы! Приходите с семьей, с друзьями, с девушкой или просто в одиночестве, чтобы насладится теплой обстановкой и приятно провести время!:)
 					</p>
 					<p>
-						Ваш ждет море позитива, вкусной еды и скидок!
+						<b>Ваш ждет море позитива, вкусной еды и скидок!</b>
 					</p>
 				</div>
 				<div class="slider__img"><img src="img/pic_sacs.jpg" alt=""></div>
-			</div>
-		</div>
+			</li>
+			<li class="slider__item">
+				<div class="slider__text">
+					<h4>Музыкальные вечера в Рыжем Лисе</h4>
+					<p>Уважаемые гости, дорогие друзья!</p>
+					<p>
+						Каждый четверг в Рыжем Лисе будут проходить музыальные вечера! Для Вас будут играть лучшие музыканты Москвы! Приходите с семьей, с друзьями, с девушкой или просто в одиночестве, чтобы насладится теплой обстановкой и приятно провести время!:)
+					</p>
+					<p>
+						<b>Ваш ждет море позитива, вкусной еды и скидок!</b>
+					</p>
+				</div>
+				<div class="slider__img"><img src="img/pic_sacs.jpg" alt=""></div>
+			</li>
+			
+			<li class="slider__item">
+				<div class="slider__text">
+					<h4>Музыкальные вечера в Рыжем Лисе</h4>
+					<p>Уважаемые гости, дорогие друзья!</p>
+					<p>
+						Каждый четверг в Рыжем Лисе будут проходить музыальные вечера! Для Вас будут играть лучшие музыканты Москвы! Приходите с семьей, с друзьями, с девушкой или просто в одиночестве, чтобы насладится теплой обстановкой и приятно провести время!:)
+					</p>
+					<p>
+						<b>Ваш ждет море позитива, вкусной еды и скидок!</b>
+					</p>
+				</div>
+				<div class="slider__img"><img src="img/pic_sacs.jpg" alt=""></div>
+			</li>
+		</ul>
 	</section>
+
+		<!-- <ul id="items">
+			<li>
+				<p class="image"><a href="http://templatica.com"><img src="images/01.jpg" alt="Template preview" /></a></p>
+				<h3>Template 01</h3>
+				<p class="info">Pretty cool template</p>
+			</li>
+
+			<li>
+				<p class="image"><a href="http://templatica.com"><img src="images/02.jpg" alt="Template preview" /></a></p>
+				<h3>Template 02</h3>
+				<p class="info">Pretty cool template</p>
+			</li>
+
+			<li>
+				<p class="image"><a href="http://templatica.com"><img src="images/03.jpg" alt="Template preview" /></a></p>
+				<h3>Template 03</h3>
+				<p class="info">Pretty cool template</p>
+			</li>
+		</ul> -->
 
 	<section class="more-discount-offer">
 		<h3 class="more-discount-offer__offer">Хотите дополнительную скидку!</h3>
@@ -528,7 +575,7 @@
 					Метро: Семеновская
 				</p>
 				<p>
-					Посмотреть <a href="#">схему проезда</a>
+					Посмотреть <a href="https://yandex.ru/maps/213/moscow/?mode=search&text=%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B5%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80.%20%D0%B4%D0%BE%D0%BC%2021&sll=49.419207%2C53.508816&sspn=0.258522%2C0.087390&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.717%252C55.783%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%25A1%25D0%25B5%25D0%25BC%25D1%2591%25D0%25BD%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%25D0%25BF%25D0%25B5%25D1%2580%25D0%25B5%25D1%2583%25D0%25BB%25D0%25BE%25D0%25BA%252C%252021&ll=37.717029%2C55.782706&z=18">схему проезда</a>
 				</p>
 			</section>
 			<section class="footer__column">
@@ -553,6 +600,20 @@
 			<a href="https://www.tripadvisor.ru/Restaurant_Review-g298484-d10104949-Reviews-Red_Fox-Moscow_Central_Russia.html"><img src="img/tripAdLogo.png" alt=""></a>
 		</section>
 	</footer>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="js/easypaginate.js" type="text/javascript" defer></script>
+	<script type="text/javascript">
+
+		jQuery(function($){
+
+			$('ul#items').easyPaginate({
+				step: 1
+			});
+
+		});    
+
+	</script>
 
 	<script>
 		var menu = document.querySelector('.top-nav__left');
