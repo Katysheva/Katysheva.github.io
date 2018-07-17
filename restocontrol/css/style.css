@@ -114,8 +114,7 @@ input:focus {
       max-width: 1150px; } }
 
 .grid-3x3 {
-  display: -ms-grid;
-  display: grid;
+  display: block;
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
   -ms-flex-align: center;
       align-items: center;
@@ -128,6 +127,11 @@ input:focus {
 .centered-img {
   display: block;
   margin: 0 auto; }
+
+@media (min-width: 701px) {
+  .grid-3x3 {
+    display: -ms-grid;
+    display: grid; } }
 
 @media (min-width: 701px) {
   .colored-section {
