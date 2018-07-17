@@ -158,6 +158,7 @@ input:focus {
       height: 25px; } }
 
 .button {
+  position: relative;
   display: block;
   width: 100%;
   text-transform: uppercase;
@@ -176,6 +177,27 @@ input:focus {
   .button:active {
     background-color: var(--light-gray);
     color: var(--dark-gray); }
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none; }
+  .close-btn:before, .close-btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--dark-gray);
+    transform-origin: 50% 50%; }
+  .close-btn:before {
+    transform: rotate3d(0, 0, 1, 45deg); }
+  .close-btn:after {
+    transform: rotate3d(0, 0, 1, -45deg); }
 
 .contacts {
   padding: 40px 0; }

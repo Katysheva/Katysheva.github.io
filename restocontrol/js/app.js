@@ -17,7 +17,7 @@ function openMenu() {
 
     var overlay = $('#overlay');
     var open_modal = $('.open_modal');
-    var close = $('#overlay');
+    var close = $('#overlay, .close-btn');
     var modal = $('.modal-window');
     var body = $('body');
 
@@ -34,8 +34,7 @@ function openMenu() {
       $(modal).css('overflow', 'auto');
     });
     close.click( function(){
-      modal
-      .animate({opacity: 0, top: '45%'}, 200,
+      modal.animate({opacity: 0, top: '45%'}, 200,
         function(){
           $(this).css('display', 'none');
           overlay.fadeOut(400);
