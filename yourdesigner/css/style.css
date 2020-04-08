@@ -117,13 +117,13 @@ body {
   background-image: url("../img/ramka.svg");
   background-repeat: no-repeat;
   background-size: 857px 566px;
-  background-position: 50% -95px;
+  background-position: 50% -115px;
 }
 
 .work-list__menu {
   width: 576px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 80px 0;
   transform: skew(-8deg) rotate(-7.5deg);
   list-style: none;
 
@@ -143,7 +143,7 @@ body {
   font-weight: 500;
   line-height: 42px;
   font-style: italic;
-  text-decoration: underline;
+  text-decoration: none;
   text-transform: uppercase;
 
   position: relative;
@@ -153,7 +153,7 @@ body {
 
 .work-list__link:hover,
 .work-list__link:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .work-list__img {
@@ -179,6 +179,11 @@ body {
 }
 
 /* Footer */
+
+.footer {
+  padding-top: 30px;
+}
+
 .footer__social {
   display: flex;
   justify-content: center;
