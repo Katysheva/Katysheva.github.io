@@ -52,7 +52,7 @@ body {
 .header {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 60px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,7 +254,7 @@ body {
 
 .footer__bottom-wrapper {
   text-align: center;
-  padding-bottom: 65px;
+  padding-bottom: 45px;
   font-family: 'Roboto-Condensed', Arial, sans-serif;
 }
 
