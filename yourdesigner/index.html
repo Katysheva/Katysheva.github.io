@@ -4,7 +4,7 @@
   	<meta charset="utf-8">
     <link rel="stylesheet" href="css/normilize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>...</title>
+    <title>Креативное агентство "Ваш дизайнер"</title>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
@@ -100,6 +100,7 @@
         rus_btn.on('click', function(evt) {
           evt.currentTarget.classList.add('active');
           eng_btn[0].classList.remove('active');
+          $('title').text(rus['title']);
 
           logo_img.attr('src', 'img/logo-rus.png');
 
@@ -116,6 +117,7 @@
           // debugger
           rus_btn[0].classList.remove('active');
           logo_img.attr('src', 'img/logo_eng.png');
+          $('title').text(eng['title']);
 
           let r = $('.localization').each(function() {
             let el = $(this);
@@ -127,6 +129,7 @@
 
 
         let rus = {
+          title: 'Креативное агентство "Ваш дизайнер"',
           logo: 'Логотипы,',
           firm_style: 'Фирменный стиль,',
           polygraphy: 'Полиграфия,',
@@ -139,6 +142,7 @@
           video: 'Видеоролики'
         };
         let eng = {
+          title: 'Creative agency "Your designer"',
           logo: 'Logos,',
           firm_style: 'Firm style,',
           polygraphy: 'Polygraphy,',
