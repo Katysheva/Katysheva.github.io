@@ -42,7 +42,7 @@ body {
 .header {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 70px;
 
   display: flex;
   justify-content: space-between;
@@ -124,7 +124,7 @@ body {
   width: 576px;
   margin: 0 auto;
   padding: 100px 0;
-  transform: skew(-8deg) rotate(-8deg);
+  transform: skew(-8deg) rotate(-7.5deg);
   list-style: none;
 
   display: flex;
@@ -162,7 +162,7 @@ body {
   position: absolute;
   top: 230px;
   left: 360px;
-  transform: skew(8deg) rotate(8deg);
+  transform: skew(8deg) rotate(7.5deg);
 
   /*display: none;*/
   visibility: hidden;
