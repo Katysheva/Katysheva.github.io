@@ -19,13 +19,23 @@
   font-style: normal;
 }
 
-body {
-	font-family: 'CompPro-Regular', Arial, serif;
-	font-size: 100%;
-	color: #fff;
-	background: black;
+html {
+  box-sizing: border-box;
+}
 
-   min-height: 100vh;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'CompPro-Regular', Arial, serif;
+  font-size: 100%;
+  color: #fff;
+  background: black;
+
+  min-height: 100vh;
 }
    
 .bg-wrapper {
@@ -35,7 +45,7 @@ body {
   background: -moz-radial-gradient(#660000, black); /* Для Firefox 3.6 - 15 */
   background: radial-gradient(#660000, black); /* Стандартный синтаксис */
 
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
 }   
 
@@ -46,6 +56,7 @@ body {
 
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .header__phones {
@@ -65,7 +76,9 @@ body {
 }
 
 .phone:hover,
-.phone:focus,
+.phone:focus {
+  opacity: .7;
+}
 .lang-btn:hover,
 .lang-btn:focus {
   text-decoration: underline;
@@ -110,7 +123,7 @@ body {
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: 786px;
+  max-width: 700px;
 }
 
 .work-list {
@@ -132,9 +145,11 @@ body {
 
   position: relative;
 }
-
 .work-list__item {
-
+  display: block;
+}
+.work-list__item.hidden {
+  display: none;
 }
 
 .work-list__link {
@@ -146,9 +161,15 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 
+  border: 0;
+  background: none;
+  text-align: left;
+
   position: relative;
   z-index: 99;
   padding-right: 5px;
+
+  outline: none;
 }
 
 .work-list__link:hover,
@@ -157,25 +178,26 @@ body {
 }
 
 .work-list__img {
-  width: 487px;
-  height: 213px;
+  max-width: 520px;
+  width: 100%;
+  height: auto;
   position: absolute;
-  top: 230px;
-  left: 360px;
   transform: skew(8deg) rotate(7.5deg);
 
   /*display: none;*/
   visibility: hidden;
   opacity: 0;
+  bottom: -70px;
+  right: -100px;
 
   transition: all ease-in .5s;
 }
 
 
 .work-list__link:hover ~ .work-list__img {
-  /*display: block;*/
   visibility: visible;
   opacity: 1;
+
 }
 
 /* Footer */
@@ -201,6 +223,7 @@ body {
 .footer__bottom-wrapper {
   text-align: center;
   padding-bottom: 65px;
+  font-family: 'Roboto-Condensed', Arial, sans-serif;
 }
 
 .footer__link {
@@ -208,12 +231,8 @@ body {
   font-size: 24px;
   line-height: 43px;
   text-decoration: none;
-  font-family: 'Roboto-Condensed', Arial, sans-serif;
 
   position: relative;
-
-  /*border-bottom: 1px solid;*/
-  /*transition: border-bottom ease .2s;*/
 }
 
 .footer__link:after {
@@ -232,4 +251,145 @@ body {
 .footer__link:hover:after,
 .footer__link:focus:after {
   width: 0;
+}
+
+.footer__copyright {
+  color: rgba(255,255,255,.2);
+  font-size: 15px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 1920px) {
+  .header {
+    padding-top: 50px;
+    max-width: 800px;
+  }
+  .phone {
+    font-size: 40px;
+  }
+
+  .lang-btn {
+    font-size: 36px;
+  }
+
+  .logo__img {
+    max-width: 600px;
+  }
+
+  .work-list {
+    background-size: 720px 566px;
+    background-position: 50% -155px;
+  }
+
+  .work-list__menu {
+    max-width: 480px;
+    width: 100%;
+    padding: 55px 0;
+  }
+
+  .work-list__link {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    padding-top: 30px;
+    max-width: 700px;
+  }
+
+  .phone {
+    font-size: 30px;
+  }
+
+  .phone--whatsapp:after {
+    transform: scale(.8) skew(8deg) rotate(8deg);
+    top: -10px;
+    right: -65px;
+  }
+
+  .logo__img {
+    max-width: 450px;
+  }
+
+  .work-list {
+    background-size: 620px 566px;
+    background-position: 45% -175px;
+  }
+
+  .work-list__img {
+    max-width: 300px;
+
+    left: auto;
+    top: auto;
+  }
+
+  .work-list__menu {
+    padding: 38px 0 50px;
+  }
+
+  .work-list__link {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    max-width: 500px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding: 30px 30px 0;
+  }
+  .header__langs {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .header__phones {
+    /*width: 100%;*/
+  }
+
+  .phone--whatsapp:after {
+    transform: scale(.6) skew(8deg) rotate(8deg);
+    top: -10px;
+    right: -55px;
+  }
+
+  .logo {
+    padding: 0 30px;
+  }
+  .logo__img {
+    /*max-width: 300px;*/
+  }
+  .work-list {
+    background: none;
+    overflow: hidden;
+  }
+
+  .work-list__menu {
+    display: block;
+    padding: 0 30px 30px;
+  }
+
+  .work-list__link {
+    display: block;
+  }
+
+  .work-list__img {
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: auto;
+
+    transition: none;
+  }
+
+  .work-list__link:hover ~ .work-list__img,
+  .work-list__link:focus ~ .work-list__img {
+    position: relative;
+    /*height: 0;*/
+  }
 }
