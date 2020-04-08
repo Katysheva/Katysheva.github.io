@@ -1,0 +1,230 @@
+@font-face {
+ font-family: 'CompPro-Regular';
+ src: /*url('/fonts/PdfInTextCompro-Regular.woff2') format('woff2'),*/
+        url('../fonts/PdfInTextCompro-Regular.woff') format('woff');
+}
+
+@font-face {
+ font-family: 'CompPro-Medium';
+ src: /*url('/fonts/PdfInTextCompro-Regular.woff2') format('woff2'),*/
+        url('../fonts/PdfInTextCompro-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto-Condensed';
+
+  src: url('../fonts/ROBOTO-CONDENSED.woff') format('woff'),
+       url('../fonts/ROBOTO-CONDENSED.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: 'CompPro-Regular', Arial, serif;
+	font-size: 100%;
+	color: #fff;
+	background: black;
+
+   min-height: 100vh;
+}
+   
+.bg-wrapper {
+  background: #660000; /* Для браузеров, которые не поддерживают градиенты */
+  background: -webkit-radial-gradient(#660000, black); /* Для Opera 11.1 - 12.0 */
+  background: -o-radial-gradient(#660000, black); /* Для Opera 11.1 - 12.0 */
+  background: -moz-radial-gradient(#660000, black); /* Для Firefox 3.6 - 15 */
+  background: radial-gradient(#660000, black); /* Стандартный синтаксис */
+
+  height: 100%;
+  width: 100%;
+}   
+
+.header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__phones {
+  transform: skew(-8deg) rotate(-8deg);
+  font-style: italic;
+}
+
+.phone {
+  display: block;
+
+  font-family: 'CompPro-Medium', Arial, serif;
+  color: #fff;
+  font-size: 50px;
+  text-decoration: none;
+
+  position: relative;
+}
+
+.phone:hover,
+.phone:focus,
+.lang-btn:hover,
+.lang-btn:focus {
+  text-decoration: underline;
+}
+
+.phone--whatsapp:after {
+  content: '';
+  display: block;
+
+  position: absolute;
+  top: 0;
+  right: -70px;
+  height: 60px;
+  width: 50px;
+
+  background-image: url('../img/whatsapp-logo.png');
+  background-repeat: no-repeat;
+
+  transform: skew(8deg) rotate(8deg);
+}
+
+.header__langs {
+  transform: skew(-8deg) rotate(-8deg);
+}
+
+.lang-btn {
+  background-color: transparent;
+  border: 0;
+
+
+  font-family: 'CompPro-Regular', Arial, serif;
+  font-size: 40px;
+  color: #fff;
+  font-style: italic;
+}
+
+.lang-btn.active {
+  text-decoration: underline;
+}
+
+.logo__img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 786px;
+}
+
+.work-list {
+  background-image: url("../img/ramka.svg");
+  background-repeat: no-repeat;
+  background-size: 857px 566px;
+  background-position: 166px -97px;
+}
+
+.work-list__menu {
+  width: 576px;
+  margin: 0 auto;
+  padding: 100px 0;
+  transform: skew(-8deg) rotate(-8deg);
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  position: relative;
+}
+
+.work-list__item {
+
+}
+
+.work-list__link {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 42px;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 99;
+  padding-right: 5px;
+}
+
+.work-list__link:hover,
+.work-list__link:focus {
+  text-decoration: none;
+}
+
+.work-list__img {
+  width: 487px;
+  height: 213px;
+  position: absolute;
+  top: 230px;
+  left: 360px;
+  transform: skew(8deg) rotate(8deg);
+
+  /*display: none;*/
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all ease-in .5s;
+}
+
+
+.work-list__link:hover ~ .work-list__img {
+  /*display: block;*/
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Footer */
+.footer__social {
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links__link {
+  display: block;
+  padding: 5px;
+}
+
+.footer__bottom-wrapper {
+  text-align: center;
+  padding-bottom: 65px;
+}
+
+.footer__link {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 43px;
+  text-decoration: none;
+  font-family: 'Roboto-Condensed', Arial, sans-serif;
+
+  position: relative;
+
+  /*border-bottom: 1px solid;*/
+  /*transition: border-bottom ease .2s;*/
+}
+
+.footer__link:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  transition: width ease .2s;
+
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer__link:hover:after,
+.footer__link:focus:after {
+  width: 0;
+}
