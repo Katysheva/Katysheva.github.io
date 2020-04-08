@@ -3,15 +3,14 @@
   <head>
   	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normilize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Креативное агентство "Ваш дизайнер"</title>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
   </head>
 
   <body>
-
     <div class="bg-wrapper">
         <header class="header">
           <div class="header__phones">
@@ -31,46 +30,46 @@
           <div class="work-list">
             <ul class="work-list__menu">
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="logo">Логотипы,</button>
+                <button type="button" class="work-list__link localization" data-caption="logo">Логотипы,</button>
                 <img class="work-list__img" src="img/01-logos.png" height="320" width="520" alt="Logo"/>
               </li>
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="firm_style">Фирменный стиль,</button>
+                <button type="button" class="work-list__link localization" data-caption="firm_style">Фирменный стиль,</button>
                 <img class="work-list__img" src="img/02-corporate-identity.png" height="320" width="520" alt="piza"/></li>
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="polygraphy">Полиграфия,</button>
+                <button type="button" class="work-list__link localization" data-caption="polygraphy">Полиграфия,</button>
                 <img class="work-list__img" src="img/03-polygraphy.png" height="320" width="520" alt="Logo"/>
               </li>
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="pack">Упаковка,</button>
+                <button type="button" class="work-list__link localization" data-caption="pack">Упаковка,</button>
                 <img class="work-list__img" src="img/04-packaging.png" height="320" width="520" alt="Logo"/>
               </li>
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="banner">Баннеры,</button>
+                <button type="button" class="work-list__link localization" data-caption="banner">Баннеры,</button>
                 <img class="work-list__img" src="img/05-banners.png" height="320" width="520" alt="Logo"/>
               </li>
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="web">Веб-сайты,</button>
+                <button type="button" class="work-list__link localization" data-caption="web">Веб-сайты,</button>
                 <img class="work-list__img" src="img/06-websites.png" height="320" width="520" alt="Logo"/>
               </li>
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="animation">Анимация,</button>
+                <button type="button" class="work-list__link localization" data-caption="animation">Анимация,</button>
                 <img class="work-list__img" src="img/07-animations.png" height="320" width="520" alt="Logo"/>
               </li>
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="social">Ведение страниц в социальных сетях,</button>
+                <button type="button" class="work-list__link localization" data-caption="social">Ведение страниц в социальных сетях,</button>
                 <img class="work-list__img" src="img/08-social-networks.png" height="320" width="520" alt="Logo"/>
               </li>
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="modelling">3D моделирование,</button>
+                <button type="button" class="work-list__link localization" data-caption="modelling">3D моделирование,</button>
                 <img class="work-list__img" src="img/09-3d-modeling.png" height="320" width="520" alt="Logo"/>
               </li>
               <li class="work-list__item">
-                <button type="button" class="work-list__link localization" caption="video">Видеоролики</button>
+                <button type="button" class="work-list__link localization" data-caption="video">Видеоролики</button>
                 <img class="work-list__img" src="img/10-videos.png" height="320" width="520" alt="Logo"/>
               </li>
               <li class="work-list__item hidden eng-only">
-                <button type="button" class="work-list__link localization" caption="photography">Видеоролики</button>
+                <button type="button" class="work-list__link localization" data-caption="photography">Видеоролики</button>
                 <img class="work-list__img" src="img/11-photography.png" height="320" width="520" alt="Logo"/>
               </li>
             </ul>
@@ -79,12 +78,12 @@
         <footer class="footer">
           <ul class="footer__social social-links">
             <li>
-              <a href="#" class="social-links__link">
+              <a href="https://vk.com/yourdesigner_creative_agency" class="social-links__link" title="Creative designer in VK">
                 <img class="social-links__img" src="img/logo_vk.png" height="28" width="50" alt="VK"/>
               </a>
             </li>
             <li>
-              <a href="#" class="social-links__link">
+              <a href="https://vk.com/away.php?to=https%3A%2F%2Fwww.instagram.com%2Fyourdesigner_creative_agency%2F&cc_key=" class="social-links__link" title="Creative designer on Instagram">
                 <img class="social-links__img" src="img/logo_insta.png" height="28" width="28" alt="Insta"/>
               </a>
             </li>
@@ -97,84 +96,6 @@
 
 
     </div>
-    <script>
-      $(document).ready(function() {
-        let rus_btn = $('.rus');
-        let eng_btn = $('.eng');
-        let logo_img = $('.logo__img');
-        let eng_only = $('.work-list__item.eng-only');
-
-        rus_btn.on('click', function(evt) {
-          evt.preventDefault();
-          evt.currentTarget.classList.add('active');
-          eng_btn[0].classList.remove('active');
-          $('title').text(rus['title']);
-
-          logo_img.attr({
-            'src': 'img/logo-rus.svg',
-            'alt': rus['title']
-          });
-          eng_only[0].classList.add('hidden');
-
-          let r = $('.localization').each(function() {
-            let el = $(this);
-            let key = (el.attr('caption'));
-            el.text(rus[key]);
-          });
-        });
-
-
-        eng_btn.on('click', function(evt) {
-          evt.preventDefault();
-
-          evt.currentTarget.classList.add('active')
-          rus_btn[0].classList.remove('active');
-          $('title').text(eng['title']);
-          logo_img.attr({
-            'src': 'img/logo-eng.svg',
-            'alt': eng['title']
-          });
-
-          eng_only[0].classList.remove('hidden');
-
-          let r = $('.localization').each(function() {
-            let el = $(this);
-            let key = (el.attr('caption'));
-            el.text(eng[key]);
-          });
-        });
-
-
-
-        let rus = {
-          title: 'Креативное агентство "Ваш дизайнер"',
-          logo: 'Логотипы,',
-          firm_style: 'Фирменный стиль,',
-          polygraphy: 'Полиграфия,',
-          pack: 'Упаковка,',
-          banner: 'Баннеры,',
-          web: 'Веб-сайты,',
-          animation: 'Анимация,',
-          social: 'Ведение страниц в социальных сетях,',
-          modelling: '3D моделирование,',
-          video: 'Видеоролики'
-        };
-        let eng = {
-          title: 'Creative agency "Your designer"',
-          logo: 'Logos,',
-          firm_style: 'Firm style,',
-          polygraphy: 'Polygraphy,',
-          pack: 'Packaging,',
-          banner: 'Banners,',
-          web: 'Web sites,',
-          animation: 'Animation,',
-          social: 'Maintaining pages on social networks,',
-          modelling: '3D modelling,',
-          video: 'Videos,',
-          photography: 'Photography'
-        };
-      });
-
-    </script>
+    <script src="scripts/app.min.js"></script>
   </body>
 </html>
