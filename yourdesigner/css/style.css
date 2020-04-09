@@ -217,11 +217,6 @@ body {
   transition: all ease-in .5s;
 }
 
-.work-list__link:hover ~ .work-list__img {
-  visibility: visible;
-  opacity: 1;
-
-}
 
 /* Footer */
 
@@ -410,9 +405,17 @@ body {
   }
   .logo__img {
   }
+
   .work-list {
     background: none;
     overflow: hidden;
+  }
+
+  .work-list__item.show-img .work-list__img {
+    position: relative;
+    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 
   .work-list__menu {
@@ -433,10 +436,15 @@ body {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
-  }
 
-  .work-list__link:hover ~ .work-list__img,
-  .work-list__link:focus ~ .work-list__img {
-    position: relative;
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 901px) {
+  .work-list__link:hover ~ .work-list__img {
+    visibility: visible;
+    opacity: 1;
   }
 }

@@ -44,8 +44,6 @@ $(document).ready(function() {
         });
     });
 
-
-
     let rus = {
         title: 'Креативное агентство "Ваш дизайнер"',
         logo: 'Логотипы,',
