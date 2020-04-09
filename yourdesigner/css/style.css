@@ -268,19 +268,10 @@ body {
   width: 100%;
   height: 1px;
 
-  -webkit-transition: width ease .2s;
-  -o-transition: width ease .2s;
-  transition: width ease .2s;
-
   background: #ffffff;
   position: absolute;
   left: 0;
   bottom: 0;
-}
-
-.footer__link:hover:after,
-.footer__link:focus:after {
-  width: 0;
 }
 
 .footer__copyright {

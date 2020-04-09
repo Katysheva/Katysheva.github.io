@@ -10,6 +10,8 @@ $(document).ready(function() {
         eng_btn[0].classList.remove('active');
         $('title').text(rus['title']);
 
+        $('.footer__copyright').text(rus['footer_sign']);
+
         logo_img.attr({
             'src': 'img/logo-rus.svg',
             'alt': rus['title']
@@ -30,6 +32,8 @@ $(document).ready(function() {
         evt.currentTarget.classList.add('active');
         rus_btn[0].classList.remove('active');
         $('title').text(eng['title']);
+        $('.footer__copyright').text(eng['footer_sign']);
+
         logo_img.attr({
             'src': 'img/logo-eng.svg',
             'alt': eng['title']
@@ -55,7 +59,8 @@ $(document).ready(function() {
         animation: 'Анимация,',
         social: 'Ведение страниц в социальных сетях,',
         modelling: '3D моделирование,',
-        video: 'Видеоролики'
+        video: 'Видеоролики',
+        footer_sign: '© «Ваш Дизайнер», 2020'
     };
     let eng = {
         title: 'Creative agency "Your designer"',
@@ -69,6 +74,7 @@ $(document).ready(function() {
         social: 'Maintaining pages on social networks,',
         modelling: '3D modelling,',
         video: 'Videos,',
-        photography: 'Photography'
+        photography: 'Photography',
+        footer_sign: '© «Your Designer», 2020'
     };
 });
