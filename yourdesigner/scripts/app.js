@@ -12,7 +12,7 @@ $(document).ready(function() {
 
         $('.footer__copyright').text(rus['footer_sign']);
 
-        logo_img[0].parentElement.style.marginLeft = '0';
+        logo_img[0].parentElement.style.marginLeft = '-5px';
         logo_img.attr({
             'src': 'img/logo-rus.svg',
             'alt': rus['title']
@@ -34,7 +34,7 @@ $(document).ready(function() {
         rus_btn[0].classList.remove('active');
         $('title').text(eng['title']);
         $('.footer__copyright').text(eng['footer_sign']);
-debugger;
+
         if ($(window).width() > '900') {
             logo_img[0].parentElement.style.marginLeft = '-100px';
         }
