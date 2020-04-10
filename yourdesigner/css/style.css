@@ -38,6 +38,7 @@ body {
   background: black;
 
   min-height: 100vh;
+  min-width: 320px;
 }
 
 .bg-wrapper {
@@ -175,7 +176,6 @@ body {
 
 .work-list__item {
   display: block;
-  transform: skew(8deg);
 }
 
 .work-list__item.hidden {
@@ -200,6 +200,7 @@ body {
   padding-right: 5px;
 
   outline: none;
+  transform: skew(8deg);
 }
 
 .work-list__link:hover,
@@ -213,14 +214,14 @@ body {
   height: auto;
   position: absolute;
 
-  -webkit-transform: skew(8deg) rotate(7.5deg);
-  -ms-transform: skew(8deg) rotate(7.5deg);
-  transform: skew(8deg) rotate(7.5deg);
+  -webkit-transform: skew(15deg) rotate(7.5deg);
+  -ms-transform: skew(15deg) rotate(7.5deg);
+  transform: skew(15deg) rotate(7.5deg);
 
   visibility: hidden;
   opacity: 0;
   bottom: -160px;
-  right: -330px;
+  right: -300px;
 
   -webkit-transition: all ease-in .5s;
   -o-transition: all ease-in .5s;
@@ -283,7 +284,7 @@ body {
 @media screen and (max-width: 1910px) {
   .header {
     padding-top: 50px;
-    max-width: 800px;
+    max-width: 600px;
   }
   .phone {
     font-size: 40px;
@@ -317,7 +318,7 @@ body {
 @media screen and (max-width: 1560px) {
   .header {
     padding-top: 30px;
-    max-width: 700px;
+    max-width: 600px;
   }
 
   .phone {
@@ -334,7 +335,7 @@ body {
   }
 
   .logo__img {
-    max-width: 450px;
+    max-width: 570px;
   }
 
   .work-list {
@@ -362,6 +363,10 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .bg-wrapper {
+    overflow-x: hidden;
+  }
+
   .header {
     max-width: 500px;
 
@@ -371,6 +376,7 @@ body {
     flex-direction: column-reverse;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     padding: 30px 30px 0;
   }
@@ -378,9 +384,11 @@ body {
   .header__langs {
     width: 100%;
     padding-bottom: 40px;
+    padding-top: 0;
   }
 
   .header__phones {
+    padding-left: 17px;
   }
 
   .phone--whatsapp:after {
@@ -396,6 +404,7 @@ body {
     padding: 0 30px;
   }
   .logo__img {
+    max-width: 460px;
   }
 
   .work-list {
@@ -413,10 +422,16 @@ body {
   .work-list__menu {
     display: block;
     padding: 0 30px 30px;
+    transform: skew(-8deg) rotate(-7.5deg);
+  }
+
+  .work-list__item {
+
   }
 
   .work-list__link {
     display: block;
+    transform: skew(-4deg);
   }
 
   .work-list__img {
@@ -430,6 +445,7 @@ body {
     transition: none;
 
     display: none;
+    transform: skew(8deg) rotate(7.5deg);
   }
 }
 
