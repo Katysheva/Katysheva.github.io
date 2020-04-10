@@ -153,7 +153,10 @@ body {
   background-size: 857px 566px;
   background-position: 50% -115px;
 
-  margin-top: -40px;
+
+  max-width: 730px;
+  margin: -40px auto 0;
+  padding-left: 20px;
 }
 
 .work-list__menu {
@@ -343,6 +346,8 @@ body {
     background-position: 45% -175px;
 
     margin-top: 0;
+
+    padding-left: 45px;
   }
 
   .work-list__img {

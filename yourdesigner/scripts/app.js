@@ -65,14 +65,14 @@ $(document).ready(function() {
     let eng = {
         title: 'Creative agency "Your designer"',
         logo: 'Logos,',
-        firm_style: 'Firm style,',
+        firm_style: 'Corporate Identity,',
         polygraphy: 'Polygraphy,',
         pack: 'Packaging,',
         banner: 'Banners,',
-        web: 'Web sites,',
-        animation: 'Animation,',
+        web: 'Websites,',
+        animation: 'Animations,',
         social: 'Maintaining pages on social networks,',
-        modelling: '3D modelling,',
+        modelling: '3D Modeling,',
         video: 'Videos,',
         photography: 'Photography',
         footer_sign: '© «Your Designer», 2020'
