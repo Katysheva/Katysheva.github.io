@@ -58,7 +58,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-top: 60px;
-  padding-right: 42px;
+  padding-right: 38px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,19 +150,18 @@ body {
 .work-list {
   background-image: url("../img/ramka.svg");
   background-repeat: no-repeat;
-  background-size: 857px 566px;
-  background-position: 50% -115px;
 
+  background-size: 752px 566px;
+  background-position: -32px -115px;
+  max-width: 750px;
 
-  max-width: 730px;
   margin: -40px auto 0;
-  padding-left: 20px;
 }
 
 .work-list__menu {
   width: 592px;
   margin: 0 auto;
-  padding: 80px 0 80px 10px;
+  padding: 83px 0 80px 18px;
   -webkit-transform: skew(-15deg) rotate(-7.5deg);
   -ms-transform: skew(-15deg) rotate(-7.5deg);
   transform: skew(-15deg) rotate(-7.5deg);
@@ -187,9 +186,9 @@ body {
 
 .work-list__link {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
-  line-height: 42px;
+  line-height: 38px;
   font-style: italic;
   text-decoration: none;
   text-transform: uppercase;
@@ -212,7 +211,7 @@ body {
 }
 
 .work-list__img {
-  max-width: 520px;
+  max-width: 460px;
   width: 100%;
   height: auto;
   position: absolute;
@@ -223,8 +222,8 @@ body {
 
   visibility: hidden;
   opacity: 0;
-  bottom: -160px;
-  right: -300px;
+  bottom: -130px;
+  right: -203px;
 
   -webkit-transition: all ease-in .5s;
   -o-transition: all ease-in .5s;
@@ -288,6 +287,7 @@ body {
   .header {
     padding-top: 50px;
     max-width: 600px;
+    padding-right: 17px;
   }
   .phone {
     font-size: 40px;
@@ -302,9 +302,12 @@ body {
   }
 
   .work-list {
-    background-size: 720px 566px;
-    background-position: 50% -155px;
+    background-size: 655px 566px;
+    background-position: 0 -155px;
     padding-left: 10px;
+
+    max-width: 710px;
+
   }
 
   .work-list__menu {
@@ -314,15 +317,15 @@ body {
   }
 
   .work-list__link {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 28px;
+    line-height: 32px;
   }
 
   .work-list__img {
     max-width: 450px;
 
     bottom: -150px;
-    right: -260px;
+    right: -220px;
   }
 }
 
@@ -330,6 +333,7 @@ body {
   .header {
     padding-top: 30px;
     max-width: 600px;
+    padding-right: 28px;
   }
 
   .phone {
@@ -350,12 +354,13 @@ body {
   }
 
   .work-list {
-    background-size: 620px 566px;
-    background-position: 45% -175px;
+    background-size: 606px 566px;
+    background-position: 15px -175px;
 
     margin-top: 0;
+    padding-left: 8px;
 
-    padding-left: 45px;
+    max-width: 690px;
   }
 
   .work-list__img {
@@ -367,10 +372,11 @@ body {
 
   .work-list__menu {
     padding: 38px 0 50px;
+    max-width: 465px;
   }
 
   .work-list__link {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 32px;
   }
 }
