@@ -58,7 +58,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-top: 60px;
-  padding-right: 38px;
+  padding-right: 32px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,7 +70,7 @@ body {
 
   align-items: center;
 
-  transform: skew(-20deg) rotate(-8deg);
+  transform: skew(-15deg) rotate(-8deg);
 }
 
 .header__phones {
@@ -90,7 +90,7 @@ body {
   text-decoration: none;
 
   position: relative;
-  transform: skew(10deg);
+  transform: skew(8deg);
 }
 
 .lang-btn:hover,
@@ -130,7 +130,7 @@ body {
 
 
   font-family: 'CompPro-Regular', Arial, serif;
-  font-size: 36px;
+  font-size: 34px;
   color: #fff;
   font-style: italic;
   padding: 0 3px;
@@ -159,9 +159,9 @@ body {
 }
 
 .work-list__menu {
-  width: 592px;
+  width: 570px;
   margin: 0 auto;
-  padding: 83px 0 80px 18px;
+  padding: 83px 0 80px 10px;
   -webkit-transform: skew(-15deg) rotate(-7.5deg);
   -ms-transform: skew(-15deg) rotate(-7.5deg);
   transform: skew(-15deg) rotate(-7.5deg);
@@ -311,7 +311,7 @@ body {
   }
 
   .work-list__menu {
-    max-width: 500px;
+    max-width: 490px;
     width: 100%;
     padding: 55px 0;
   }
@@ -358,7 +358,7 @@ body {
     background-position: 15px -175px;
 
     margin-top: 0;
-    padding-left: 8px;
+    padding-left: 0;
 
     max-width: 690px;
   }
@@ -372,7 +372,7 @@ body {
 
   .work-list__menu {
     padding: 38px 0 50px;
-    max-width: 465px;
+    max-width: 445px;
   }
 
   .work-list__link {
