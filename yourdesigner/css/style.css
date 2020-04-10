@@ -47,12 +47,17 @@ body {
 
   min-height: 100vh;
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  max-width: 900px;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 60px;
+  padding-right: 42px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,16 +67,17 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  align-items: center;
+
+  transform: skew(-20deg) rotate(-8deg);
 }
 
 .header__phones {
-  -webkit-transform: skew(-8deg) rotate(-8deg);
-  -ms-transform: skew(-8deg) rotate(-8deg);
-  transform: skew(-8deg) rotate(-8deg);
+  /*-webkit-transform: skew(-20deg) rotate(-8deg);*/
+  /*-ms-transform: skew(-20deg) rotate(-8deg);*/
+  /*transform: skew(-20deg) rotate(-8deg);*/
   font-style: italic;
+
 }
 
 .phone {
@@ -79,15 +85,11 @@ body {
 
   font-family: 'CompPro-Medium', Arial, serif;
   color: #fff;
-  font-size: 50px;
+  font-size: 45px;
   text-decoration: none;
 
   position: relative;
-}
-
-.phone:hover,
-.phone:focus {
-  opacity: .7;
+  transform: skew(10deg);
 }
 
 .lang-btn:hover,
@@ -114,9 +116,11 @@ body {
 }
 
 .header__langs {
-  -webkit-transform: skew(-8deg) rotate(-8deg);
-  -ms-transform: skew(-8deg) rotate(-8deg);
-  transform: skew(-8deg) rotate(-8deg);
+  /*-webkit-transform: skew(-8deg) rotate(-8deg);*/
+  /*-ms-transform: skew(-8deg) rotate(-8deg);*/
+  /*transform: skew(-8deg) rotate(-8deg);*/
+  transform: skew(8deg);
+  padding-top: 50px;
 }
 
 .lang-btn {
@@ -125,9 +129,10 @@ body {
 
 
   font-family: 'CompPro-Regular', Arial, serif;
-  font-size: 40px;
+  font-size: 36px;
   color: #fff;
   font-style: italic;
+  padding: 0 3px;
 }
 
 .lang-btn.active {
@@ -151,12 +156,12 @@ body {
 }
 
 .work-list__menu {
-  width: 586px;
+  width: 592px;
   margin: 0 auto;
-  padding: 80px 0;
-  -webkit-transform: skew(-8deg) rotate(-7.5deg);
-  -ms-transform: skew(-8deg) rotate(-7.5deg);
-  transform: skew(-8deg) rotate(-7.5deg);
+  padding: 80px 0 80px 10px;
+  -webkit-transform: skew(-15deg) rotate(-7.5deg);
+  -ms-transform: skew(-15deg) rotate(-7.5deg);
+  transform: skew(-15deg) rotate(-7.5deg);
   list-style: none;
 
   display: -webkit-box;
@@ -170,6 +175,7 @@ body {
 
 .work-list__item {
   display: block;
+  transform: skew(8deg);
 }
 
 .work-list__item.hidden {
@@ -178,7 +184,7 @@ body {
 
 .work-list__link {
   color: #ffffff;
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 42px;
   font-style: italic;
@@ -225,6 +231,8 @@ body {
 
 .footer {
   padding-top: 50px;
+
+  margin-top: auto;
 }
 
 .footer__social {
