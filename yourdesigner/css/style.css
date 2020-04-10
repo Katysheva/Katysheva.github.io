@@ -54,7 +54,7 @@ body {
 }
 
 .header {
-  max-width: 800px;
+  max-width: 740px;
   width: 100%;
   margin: 0 auto;
   padding-top: 60px;
@@ -304,6 +304,7 @@ body {
   .work-list {
     background-size: 720px 566px;
     background-position: 50% -155px;
+    padding-left: 10px;
   }
 
   .work-list__menu {
@@ -315,6 +316,13 @@ body {
   .work-list__link {
     font-size: 32px;
     line-height: 36px;
+  }
+
+  .work-list__img {
+    max-width: 450px;
+
+    bottom: -150px;
+    right: -260px;
   }
 }
 
