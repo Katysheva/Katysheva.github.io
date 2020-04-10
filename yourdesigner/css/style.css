@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'CompPro-Medium';
-  src: url('/fonts/PdfInTextCompro-Medium.woff2') format('woff2'),
+  src: url('../fonts/PdfInTextCompro-Medium.woff2') format('woff2'),
   url('../fonts/PdfInTextCompro-Medium.woff') format('woff');
 }
 
