@@ -1,0 +1,58 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 100%;
+    color: #445c92;
+
+    background: #eeeeee;
+
+    word-break: break-word;
+}
+
+.article {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px;
+
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 0px rgba(128,128,128,1);
+
+    background: #fef3f4;
+
+    text-align: justify;
+}
+
+.article__header {
+    font-family: 'PT Serif', Georgia, serif;
+    font-size: 1.8em;
+}
+
+.article span {
+    color: #a01918;
+    font-weight: bold;
+}
+
+.article__header span {
+    display: block;
+    color: #445c92;
+}
+
+.article__list li {
+    padding: 5px 0;
+}
+
+.article__literature {
+    font-size: 14px;
+    color: rgba(68,92,146, .8);
+}
